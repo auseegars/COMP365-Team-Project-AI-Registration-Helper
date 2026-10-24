@@ -1,0 +1,2 @@
+# Only the interface requires an external package; tests use unittest.
+streamlit>=1.40,<2
