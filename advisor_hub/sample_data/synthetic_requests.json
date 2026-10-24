@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "description": "Entirely fictional student advising requests for baseline testing; no real student records. Labels are hand-authored expectations, not model predictions.",
+  "requests": [
+    {"id": "SYN-001", "text": "There is a financial hold on my account.", "expected_category": "Registration Holds", "expected_urgency": "Medium"},
+    {"id": "SYN-002", "text": "I cannot register and registration closes tomorrow.", "expected_category": "Registration Holds", "expected_urgency": "High"},
+    {"id": "SYN-003", "text": "Can you help me build a four-year plan?", "expected_category": "Degree Planning", "expected_urgency": "Low"},
+    {"id": "SYN-004", "text": "My degree audit needs attention this week.", "expected_category": "Degree Planning", "expected_urgency": "Medium"},
+    {"id": "SYN-005", "text": "Which courses should I take next semester?", "expected_category": "Course Selection", "expected_urgency": "Low"},
+    {"id": "SYN-006", "text": "I need elective recommendations ASAP.", "expected_category": "Course Selection", "expected_urgency": "High"},
+    {"id": "SYN-007", "text": "Where can I find the graduation application?", "expected_category": "Graduation", "expected_urgency": "Low"},
+    {"id": "SYN-008", "text": "My graduation application is due today.", "expected_category": "Graduation", "expected_urgency": "High"},
+    {"id": "SYN-009", "text": "I would like to schedule an appointment.", "expected_category": "Appointments", "expected_urgency": "Low"},
+    {"id": "SYN-010", "text": "Can I meet with my advisor soon?", "expected_category": "Appointments", "expected_urgency": "Medium"},
+    {"id": "SYN-011", "text": "Where is the campus bookstore?", "expected_category": "Other/Needs Review", "expected_urgency": "Low"},
+    {"id": "SYN-012", "text": "Urgent: I need help with my student portal password.", "expected_category": "Other/Needs Review", "expected_urgency": "High"},
+    {"id": "SYN-013", "text": "I need an appointment to discuss my graduation.", "expected_category": "Other/Needs Review", "expected_urgency": "Low"},
+    {"id": "SYN-014", "text": "", "expected_category": "Other/Needs Review", "expected_urgency": "Low"},
+    {"id": "SYN-015", "text": "This is not urgent; I want to review my degree requirements.", "expected_category": "Degree Planning", "expected_urgency": "Low"},
+    {"id": "SYN-016", "text": "I have a registration hold and need help choosing electives.", "expected_category": "Other/Needs Review", "expected_urgency": "Medium"},
+    {"id": "SYN-017", "text": "I CAN’T REGISTER!", "expected_category": "Registration Holds", "expected_urgency": "Medium"},
+    {"id": "SYN-018", "text": "My commencement deadline is next month.", "expected_category": "Graduation", "expected_urgency": "Medium"}
+  ]
+}
