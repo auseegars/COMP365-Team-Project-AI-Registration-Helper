@@ -72,3 +72,18 @@ information change every year, so outputs must be confirmed with the registrar o
 ## Data and ethics
 Only public catalog data is used. No real student records (FERPA): all test and demo profiles are synthetic.
 The hub supports advisors; it does not replace them.
+
+## Evaluation (owner: Jarren Woodward)
+
+`evaluate.py` scores each component against the targets in our pitch. Status: **partial**. It has passed its self-test on made-up sample data only, and no project results are reported from it yet.
+
+| Aim | Component | Metric | Target |
+|---|---|---|---|
+| 1 | Schedule builder / graduation planner | valid schedules; graduation term matches or beats advisor plan | 100%; at least 90% |
+| 2 | Elective recommender | precision@5 vs most-popular baseline; eligibility | beats baseline; 100% |
+| 3 | Cited Q&A assistant | answered correctly; cited correctly | at least 85%; at least 90% |
+| 4 | Triage classifier | macro-F1; urgent recall | at least 0.80; at least 95% |
+
+Run it from the folder containing `evaluate.py` with `python evaluate.py selftest`. Input formats are described in the comments in the file. `profiles_template.json` and `questions_template.csv` give the format for the 40 test profiles and 120 questions, which are still to be built.
+
+Tools: `evaluate.py` was drafted with Claude (an AI assistant) and reviewed and tested by Jarren Woodward.
