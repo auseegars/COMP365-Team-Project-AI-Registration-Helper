@@ -1,0 +1,44 @@
+{
+ "program_id": "CORE",
+ "program_name": "First-year engineering core (courses in the first two terms of all six programs)",
+ "catalog_year": "2025-2026",
+ "total_credits": 15.0,
+ "source_url": "derived",
+ "source_detail": "Intersection of the six program curricula (tools/build_data.py)",
+ "retrieved": "2026-10-25",
+ "requirements": [
+  {
+   "id": "CORE-01",
+   "type": "course",
+   "code": "ENGL 100",
+   "term": 1
+  },
+  {
+   "id": "CORE-02",
+   "type": "course",
+   "code": "ENGL 101",
+   "term": 2
+  },
+  {
+   "id": "CORE-03",
+   "type": "course",
+   "code": "GEEN 111",
+   "term": 1
+  },
+  {
+   "id": "CORE-04",
+   "type": "course",
+   "code": "MATH 131",
+   "term": 1
+  },
+  {
+   "id": "CORE-05",
+   "type": "course",
+   "code": "MATH 132",
+   "term": 2
+  }
+ ],
+ "min_grade": {},
+ "notes": [],
+ "known_discrepancies": []
+}

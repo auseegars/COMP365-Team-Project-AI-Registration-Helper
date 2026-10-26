@@ -1,0 +1,13 @@
+{
+  "_note": "SYNTHETIC TEST FIXTURE. Fake course codes (TEST ...). NOT catalog data.",
+  "courses": {
+    "TEST 101": {"title": "Intro A", "credits": 3, "prereq": []},
+    "TEST 102": {"title": "Intro B", "credits": 3, "prereq": []},
+    "TEST 201": {"title": "Core 1", "credits": 3, "prereq": [["TEST 101"]]},
+    "TEST 202": {"title": "Core 2", "credits": 3, "prereq": [["TEST 201"], ["TEST 102"]]},
+    "TEST 301": {"title": "Choice X", "credits": 3, "prereq": [["TEST 201", "TEST 102"]]},
+    "TEST 302": {"title": "Choice Y", "credits": 3, "prereq": [["TEST 202"]]},
+    "TEST 401": {"title": "Elective P", "credits": 3, "prereq": []},
+    "TEST 402": {"title": "Elective Q", "credits": 3, "prereq": []}
+  }
+}
