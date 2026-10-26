@@ -1,0 +1,325 @@
+{
+ "program_id": "ME",
+ "program_name": "B.S. Mechanical Engineering",
+ "catalog_year": "2025-2026",
+ "total_credits": 120,
+ "source_url": "https://catalog.ncat.edu/preview_program.php?catoid=19&poid=3093&returnto=766",
+ "source_detail": "Saved catalog page (curriculum guide)",
+ "retrieved": "2026-10-25",
+ "requirements": [
+  {
+   "id": "ME-01",
+   "type": "course",
+   "code": "ENGL 100",
+   "term": 1
+  },
+  {
+   "id": "ME-02",
+   "type": "course",
+   "code": "CHEM 106",
+   "term": 1
+  },
+  {
+   "id": "ME-03",
+   "type": "course",
+   "code": "CHEM 116",
+   "term": 1
+  },
+  {
+   "id": "ME-04",
+   "type": "course",
+   "code": "MATH 131",
+   "term": 1
+  },
+  {
+   "id": "ME-05",
+   "type": "course",
+   "code": "GEEN 100",
+   "term": 1
+  },
+  {
+   "id": "ME-06",
+   "type": "course",
+   "code": "MEEN 104",
+   "term": 1
+  },
+  {
+   "id": "ME-07",
+   "type": "course",
+   "code": "GEEN 111",
+   "term": 1
+  },
+  {
+   "id": "ME-08",
+   "type": "course",
+   "code": "ENGL 101",
+   "term": 2
+  },
+  {
+   "id": "ME-09",
+   "type": "course",
+   "code": "PHYS 241",
+   "term": 2
+  },
+  {
+   "id": "ME-10",
+   "type": "course",
+   "code": "PHYS 251",
+   "term": 2
+  },
+  {
+   "id": "ME-11",
+   "type": "course",
+   "code": "MATH 132",
+   "term": 2
+  },
+  {
+   "id": "ME-12",
+   "type": "elective",
+   "label": "Global Awareness Elective",
+   "category": "global_awareness",
+   "credits": 3.0,
+   "term": 2,
+   "fill": "list",
+   "list_ref": "GENED_GLOBAL"
+  },
+  {
+   "id": "ME-13",
+   "type": "course",
+   "code": "MATH 231",
+   "term": 3
+  },
+  {
+   "id": "ME-14",
+   "type": "course",
+   "code": "ISEN 260",
+   "term": 3
+  },
+  {
+   "id": "ME-15",
+   "type": "course",
+   "code": "MEEN 202",
+   "term": 3
+  },
+  {
+   "id": "ME-16",
+   "type": "course",
+   "code": "MEEN 210",
+   "term": 3
+  },
+  {
+   "id": "ME-17",
+   "type": "course",
+   "code": "MEEN 231",
+   "term": 3
+  },
+  {
+   "id": "ME-18",
+   "type": "course",
+   "code": "MEEN 261",
+   "term": 3
+  },
+  {
+   "id": "ME-19",
+   "type": "elective",
+   "label": "African American Studies Elective",
+   "category": "african_american",
+   "credits": 3.0,
+   "term": 4,
+   "fill": "list",
+   "list_ref": "GENED_AFAM"
+  },
+  {
+   "id": "ME-20",
+   "type": "course",
+   "code": "MEEN 232",
+   "term": 4
+  },
+  {
+   "id": "ME-21",
+   "type": "course",
+   "code": "MEEN 241",
+   "term": 4
+  },
+  {
+   "id": "ME-22",
+   "type": "course",
+   "code": "MEEN 233",
+   "term": 4
+  },
+  {
+   "id": "ME-23",
+   "type": "course",
+   "code": "MATH 341",
+   "term": 4
+  },
+  {
+   "id": "ME-24",
+   "type": "course",
+   "code": "MEEN 267",
+   "term": 4
+  },
+  {
+   "id": "ME-25",
+   "type": "course",
+   "code": "ISEN 370",
+   "term": 5
+  },
+  {
+   "id": "ME-26",
+   "type": "course",
+   "code": "MEEN 316",
+   "term": 5
+  },
+  {
+   "id": "ME-27",
+   "type": "course",
+   "code": "MEEN 361",
+   "term": 5
+  },
+  {
+   "id": "ME-28",
+   "type": "course",
+   "code": "MEEN 363",
+   "term": 5
+  },
+  {
+   "id": "ME-29",
+   "type": "course",
+   "code": "PHYS 242",
+   "term": 5
+  },
+  {
+   "id": "ME-30",
+   "type": "course",
+   "code": "PHYS 252",
+   "term": 5
+  },
+  {
+   "id": "ME-31",
+   "type": "course",
+   "code": "ECEN 340",
+   "term": 6
+  },
+  {
+   "id": "ME-32",
+   "type": "course",
+   "code": "MEEN 317",
+   "term": 6
+  },
+  {
+   "id": "ME-33",
+   "type": "course",
+   "code": "MEEN 321",
+   "term": 6
+  },
+  {
+   "id": "ME-34",
+   "type": "course",
+   "code": "MEEN 324",
+   "term": 6
+  },
+  {
+   "id": "ME-35",
+   "type": "course",
+   "code": "MEEN 341",
+   "term": 6
+  },
+  {
+   "id": "ME-36",
+   "type": "course",
+   "code": "MEEN 343",
+   "term": 6
+  },
+  {
+   "id": "ME-37",
+   "type": "elective",
+   "label": "Humanities & Fine Arts Elective",
+   "category": "humanities",
+   "credits": 3.0,
+   "term": 7,
+   "fill": "list",
+   "list_ref": "GENED_HUM"
+  },
+  {
+   "id": "ME-38",
+   "type": "course",
+   "code": "MEEN 480",
+   "term": 7
+  },
+  {
+   "id": "ME-39",
+   "type": "course",
+   "code": "MEEN 421",
+   "term": 7
+  },
+  {
+   "id": "ME-40",
+   "type": "course",
+   "code": "MEEN 424",
+   "term": 7
+  },
+  {
+   "id": "ME-41",
+   "type": "course",
+   "code": "MEEN 425",
+   "term": 7
+  },
+  {
+   "id": "ME-42",
+   "type": "elective",
+   "label": "Social & Behavioral Sciences Elective",
+   "category": "social_behavioral",
+   "credits": 3.0,
+   "term": 8,
+   "fill": "list",
+   "list_ref": "GENED_SOC"
+  },
+  {
+   "id": "ME-43",
+   "type": "course",
+   "code": "MEEN 481",
+   "term": 8
+  },
+  {
+   "id": "ME-44",
+   "type": "course",
+   "code": "MEEN 492",
+   "term": 8
+  },
+  {
+   "id": "ME-45",
+   "type": "elective",
+   "label": "MEEN 4xx Tech or Math/Sci Elective",
+   "category": "technical_or_math_science",
+   "credits": 3.0,
+   "term": 8,
+   "fill": "partial",
+   "approved": [
+    "MEEN 4xx"
+   ]
+  },
+  {
+   "id": "ME-46",
+   "type": "elective",
+   "label": "MEEN 4xx Technical Elective",
+   "category": "technical",
+   "credits": 3.0,
+   "term": 8,
+   "fill": "partial",
+   "approved": [
+    "MEEN 4xx"
+   ]
+  }
+ ],
+ "min_grade": {
+  "C-": [
+   "MATH 131",
+   "MATH 231",
+   "MATH 132",
+   "PHYS 241"
+  ]
+ },
+ "notes": [],
+ "known_discrepancies": []
+}

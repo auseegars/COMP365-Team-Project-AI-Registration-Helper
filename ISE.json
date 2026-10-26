@@ -1,0 +1,324 @@
+{
+ "program_id": "ISE",
+ "program_name": "B.S. Industrial and Systems Engineering",
+ "catalog_year": "2025-2026",
+ "total_credits": 120,
+ "source_url": "https://catalog.ncat.edu/preview_program.php?catoid=19&poid=3092&returnto=766",
+ "source_detail": "Saved catalog page (curriculum guide)",
+ "retrieved": "2026-10-25",
+ "requirements": [
+  {
+   "id": "ISE-01",
+   "type": "course",
+   "code": "ENGL 100",
+   "term": 1
+  },
+  {
+   "id": "ISE-02",
+   "type": "course",
+   "code": "CHEM 106",
+   "term": 1
+  },
+  {
+   "id": "ISE-03",
+   "type": "course",
+   "code": "CHEM 116",
+   "term": 1
+  },
+  {
+   "id": "ISE-04",
+   "type": "course",
+   "code": "MATH 131",
+   "term": 1
+  },
+  {
+   "id": "ISE-05",
+   "type": "course",
+   "code": "GEEN 100",
+   "term": 1
+  },
+  {
+   "id": "ISE-06",
+   "type": "course",
+   "code": "GEEN 111",
+   "term": 1
+  },
+  {
+   "id": "ISE-07",
+   "type": "course",
+   "code": "ENGL 101",
+   "term": 2
+  },
+  {
+   "id": "ISE-08",
+   "type": "elective",
+   "label": "Humanities/Fine Arts Elective",
+   "category": "humanities",
+   "credits": 3.0,
+   "term": 2,
+   "fill": "list",
+   "list_ref": "GENED_HUM"
+  },
+  {
+   "id": "ISE-09",
+   "type": "course",
+   "code": "ISEN 162",
+   "term": 2
+  },
+  {
+   "id": "ISE-10",
+   "type": "course",
+   "code": "MATH 132",
+   "term": 2
+  },
+  {
+   "id": "ISE-11",
+   "type": "course",
+   "code": "PHYS 241",
+   "term": 2
+  },
+  {
+   "id": "ISE-12",
+   "type": "course",
+   "code": "PHYS 251",
+   "term": 2
+  },
+  {
+   "id": "ISE-13",
+   "type": "course",
+   "code": "ISEN 121",
+   "term": 2
+  },
+  {
+   "id": "ISE-14",
+   "type": "course",
+   "code": "PSYC 101",
+   "term": 3
+  },
+  {
+   "id": "ISE-15",
+   "type": "course",
+   "code": "ISEN 102",
+   "term": 3
+  },
+  {
+   "id": "ISE-16",
+   "type": "course",
+   "code": "ISEN 246",
+   "term": 3
+  },
+  {
+   "id": "ISE-17",
+   "type": "course",
+   "code": "MATH 351",
+   "term": 3
+  },
+  {
+   "id": "ISE-18",
+   "type": "course",
+   "code": "PHYS 242",
+   "term": 3
+  },
+  {
+   "id": "ISE-19",
+   "type": "course",
+   "code": "PHYS 252",
+   "term": 3
+  },
+  {
+   "id": "ISE-20",
+   "type": "elective",
+   "label": "Global Awareness Elective",
+   "category": "global_awareness",
+   "credits": 3.0,
+   "term": 4,
+   "fill": "list",
+   "list_ref": "GENED_GLOBAL"
+  },
+  {
+   "id": "ISE-21",
+   "type": "elective",
+   "label": "African-American Culture / HIST Elective",
+   "category": "african_american",
+   "credits": 3.0,
+   "term": 4,
+   "fill": "list",
+   "list_ref": "GENED_AFAM"
+  },
+  {
+   "id": "ISE-22",
+   "type": "course",
+   "code": "ISEN 255",
+   "term": 4
+  },
+  {
+   "id": "ISE-23",
+   "type": "course",
+   "code": "ISEN 286",
+   "term": 4
+  },
+  {
+   "id": "ISE-24",
+   "type": "course",
+   "code": "MEEN 260",
+   "term": 4
+  },
+  {
+   "id": "ISE-25",
+   "type": "course",
+   "code": "MATH 231",
+   "term": 4
+  },
+  {
+   "id": "ISE-26",
+   "type": "course",
+   "code": "ISEN 380",
+   "term": 5
+  },
+  {
+   "id": "ISE-27",
+   "type": "course",
+   "code": "ISEN 430",
+   "term": 5
+  },
+  {
+   "id": "ISE-28",
+   "type": "course",
+   "code": "ISEN 361",
+   "term": 5
+  },
+  {
+   "id": "ISE-29",
+   "type": "course",
+   "code": "ISEN 370",
+   "term": 5
+  },
+  {
+   "id": "ISE-30",
+   "type": "course",
+   "code": "ISEN 471",
+   "term": 5
+  },
+  {
+   "id": "ISE-31",
+   "type": "course",
+   "code": "ISEN 324",
+   "term": 6
+  },
+  {
+   "id": "ISE-32",
+   "type": "course",
+   "code": "ISEN 386",
+   "term": 6
+  },
+  {
+   "id": "ISE-33",
+   "type": "course",
+   "code": "ISEN 435",
+   "term": 6
+  },
+  {
+   "id": "ISE-34",
+   "type": "course",
+   "code": "ISEN 465",
+   "term": 6
+  },
+  {
+   "id": "ISE-35",
+   "type": "course",
+   "code": "ISEN 472",
+   "term": 6
+  },
+  {
+   "id": "ISE-36",
+   "type": "course",
+   "code": "MEEN 230",
+   "term": 6
+  },
+  {
+   "id": "ISE-37",
+   "type": "course",
+   "code": "ISEN 425",
+   "term": 7
+  },
+  {
+   "id": "ISE-38",
+   "type": "course",
+   "code": "ISEN 455",
+   "term": 7
+  },
+  {
+   "id": "ISE-39",
+   "type": "course",
+   "code": "ISEN 415",
+   "term": 7
+  },
+  {
+   "id": "ISE-40",
+   "type": "course",
+   "code": "ISEN 475",
+   "term": 7
+  },
+  {
+   "id": "ISE-41",
+   "type": "course",
+   "code": "ISEN 400",
+   "term": 7
+  },
+  {
+   "id": "ISE-42",
+   "type": "elective",
+   "label": "ISE Technical Elective",
+   "category": "technical",
+   "credits": 3.0,
+   "term": 7,
+   "fill": "attest"
+  },
+  {
+   "id": "ISE-43",
+   "type": "course",
+   "code": "ISEN 440",
+   "term": 8
+  },
+  {
+   "id": "ISE-44",
+   "type": "course",
+   "code": "ISEN 486",
+   "term": 8
+  },
+  {
+   "id": "ISE-45",
+   "type": "course",
+   "code": "ISEN 495",
+   "term": 8
+  },
+  {
+   "id": "ISE-46",
+   "type": "course",
+   "code": "ISEN 480",
+   "term": 8
+  },
+  {
+   "id": "ISE-47",
+   "type": "elective",
+   "label": "ISE Technical Elective",
+   "category": "technical",
+   "credits": 3.0,
+   "term": 8,
+   "fill": "attest"
+  }
+ ],
+ "min_grade": {
+  "C-": [
+   "MATH 131",
+   "MATH 132",
+   "MATH 231",
+   "ISEN 370",
+   "PHYS 241"
+  ]
+ },
+ "notes": [
+  "Catalog footnote: See your academic advisor for a list of eligible courses to satisfy these requirements."
+ ],
+ "known_discrepancies": []
+}
