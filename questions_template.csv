@@ -1,0 +1,3 @@
+id,question,gold_answer,source_url,answerable
+Q001,REPLACE with a real student question,REPLACE with the answer exactly as the official page states it,REPLACE with official page URL,1
+Q002,REPLACE with a question the official pages do NOT answer,,,0
