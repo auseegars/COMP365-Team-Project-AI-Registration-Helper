@@ -1,0 +1,61 @@
+test_appointment_submit_and_update (test_app.InterfaceTests.test_appointment_submit_and_update) ... ok
+test_demo_filters_sort_and_reset (test_app.InterfaceTests.test_demo_filters_sort_and_reset) ... 2026-11-10 11:07:26.424 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_empty_pages (test_app.InterfaceTests.test_empty_pages) ... 2026-11-10 11:07:27.490 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_invalid_appointment_shows_validation (test_app.InterfaceTests.test_invalid_appointment_shows_validation) ... 2026-11-10 11:07:27.754 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_invalid_request_shows_validation (test_app.InterfaceTests.test_invalid_request_shows_validation) ... 2026-11-10 11:07:28.015 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_past_appointment_time_rejected_in_ui (test_app.InterfaceTests.test_past_appointment_time_rejected_in_ui) ... 2026-11-10 11:07:28.251 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_status_filter_refresh_after_resolving (test_app.InterfaceTests.test_status_filter_refresh_after_resolving) ... 2026-11-10 11:07:28.482 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_submit_process_and_rerun_without_duplicates (test_app.InterfaceTests.test_submit_process_and_rerun_without_duplicates) ... 2026-11-10 11:07:28.848 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_blank_and_unmatched_requests_need_review (test_classifier.ClassificationTests.test_blank_and_unmatched_requests_need_review) ... ok
+test_case_punctuation_whitespace_and_unicode (test_classifier.ClassificationTests.test_case_punctuation_whitespace_and_unicode) ... ok
+test_keywords_do_not_match_inside_other_words (test_classifier.ClassificationTests.test_keywords_do_not_match_inside_other_words) ... ok
+test_multiple_categories_need_review_with_explanation (test_classifier.ClassificationTests.test_multiple_categories_need_review_with_explanation) ... ok
+test_non_string_input_is_rejected (test_classifier.ClassificationTests.test_non_string_input_is_rejected) ... ok
+test_repeated_calls_are_deterministic_and_serializable (test_classifier.ClassificationTests.test_repeated_calls_are_deterministic_and_serializable) ... ok
+test_repeated_keywords_do_not_override_ambiguity (test_classifier.ClassificationTests.test_repeated_keywords_do_not_override_ambiguity) ... ok
+test_synthetic_examples (test_classifier.ClassificationTests.test_synthetic_examples) ... ok
+test_explicit_high_urgency (test_classifier.UrgencyTests.test_explicit_high_urgency) ... ok
+test_high_urgency_takes_precedence (test_classifier.UrgencyTests.test_high_urgency_takes_precedence) ... ok
+test_incidental_time_mentions_are_low (test_classifier.UrgencyTests.test_incidental_time_mentions_are_low) ... ok
+test_medium_urgency (test_classifier.UrgencyTests.test_medium_urgency) ... ok
+test_near_or_missed_deadlines (test_classifier.UrgencyTests.test_near_or_missed_deadlines) ... ok
+test_negated_urgency_does_not_hide_deadlines_or_other_cues (test_classifier.UrgencyTests.test_negated_urgency_does_not_hide_deadlines_or_other_cues) ... ok
+test_simple_negated_urgency (test_classifier.UrgencyTests.test_simple_negated_urgency) ... ok
+test_evaluate_records_and_adapter (test_evaluation.EvaluationTests.test_evaluate_records_and_adapter) ... ok
+test_invalid_evaluation_rows (test_evaluation.EvaluationTests.test_invalid_evaluation_rows) ... ok
+test_invalid_labels_lengths_and_empty_data (test_evaluation.EvaluationTests.test_invalid_labels_lengths_and_empty_data) ... ok
+test_known_macro_f1_and_confusion_matrix (test_evaluation.EvaluationTests.test_known_macro_f1_and_confusion_matrix) ... ok
+test_macro_weights_classes_equally (test_evaluation.EvaluationTests.test_macro_weights_classes_equally) ... ok
+test_no_urgent_support_is_undefined (test_evaluation.EvaluationTests.test_no_urgent_support_is_undefined) ... ok
+test_urgent_recall_false_negatives (test_evaluation.EvaluationTests.test_urgent_recall_false_negatives) ... ok
+test_zero_denominators_and_absent_classes (test_evaluation.EvaluationTests.test_zero_denominators_and_absent_classes) ... ok
+test_edge_cases_have_unique_ids_and_required_coverage (test_evidence.EvidenceTests.test_edge_cases_have_unique_ids_and_required_coverage) ... ok
+test_fixture_report_does_not_claim_held_out_performance (test_evidence.EvidenceTests.test_fixture_report_does_not_claim_held_out_performance) ... ok
+test_required_examples_use_actual_classifier (test_evidence.EvidenceTests.test_required_examples_use_actual_classifier) ... ok
+test_appointment_replay_unique_and_separate (test_management.ManagementTests.test_appointment_replay_unique_and_separate) ... ok
+test_appointment_status_and_pending_metric (test_management.ManagementTests.test_appointment_status_and_pending_metric) ... ok
+test_appointment_validation (test_management.ManagementTests.test_appointment_validation) ... ok
+test_classification_integration_and_unique_ids (test_management.ManagementTests.test_classification_integration_and_unique_ids) ... ok
+test_combined_filters_and_search (test_management.ManagementTests.test_combined_filters_and_search) ... ok
+test_demo_idempotence_status_and_reset_preserve_submissions (test_management.ManagementTests.test_demo_idempotence_status_and_reset_preserve_submissions) ... ok
+test_distributions (test_management.ManagementTests.test_distributions) ... ok
+test_empty_state (test_management.ManagementTests.test_empty_state) ... ok
+test_invalid_status_and_id (test_management.ManagementTests.test_invalid_status_and_id) ... ok
+test_request_invalid_inputs_are_atomic (test_management.ManagementTests.test_request_invalid_inputs_are_atomic) ... ok
+test_request_replay_and_conflicting_token (test_management.ManagementTests.test_request_replay_and_conflicting_token) ... ok
+test_sort_priority_and_time_without_mutation (test_management.ManagementTests.test_sort_priority_and_time_without_mutation) ... ok
+test_status_transitions_and_metrics (test_management.ManagementTests.test_status_transitions_and_metrics) ... ok
+test_classifier_import (test_setup.ImportTests.test_classifier_import) ... ok
+test_interface_import (test_setup.ImportTests.test_interface_import) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 4.255s
+
+OK

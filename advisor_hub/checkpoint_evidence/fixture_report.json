@@ -1,0 +1,178 @@
+{
+  "dataset": "18 synthetic regression fixtures used during baseline development",
+  "synthetic": true,
+  "held_out": false,
+  "interpretation": "Fixture agreement only; not held-out accuracy or evidence that targets are met.",
+  "fixture_sha256": "e3a579e3635f42af842d51a52ce38bf3bf43634382eac27024a984e8a287aecf",
+  "category": {
+    "sample_count": 18,
+    "macro_f1": 1.0,
+    "zero_division_policy": "0; all declared labels included",
+    "per_class": {
+      "Registration Holds": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0
+      },
+      "Degree Planning": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0
+      },
+      "Course Selection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "Graduation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0
+      },
+      "Appointments": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "Other/Needs Review": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 5,
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "confusion_matrix": {
+      "Registration Holds": {
+        "Registration Holds": 3,
+        "Degree Planning": 0,
+        "Course Selection": 0,
+        "Graduation": 0,
+        "Appointments": 0,
+        "Other/Needs Review": 0
+      },
+      "Degree Planning": {
+        "Registration Holds": 0,
+        "Degree Planning": 3,
+        "Course Selection": 0,
+        "Graduation": 0,
+        "Appointments": 0,
+        "Other/Needs Review": 0
+      },
+      "Course Selection": {
+        "Registration Holds": 0,
+        "Degree Planning": 0,
+        "Course Selection": 2,
+        "Graduation": 0,
+        "Appointments": 0,
+        "Other/Needs Review": 0
+      },
+      "Graduation": {
+        "Registration Holds": 0,
+        "Degree Planning": 0,
+        "Course Selection": 0,
+        "Graduation": 3,
+        "Appointments": 0,
+        "Other/Needs Review": 0
+      },
+      "Appointments": {
+        "Registration Holds": 0,
+        "Degree Planning": 0,
+        "Course Selection": 0,
+        "Graduation": 0,
+        "Appointments": 2,
+        "Other/Needs Review": 0
+      },
+      "Other/Needs Review": {
+        "Registration Holds": 0,
+        "Degree Planning": 0,
+        "Course Selection": 0,
+        "Graduation": 0,
+        "Appointments": 0,
+        "Other/Needs Review": 5
+      }
+    }
+  },
+  "urgency": {
+    "sample_count": 18,
+    "macro_f1": 1.0,
+    "zero_division_policy": "0; all declared labels included",
+    "per_class": {
+      "High": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0
+      },
+      "Medium": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6,
+        "tp": 6,
+        "fp": 0,
+        "fn": 0
+      },
+      "Low": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8,
+        "tp": 8,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "confusion_matrix": {
+      "High": {
+        "High": 4,
+        "Medium": 0,
+        "Low": 0
+      },
+      "Medium": {
+        "High": 0,
+        "Medium": 6,
+        "Low": 0
+      },
+      "Low": {
+        "High": 0,
+        "Medium": 0,
+        "Low": 8
+      }
+    }
+  },
+  "urgent_recall": {
+    "positive_label": "High",
+    "true_positives": 4,
+    "false_negatives": 0,
+    "urgent_support": 4,
+    "recall": 1.0
+  },
+  "category_exact_matches": 18,
+  "urgency_exact_matches": 18
+}

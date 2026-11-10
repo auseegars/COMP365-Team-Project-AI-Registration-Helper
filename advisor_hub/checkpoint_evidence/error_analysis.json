@@ -1,0 +1,197 @@
+{
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "EDGE-01",
+      "input": "Can someone help me?",
+      "category": "Other/Needs Review",
+      "urgency": "Low",
+      "matched_categories": [],
+      "matched_keywords": [],
+      "urgency_reasons": [],
+      "needs_review": true,
+      "case": "Ambiguous wording",
+      "interpretation": "No specific intent keywords; review is needed."
+    },
+    {
+      "id": "EDGE-02",
+      "input": "I have a registration hold and need help choosing electives.",
+      "category": "Other/Needs Review",
+      "urgency": "Medium",
+      "matched_categories": [
+        "Registration Holds",
+        "Course Selection"
+      ],
+      "matched_keywords": [
+        "hold",
+        "electives"
+      ],
+      "urgency_reasons": [
+        "hold"
+      ],
+      "needs_review": true,
+      "case": "Multiple categories",
+      "interpretation": "The baseline refers multiple categories for review rather than breaking ties."
+    },
+    {
+      "id": "EDGE-03",
+      "input": "Where is the campus library?",
+      "category": "Other/Needs Review",
+      "urgency": "Low",
+      "matched_categories": [],
+      "matched_keywords": [],
+      "urgency_reasons": [],
+      "needs_review": true,
+      "case": "Unrecognized question",
+      "interpretation": "Out-of-scope questions have no category rule."
+    },
+    {
+      "id": "EDGE-04",
+      "input": "Urgent: my student portal is broken!",
+      "category": "Other/Needs Review",
+      "urgency": "High",
+      "matched_categories": [],
+      "matched_keywords": [],
+      "urgency_reasons": [
+        "urgent"
+      ],
+      "needs_review": true,
+      "case": "Urgent without category",
+      "interpretation": "Urgency is detected independently from routing."
+    },
+    {
+      "id": "EDGE-05",
+      "input": "I read the catalog today.",
+      "category": "Other/Needs Review",
+      "urgency": "Low",
+      "matched_categories": [],
+      "matched_keywords": [],
+      "urgency_reasons": [],
+      "needs_review": true,
+      "case": "Incidental date",
+      "interpretation": "A time mention alone should not establish a deadline."
+    },
+    {
+      "id": "EDGE-06",
+      "input": "This is not urgent; I need an appointment.",
+      "category": "Appointments",
+      "urgency": "Low",
+      "matched_categories": [
+        "Appointments"
+      ],
+      "matched_keywords": [
+        "appointment"
+      ],
+      "urgency_reasons": [],
+      "needs_review": false,
+      "case": "Simple negation",
+      "interpretation": "Supported simple negation suppresses the explicit cue."
+    },
+    {
+      "id": "EDGE-07",
+      "input": "",
+      "category": "Other/Needs Review",
+      "urgency": "Low",
+      "matched_categories": [],
+      "matched_keywords": [],
+      "urgency_reasons": [],
+      "needs_review": true,
+      "case": "Empty input",
+      "interpretation": "The classifier accepts blank strings for review; the submission form rejects blanks."
+    },
+    {
+      "id": "EDGE-08",
+      "input": "  WHICH---COURSES should I take???  ",
+      "category": "Course Selection",
+      "urgency": "Low",
+      "matched_categories": [
+        "Course Selection"
+      ],
+      "matched_keywords": [
+        "which courses"
+      ],
+      "urgency_reasons": [],
+      "needs_review": false,
+      "case": "Punctuation and capitalization",
+      "interpretation": "Normalization collapses punctuation and case."
+    },
+    {
+      "id": "EDGE-09",
+      "input": "I no longer have a hold.",
+      "category": "Registration Holds",
+      "urgency": "Medium",
+      "matched_categories": [
+        "Registration Holds"
+      ],
+      "matched_keywords": [
+        "hold"
+      ],
+      "urgency_reasons": [
+        "hold"
+      ],
+      "needs_review": false,
+      "case": "Resolved hold context",
+      "interpretation": "The broad hold rule ignores resolved context and can over-triage."
+    },
+    {
+      "id": "EDGE-10",
+      "input": "I do not need help urgently.",
+      "category": "Other/Needs Review",
+      "urgency": "High",
+      "matched_categories": [],
+      "matched_keywords": [],
+      "urgency_reasons": [
+        "urgently"
+      ],
+      "needs_review": true,
+      "case": "Complex urgency negation",
+      "interpretation": "Negation outside the simple patterns can cause a false High suggestion."
+    },
+    {
+      "id": "EDGE-11",
+      "input": "My graduation application is due November 11, 2026.",
+      "category": "Graduation",
+      "urgency": "Low",
+      "matched_categories": [
+        "Graduation"
+      ],
+      "matched_keywords": [
+        "graduation"
+      ],
+      "urgency_reasons": [],
+      "needs_review": false,
+      "case": "Absolute deadline",
+      "interpretation": "Absolute calendar dates are not interpreted; a real imminent deadline can be missed."
+    },
+    {
+      "id": "EDGE-12",
+      "input": "The system won't let me enroll.",
+      "category": "Other/Needs Review",
+      "urgency": "Low",
+      "matched_categories": [],
+      "matched_keywords": [],
+      "urgency_reasons": [],
+      "needs_review": true,
+      "case": "Unseen synonym",
+      "interpretation": "Missing synonyms can hide a registration problem and its urgency."
+    },
+    {
+      "id": "EDGE-13",
+      "input": "Not urgent, but my graduation application is due today.",
+      "category": "Graduation",
+      "urgency": "High",
+      "matched_categories": [
+        "Graduation"
+      ],
+      "matched_keywords": [
+        "graduation"
+      ],
+      "urgency_reasons": [
+        "due today"
+      ],
+      "needs_review": false,
+      "case": "Negation plus real deadline",
+      "interpretation": "A supported near deadline remains High despite negated explicit urgency."
+    }
+  ]
+}

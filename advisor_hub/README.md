@@ -5,7 +5,7 @@ and Interface Developer owns student request classification, urgency triage,
 request management, appointment requests, and the Streamlit interface. All work
 is isolated in `advisor_hub/`; teammates' components are not implemented here.
 
-## Implemented through Stage 3
+## Implemented through Stages 3 and 4
 
 - Overview with actual session counts, recent requests, category and priority charts.
 - Student Requests: required fictional identifier and description; existing classifier
@@ -20,6 +20,11 @@ is isolated in `advisor_hub/`; teammates' components are not implemented here.
   appointment request. Repeated loading preserves IDs and statuses. Reset removes
   only loaded demo records, preserving submitted fictional records.
 - Native Streamlit layout, blue headings/charts, gold accents, urgency text and alerts.
+- Reusable standard-library category Macro-F1, per-class metrics/confusion matrices,
+  and High urgent-recall functions with formula and validation tests.
+- Reproducible classifier examples, edge-case analysis, synthetic fixture agreement,
+  automated verification logs, independent evaluation plan, and a video guide in
+  [checkpoint_evidence/](checkpoint_evidence/README.md).
 
 ## Python 3.12 setup and launch
 
@@ -43,6 +48,7 @@ service is needed. The classifier and management module use the standard library
 ```powershell
 advisor_hub/.venv/Scripts/python.exe -m unittest discover -s advisor_hub/tests -v
 advisor_hub/.venv/Scripts/python.exe -m compileall -q advisor_hub/app.py advisor_hub/management.py advisor_hub/classifier.py advisor_hub/tests
+advisor_hub/.venv/Scripts/python.exe -m advisor_hub.generate_evidence
 ```
 
 Without Streamlit, `py -3.12 -m unittest discover -s advisor_hub/tests -v`
@@ -52,8 +58,11 @@ suite in the installed environment before claiming UI checks passed.
 The original 17 tests passed before modifications. New management and AppTest
 checks cover classification integration, validation, statuses, actual counters,
 search/filter/sort, duplicate load/token prevention, appointments, and reruns.
-AppTest exercises widgets rather than merely checking server startup. The local
-server also started and returned HTTP 200 from `/_stcore/health`. Native browser
+Stage 3 passed 38 tests before its commit; the full Stage 4 suite passes 49 tests,
+including eight AppTest workflows, with zero failures/errors/skips. AppTest
+exercises widgets rather than merely checking server startup. The evidence
+generator also starts a separate local server and probes `/_stcore/health`.
+Native browser
 inspection was unavailable because Computer Use could not verify Chrome's URL;
 manual visual, narrow-screen, and keyboard checks remain necessary.
 
@@ -102,10 +111,14 @@ explain routing; no probabilities or confidence percentages are produced.
 - `app.py`: Streamlit entry point and four UI sections.
 - `classifier.py`: existing classification API, unchanged from Stage 2.
 - `management.py`: records, validation, IDs, status updates, metrics, filters, demo tools.
+- `evaluation.py`: Macro-F1, class metrics/confusion matrices, urgent recall, predictor adapter.
+- `generate_evidence.py`: actual examples, edge cases, fixture metrics, tests/checks/startup evidence.
+- `checkpoint_evidence/`: generated outputs, evaluation plan, manual screenshot and video guides.
 - `sample_data/`: 18 existing hand-labeled synthetic regression fixtures.
 - `tests/test_classifier.py`, `test_setup.py`: preserved baseline checks.
 - `tests/test_management.py`: business logic checks.
 - `tests/test_app.py`: installed Streamlit AppTest widget workflows.
+- `tests/test_evaluation.py`, `test_evidence.py`: metric formulas and evidence consistency checks.
 - `requirements.txt`: interface dependency; `.gitignore`: local environment/caches.
 
 Possible future connections: another component passes English request text into
@@ -126,6 +139,22 @@ The original 18 synthetic examples test expected behavior, not generalization.
 Planned independent evaluation targets are category Macro-F1 >= 0.80 and High
 urgent-request recall >= 95%; neither target has been established. A future
 trained classifier should be compared on the same untouched test set.
+
+Macro-F1 averages F1 equally across all six categories; urgent recall measures
+the proportion of independently labeled High requests predicted High. The
+evaluation functions validate labels and report class support and confusion
+matrices. Absent categories have F1 zero; no labeled High examples yields
+undefined urgent recall. The current fixture report records 18/18 category and
+urgency agreement and 4/4 High fixture detections, explicitly as development
+fixture agreement. See [the evaluation plan](checkpoint_evidence/evaluation_plan.md)
+for formulas, independent labeling, group-based splits, and future comparison.
+
+Reproduce required examples A–D and thirteen edge cases with the evidence command
+above. See [executed outputs](checkpoint_evidence/executed_cases.md),
+[verification results](checkpoint_evidence/verification.json), and
+[the 60–90 second video guide](checkpoint_evidence/video_guide.md). Browser
+screenshots were unavailable; exact manual capture instructions are in the
+evidence README. No video or screenshot has been fabricated.
 
 Before Checkpoint 3: collect independently labeled data with category and urgency
 labels; freeze a test split before rule/model tuning; analyze errors; improve the

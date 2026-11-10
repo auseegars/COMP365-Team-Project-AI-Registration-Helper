@@ -1,0 +1,64 @@
+{
+  "generated_at_utc": "2026-11-10T16:07:34.223304+00:00",
+  "python": "3.12.1",
+  "streamlit": "1.67.0",
+  "branch": "feature/advisor-hub",
+  "stage3_commit": "684bae3f4582faf30734ea2e09a7ae4f41939357",
+  "stage4_commit": "The commit containing this evidence; resolve with git log -1 -- advisor_hub/checkpoint_evidence/verification.json",
+  "tests": {
+    "run": 49,
+    "passed": 49,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "expected_failures": 0,
+    "unexpected_successes": 0
+  },
+  "checks": [
+    {
+      "command": [
+        "C:\\NCAT\\COMP365-Team-Project-AI-Registration-Helper\\advisor_hub\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "stdout": "No broken requirements found.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\NCAT\\COMP365-Team-Project-AI-Registration-Helper\\advisor_hub\\.venv\\Scripts\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "advisor_hub/app.py",
+        "advisor_hub/management.py",
+        "advisor_hub/classifier.py",
+        "advisor_hub/evaluation.py",
+        "advisor_hub/generate_evidence.py",
+        "advisor_hub/tests"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: in the working copy of 'advisor_hub/README.md', LF will be replaced by CRLF the next time Git touches it"
+    }
+  ],
+  "startup_probe_passed": true,
+  "preserved_sources_sha256": {
+    "advisor_hub/classifier.py": "82db0d972ec49b6a42327a8f2e16e9841ce6cbebc33773258d8f13e227287b68",
+    "advisor_hub/sample_data/synthetic_requests.json": "e3a579e3635f42af842d51a52ce38bf3bf43634382eac27024a984e8a287aecf"
+  },
+  "verification_scope": "Unit tests and eight Streamlit AppTest widget workflows. Startup/HTTP health independently checked during Stage 3.",
+  "manual_verification": "Browser visual/responsive/keyboard checks and screenshots remain manual. Computer Use stopped because it could not verify Chrome's URL. No screenshots or video fabricated."
+}

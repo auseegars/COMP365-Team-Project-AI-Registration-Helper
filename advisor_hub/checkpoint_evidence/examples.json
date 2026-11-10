@@ -1,0 +1,65 @@
+{
+  "synthetic": true,
+  "method": "Executed classify_request; no manual result overrides",
+  "examples": [
+    {
+      "id": "A",
+      "input": "I have a registration hold and registration closes tomorrow.",
+      "category": "Registration Holds",
+      "urgency": "High",
+      "matched_categories": [
+        "Registration Holds"
+      ],
+      "matched_keywords": [
+        "hold"
+      ],
+      "urgency_reasons": [
+        "closes tomorrow"
+      ],
+      "needs_review": false
+    },
+    {
+      "id": "B",
+      "input": "Which courses should I take next semester?",
+      "category": "Course Selection",
+      "urgency": "Low",
+      "matched_categories": [
+        "Course Selection"
+      ],
+      "matched_keywords": [
+        "which courses"
+      ],
+      "urgency_reasons": [],
+      "needs_review": false
+    },
+    {
+      "id": "C",
+      "input": "I need an appointment to discuss my graduation.",
+      "category": "Other/Needs Review",
+      "urgency": "Low",
+      "matched_categories": [
+        "Graduation",
+        "Appointments"
+      ],
+      "matched_keywords": [
+        "graduation",
+        "appointment"
+      ],
+      "urgency_reasons": [],
+      "needs_review": true
+    },
+    {
+      "id": "D",
+      "input": "This is urgent. My registration deadline is today.",
+      "category": "Other/Needs Review",
+      "urgency": "High",
+      "matched_categories": [],
+      "matched_keywords": [],
+      "urgency_reasons": [
+        "urgent",
+        "deadline is today"
+      ],
+      "needs_review": true
+    }
+  ]
+}
