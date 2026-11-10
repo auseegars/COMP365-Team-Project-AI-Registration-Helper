@@ -1,2 +1,3 @@
-# Only the interface requires an external package; tests use unittest.
-streamlit>=1.40,<2
+# Verified with Python 3.12. Includes streamlit.testing.v1.AppTest.
+# Business logic, classifier, and evaluation use only the standard library.
+streamlit==1.67.0

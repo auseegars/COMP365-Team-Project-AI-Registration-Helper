@@ -1,118 +1,139 @@
-# Advisor Hub
+﻿# Aggies Enroll — Advisor Hub
 
-COMP365 AI Registration Helper component owned by the Advisor Hub and Interface
-Developer. All component code, dependencies, sample data, and tests live here,
-separate from teammates' work.
+COMP365 student project prototype, not an official NC A&T service. The Advisor Hub
+and Interface Developer owns student request classification, urgency triage,
+request management, appointment requests, and the Streamlit interface. All work
+is isolated in `advisor_hub/`; teammates' components are not implemented here.
 
-## Completed scope: Stages 1 and 2
+## Implemented through Stage 3
 
-Stage 1 established the package, dependencies, sample data and test directories,
-classifier stub, and Streamlit placeholder in its own commit. Stage 2 adds a
-working keyword-based classifier, urgency rules, and synthetic test fixtures.
-This is a deterministic rules baseline, **not a trained ML model**. The interface
-still displays only a project placeholder; the full dashboard is deferred.
+- Overview with actual session counts, recent requests, category and priority charts.
+- Student Requests: required fictional identifier and description; existing classifier
+  output, matched rules, review flag, unique UUID, UTC timestamp, and Open status.
+- Advisor Queue: category/urgency/status filters, text/identifier/ID search, priority
+  then oldest sorting, chronological sorting, full details, and status updates.
+- Requests support Open, In Progress, Resolved, including reopening. No implicit deletion.
+- Appointments: validated fictional identifier/reason and future date/time in UTC,
+  separate UUID records, Pending list, Reviewed/Cancelled statuses, and reopening.
+  These are requests for review; nothing books or confirms an advisor appointment.
+- Optional explicitly labeled synthetic demo data: seven advising requests and one
+  appointment request. Repeated loading preserves IDs and statuses. Reset removes
+  only loaded demo records, preserving submitted fictional records.
+- Native Streamlit layout, blue headings/charts, gold accents, urgency text and alerts.
 
-## Local setup
+## Python 3.12 setup and launch
 
-Use Python 3.10 or later. From the repository root on Windows:
+From the repository root in PowerShell:
 
 ```powershell
 py -3.12 -m venv advisor_hub/.venv
 advisor_hub/.venv/Scripts/python.exe -m pip install -r advisor_hub/requirements.txt
-advisor_hub/.venv/Scripts/python.exe -m unittest discover -s advisor_hub/tests -v
-advisor_hub/.venv/Scripts/python.exe -m streamlit run advisor_hub/app.py
+advisor_hub/.venv/Scripts/python.exe -m pip check
+advisor_hub/.venv/Scripts/python.exe -m streamlit run advisor_hub/app.py --browser.gatherUsageStats false
 ```
 
-The classifier and all automated tests use only the Python standard library.
-You can run tests without installing Streamlit:
+Open the local URL printed by Streamlit (normally http://localhost:8501). Stop with
+Ctrl+C. Streamlit 1.67.0 is pinned to the version installed and tested on Python
+3.12. It provides the interface, charts/tables, session storage, and AppTest;
+its dependencies are installed by pip. No API key, database, calendar, or email
+service is needed. The classifier and management module use the standard library.
+
+## Automated checks
 
 ```powershell
-py -3.12 -m unittest discover -s advisor_hub/tests -v
+advisor_hub/.venv/Scripts/python.exe -m unittest discover -s advisor_hub/tests -v
+advisor_hub/.venv/Scripts/python.exe -m compileall -q advisor_hub/app.py advisor_hub/management.py advisor_hub/classifier.py advisor_hub/tests
 ```
 
-Streamlit is imported only when the interface runs.
+Without Streamlit, `py -3.12 -m unittest discover -s advisor_hub/tests -v`
+checks the standard-library modules and explicitly skips UI tests. Run the full
+suite in the installed environment before claiming UI checks passed.
 
-## Classifying a request
+The original 17 tests passed before modifications. New management and AppTest
+checks cover classification integration, validation, statuses, actual counters,
+search/filter/sort, duplicate load/token prevention, appointments, and reruns.
+AppTest exercises widgets rather than merely checking server startup. The local
+server also started and returned HTTP 200 from `/_stcore/health`. Native browser
+inspection was unavailable because Computer Use could not verify Chrome's URL;
+manual visual, narrow-screen, and keyboard checks remain necessary.
 
-From the repository root:
+## Demonstration workflow
 
-```python
-from dataclasses import asdict
-from advisor_hub.classifier import classify_request
+1. Open Overview: a new session has zero counts.
+2. Open Student Requests. Enter `SYN-VIDEO` and
+   `I have a registration hold and registration closes tomorrow.` Submit request.
+3. Read Registration Holds / High, matched `hold`, `closes tomorrow`, and the ID.
+4. Open Advisor Queue, view the request, select In Progress, Save request status.
+5. Select Resolved and save. Overview reflects one resolved request.
+6. Optionally load synthetic demonstration requests, inspect priority sorting,
+   try filters, and show the ambiguous graduation/appointment review result.
+7. Open Appointments, use a fictional identifier/reason and a future UTC date/time,
+   then Request appointment review. Show Pending; change to Reviewed and save.
+8. Reset demonstration records only when you want to remove loaded demo records.
+   For an entirely fresh session, close/reset the Streamlit session.
 
-result = classify_request("I have a registration hold and registration closes tomorrow.")
-print(asdict(result))
-# category: Registration Holds
-# urgency: High
-# matched_keywords: ('hold',)
-# urgency_reasons: ('closes tomorrow',)
-```
+Use no real student names, IDs, transcripts, or protected academic information.
+Records live only in the current Streamlit `session_state`, survive normal widget
+reruns/navigation, and are not shared between separate sessions. Closing/resetting
+a session or restarting the server may remove them. Forms create records only
+when submitted; tokens make replay of a submission idempotent. Explicit new
+submissions can contain the same text; they are distinct requests.
 
-`TriageResult` contains `category`, `urgency`, `matched_categories`,
-`matched_keywords`, and `urgency_reasons`, plus a `needs_review` property.
-Matched phrases explain the result; they are not probability or confidence scores.
+## Classifier methodology and API
 
-## Category rules
+The preserved `classify_request(text: str) -> TriageResult` is a deterministic
+English keyword baseline, not a trained ML model. The immutable result exposes
+`category`, `urgency`, `matched_categories`, `matched_keywords`, `urgency_reasons`,
+and `needs_review`. It does not persist data. Non-string input raises TypeError.
 
-| Category | Example matching words or phrases |
-| --- | --- |
-| Registration Holds | hold, holds, cannot register, can't register |
-| Degree Planning | degree audit, degree requirements, four-year plan |
-| Course Selection | which courses, choose classes, electives, prerequisites |
-| Graduation | graduation, graduating, commencement, diploma |
-| Appointments | appointment, advising meeting, meet with my advisor |
-| Other/Needs Review | No matching category, blank input, or multiple matching categories |
+Category labels: Registration Holds, Degree Planning, Course Selection,
+Graduation, Appointments, Other/Needs Review. Text normalization handles case,
+Unicode compatibility characters, punctuation, and whitespace; matching uses
+whole words/phrases. Zero or multiple category matches go to Other/Needs Review.
 
-Matching normalizes capitalization, Unicode compatibility characters, punctuation,
-hyphens, apostrophes, and whitespace, then checks complete words or phrases.
-Repeated keywords do not change the category. Multiple matching categories are
-returned in `matched_categories` and routed to human review without a tie-breaker.
-Non-string input raises `TypeError`. Requests are not saved by this module.
+Urgency is independent: High for explicit urgency or supported near/missed
+deadlines; Medium for holds, general deadlines, soon/this week/next week; Low
+when no urgency rule matches. Simple negations suppress explicit urgency cues
+without hiding a separate deadline. Incidental dates alone are Low. Matched rules
+explain routing; no probabilities or confidence percentages are produced.
 
-## Urgency rules
+## Structure and integration points
 
-Rules are evaluated independently of category, in this order:
+- `app.py`: Streamlit entry point and four UI sections.
+- `classifier.py`: existing classification API, unchanged from Stage 2.
+- `management.py`: records, validation, IDs, status updates, metrics, filters, demo tools.
+- `sample_data/`: 18 existing hand-labeled synthetic regression fixtures.
+- `tests/test_classifier.py`, `test_setup.py`: preserved baseline checks.
+- `tests/test_management.py`: business logic checks.
+- `tests/test_app.py`: installed Streamlit AppTest widget workflows.
+- `requirements.txt`: interface dependency; `.gitignore`: local environment/caches.
 
-1. **High:** Explicit cues such as urgent, ASAP, immediately, or emergency;
-   a deadline/due/closing phrase linked to today, tonight, or tomorrow;
-   within/in/next 24 or 48 hours; missed deadlines, past due, or overdue.
-2. **Medium:** A hold or registration block, a general deadline mention, soon,
-   this week, or next week, when no High rule matches.
-3. **Low:** No urgency cue. This means no rule matched, not verified low risk.
+Possible future connections: another component passes English request text into
+`classify_request`, consumes its category/urgency/review fields, or submits a
+fictional identifier/text/token into `HubState.submit_request`. `dataclasses.asdict`
+can expose record fields; an adapter must serialize datetimes to ISO 8601 and
+omit internal tokens. Stable request IDs could link to future degree audit,
+schedule building, graduation planning, elective recommendation, retrieval/Q&A,
+and evaluation outputs. No shared schema, authentication, persistent transport,
+or end-to-end team integration has been implemented or verified.
 
-Simple negations such as "not urgent" and "not an emergency" suppress those
-explicit cues. They do not suppress a separate deadline or another urgency cue.
-An incidental time mention, such as "my appointment is tomorrow", is Low.
+## Limitations and remaining work
 
-## Validation and limitations
+Rules miss unseen synonyms, complex negation, context, sarcasm, resolved issues,
+and unsupported date expressions; broad words can misroute requests. Low means
+no rule matched, not verified low risk. Advisors must verify routing and urgency.
+The original 18 synthetic examples test expected behavior, not generalization.
+Planned independent evaluation targets are category Macro-F1 >= 0.80 and High
+urgent-request recall >= 95%; neither target has been established. A future
+trained classifier should be compared on the same untouched test set.
 
-The suite has 17 test methods, including 18 hand-labeled synthetic requests and
-additional cases for category ambiguity, urgency precedence, negation, empty and
-invalid inputs, word boundaries, normalization, and deterministic results.
-The synthetic examples contain no real student records and are not training data.
-Passing these fixtures does not establish accuracy on real advising requests.
+Before Checkpoint 3: collect independently labeled data with category and urgency
+labels; freeze a test split before rule/model tuning; analyze errors; improve the
+classifier; agree shared team interfaces; add authenticated shared persistent
+storage and real appointment integration in an authorized future scope; complete
+manual accessibility/responsive checks and record the demonstration with your
+own voice and camera. The prototype has no authentication or production controls.
 
-The English rules do not understand general intent, complex negation, resolved
-issues, sarcasm, arbitrary calendar dates, or relative deadlines outside the
-listed patterns. Broad cues such as "hold" or "graduate" can misroute requests
-in other contexts; synonyms absent from the rules can fall through to review.
-Advisors should verify suggested categories and urgency before acting.
-
-## Structure
-
-```text
-advisor_hub/
-  .gitignore
-  __init__.py
-  app.py                  # Minimal Streamlit entry point
-  classifier.py           # Keyword classification and urgency rules
-  requirements.txt
-  README.md
-  sample_data/
-    README.md
-    synthetic_requests.json
-  tests/
-    __init__.py
-    test_setup.py         # Import smoke tests
-    test_classifier.py    # Behavioral tests and synthetic fixtures
-```
+Development and documentation were AI-assisted using Codex. Outputs are checked
+against executed code and automated tests; no synthetic metrics are claimed as
+held-out performance.
