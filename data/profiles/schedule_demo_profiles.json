@@ -1,0 +1,296 @@
+{
+ "_note": "SYNTHETIC demo profiles for the schedule builder (no real students). Not the team's 40 hand-verified test profiles.",
+ "profiles": [
+  {
+   "student_id": "SYN-CS-01",
+   "major": "CS",
+   "is_transfer": false,
+   "completed": [],
+   "note": "new first-year"
+  },
+  {
+   "student_id": "SYN-CS-02",
+   "major": "CS",
+   "is_transfer": false,
+   "completed": [
+    "ENGL 100",
+    "COMP 163",
+    "GEEN 111",
+    "MATH 131",
+    "COMP 121",
+    "ENGL 101",
+    "COMP 167",
+    "COMP 180",
+    "MATH 132",
+    "ECON 200",
+    "HIST 106"
+   ],
+   "note": "finished first year"
+  },
+  {
+   "student_id": "SYN-CS-03",
+   "major": "CS",
+   "is_transfer": true,
+   "completed": [],
+   "transfer": [
+    {
+     "institution_id": "GTCC",
+     "course": "ENG 111"
+    },
+    {
+     "institution_id": "GTCC",
+     "course": "ENG 112"
+    },
+    {
+     "institution_id": "GTCC",
+     "course": "MAT 271"
+    },
+    {
+     "institution_id": "GTCC",
+     "course": "MAT 272"
+    },
+    {
+     "institution_id": "GTCC",
+     "course": "CSC 151"
+    },
+    {
+     "institution_id": "GTCC",
+     "course": "CSC 251"
+    },
+    {
+     "institution_id": "GTCC",
+     "course": "MAT 167"
+    },
+    {
+     "institution_id": "GTCC",
+     "course": "BUS 110"
+    }
+   ],
+   "note": "Guilford Tech transfer (same 8 courses as checkpoint report)"
+  },
+  {
+   "student_id": "SYN-CS-04",
+   "major": "CS",
+   "is_transfer": false,
+   "completed": [
+    "ENGL 100",
+    "COMP 163",
+    "GEEN 111",
+    "MATH 131",
+    "COMP 121",
+    "ENGL 101",
+    "COMP 167",
+    "COMP 180",
+    "MATH 132",
+    "SPCH 250",
+    "MATH 341",
+    "COMP 280",
+    "ECON 200",
+    "HIST 106",
+    "PHYS 241",
+    "PHYS 251",
+    "MGMT 110"
+   ],
+   "in_progress": [
+    "COMP 285",
+    "COMP 267",
+    "COMP 200",
+    "MATH 224"
+   ],
+   "preferences": {
+    "max_credits": 15,
+    "avoid_times": [
+     {
+      "days": "MWF",
+      "start": "08:00",
+      "end": "09:59"
+     }
+    ]
+   },
+   "preferred_electives": [
+    "COMP 423",
+    "COMP 320",
+    "COMP 321"
+   ],
+   "note": "sophomore, no early classes, interests from recommender"
+  },
+  {
+   "student_id": "SYN-CS-05",
+   "major": "CS",
+   "is_transfer": false,
+   "completed": [
+    "ENGL 100",
+    "COMP 163",
+    "GEEN 111",
+    "MATH 131",
+    "COMP 121",
+    "ENGL 101",
+    "COMP 167",
+    "COMP 180",
+    "MATH 132",
+    "SPCH 250",
+    "MATH 341",
+    "COMP 280",
+    "COMP 285",
+    "COMP 267",
+    "COMP 200",
+    "COMP 360",
+    "ENGL 331",
+    "COMP 322",
+    "COMP 365",
+    "COMP 350",
+    "COMP 410",
+    "COMP 300",
+    "ECON 200",
+    "HIST 106",
+    "PHYS 241",
+    "PHYS 251",
+    "PHYS 242",
+    "PHYS 252",
+    "CHEM 106",
+    "CHEM 116",
+    "MGMT 110",
+    "HIST 130",
+    "MATH 224",
+    "MATH 340",
+    "COMP 375",
+    "COMP 320"
+   ],
+   "note": "rising senior; COMP 495 has COMP 410 as corequisite"
+  },
+  {
+   "student_id": "SYN-EE-01",
+   "major": "EE",
+   "is_transfer": false,
+   "completed": [],
+   "note": "new first-year"
+  },
+  {
+   "student_id": "SYN-EE-02",
+   "major": "EE",
+   "is_transfer": false,
+   "completed": [
+    "ENGL 100",
+    "ECEN 101",
+    "MATH 131",
+    "GEEN 100",
+    "GEEN 111",
+    "COMP 160",
+    "ENGL 101",
+    "ECEN 102",
+    "CHEM 106",
+    "CHEM 116",
+    "PHYS 241",
+    "PHYS 251",
+    "MATH 132"
+   ],
+   "note": "finished first year (required courses)"
+  },
+  {
+   "student_id": "SYN-ME-01",
+   "major": "ME",
+   "is_transfer": false,
+   "completed": [],
+   "note": "new first-year"
+  },
+  {
+   "student_id": "SYN-ME-02",
+   "major": "ME",
+   "is_transfer": false,
+   "completed": [
+    "ENGL 100",
+    "CHEM 106",
+    "CHEM 116",
+    "MATH 131",
+    "GEEN 100",
+    "MEEN 104",
+    "GEEN 111",
+    "ENGL 101",
+    "PHYS 241",
+    "PHYS 251",
+    "MATH 132"
+   ],
+   "note": "finished first year (required courses)"
+  },
+  {
+   "student_id": "SYN-ISE-01",
+   "major": "ISE",
+   "is_transfer": false,
+   "completed": [],
+   "note": "new first-year"
+  },
+  {
+   "student_id": "SYN-ISE-02",
+   "major": "ISE",
+   "is_transfer": false,
+   "completed": [
+    "ENGL 100",
+    "CHEM 106",
+    "CHEM 116",
+    "MATH 131",
+    "GEEN 100",
+    "GEEN 111",
+    "ENGL 101",
+    "ISEN 162",
+    "MATH 132",
+    "PHYS 241",
+    "PHYS 251",
+    "ISEN 121"
+   ],
+   "note": "finished first year (required courses)"
+  },
+  {
+   "student_id": "SYN-CPE-01",
+   "major": "CPE",
+   "is_transfer": false,
+   "completed": [],
+   "note": "new first-year"
+  },
+  {
+   "student_id": "SYN-CPE-02",
+   "major": "CPE",
+   "is_transfer": false,
+   "completed": [
+    "ENGL 100",
+    "ECEN 101",
+    "MATH 131",
+    "GEEN 100",
+    "GEEN 111",
+    "COMP 163",
+    "ENGL 101",
+    "ECEN 102",
+    "PHYS 241",
+    "PHYS 251",
+    "MATH 132"
+   ],
+   "note": "finished first year (required courses)"
+  },
+  {
+   "student_id": "SYN-CE-01",
+   "major": "CE",
+   "is_transfer": false,
+   "completed": [],
+   "note": "new first-year"
+  },
+  {
+   "student_id": "SYN-CE-02",
+   "major": "CE",
+   "is_transfer": false,
+   "completed": [
+    "GEEN 100",
+    "GEEN 111",
+    "CAEE 101",
+    "MATH 131",
+    "CHEM 106",
+    "CHEM 116",
+    "ENGL 100",
+    "MATH 132",
+    "ENGL 101",
+    "PHYS 241",
+    "PHYS 251",
+    "CAEE 121"
+   ],
+   "note": "finished first year (required courses)"
+  }
+ ]
+}
