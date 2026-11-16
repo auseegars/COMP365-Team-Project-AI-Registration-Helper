@@ -32,7 +32,11 @@ Course project for COMP 365 (Project X).
   and credits remaining. Handles wildcard electives (e.g. `ECEN 4xx`) and community-college transfer credit.
 - **Transfer-credit seed:** 29 equivalencies for the CS curriculum using NC Common Course Library codes
   (valid at all NC community colleges), with 10 target colleges registered.
-- **Data validator and 27 unit tests.**
+- **Schedule builder** (Ryan Travers): conflict-free next-semester schedule with OR-Tools CP-SAT, respecting
+  prerequisites, corequisites, credit limit, open seats, and blocked times; every course must count toward the
+  degree (checked with the degree audit). Includes a greedy baseline and an independent validity checker.
+  Runs on **synthetic** section data until real term data is available. See `repo docs/SCHEDULE_BUILDER.md`.
+- **Data validator and 50 unit tests** (27 audit/data, 23 schedule builder).
 
 ### In progress
 - Prerequisites for the 201 non-COMP courses (`data/prereq_todo.csv` lists them).
@@ -40,7 +44,7 @@ Course project for COMP 365 (Project X).
 - Approved elective lists for ISE, Civil, and part of ME (the catalog gives no machine-readable list).
 
 ### Planned
-- Schedule builder, graduation planner, elective recommender, information assistant, triage classifier,
+- Graduation planner, elective recommender, information assistant, triage classifier,
   and the Streamlit hub (see the table above).
 
 ## Repository contents
@@ -53,6 +57,9 @@ Course project for COMP 365 (Project X).
 | `data/prereq_todo.csv` | Worksheet of courses whose prerequisites still need to be entered |
 | `src/audit/degree_audit.py` | The degree-audit engine |
 | `src/audit/validate_data.py` | Consistency checks for every data file |
+| `src/schedule/` | Schedule builder (CP-SAT + greedy baseline + checker) and its evaluation script |
+| `data/sections/sample_term.json` | SYNTHETIC section times/seats for testing the schedule builder |
+| `data/profiles/schedule_demo_profiles.json` | SYNTHETIC demo students for the schedule builder |
 | `tests/` | Unit tests; `tests/fixtures/` is a small synthetic data set |
 | `docs/` | Data dictionary and known data gaps |
 
