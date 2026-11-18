@@ -75,6 +75,19 @@ Answer:
 
     answer = response.json()["response"].strip()
 
+    fallback = (
+        "I could not verify that from the available "
+        "university information. Please contact "
+        "your academic advisor."
+    )
+
+    if fallback.lower() in answer.lower():
+        return {
+            "answer": fallback,
+            "sources": [],
+        }
+
+
     return {
         "answer": answer,
         "sources": sources,
