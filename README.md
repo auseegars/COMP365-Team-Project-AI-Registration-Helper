@@ -30,8 +30,10 @@ Course project for COMP 365 (Project X).
 - **Degree-audit engine:** given a student profile it returns requirements satisfied and remaining, remaining
   courses ordered along the prerequisite chain, courses takeable now, options for open elective slots,
   and credits remaining. Handles wildcard electives (e.g. `ECEN 4xx`) and community-college transfer credit.
-- **Transfer-credit seed:** 29 equivalencies for the CS curriculum using NC Common Course Library codes
-  (valid at all NC community colleges), with 10 target colleges registered.
+- **Transfer-credit map:** 627 equivalencies for the 10 target community colleges, taken from the A&T
+  Transfer Articulation Tool (retrieved 2026-11-10) and limited to courses in our 6 curricula, including
+  "X OR Y" and "X AND Y" equivalencies (the audit picks the option the curriculum still needs). The 29-row
+  2016 handbook seed remains as a fallback for other colleges. See `repo docs/TRANSFER_NOTES.md`.
 - **Schedule builder** (Ryan Travers): conflict-free next-semester schedule with OR-Tools CP-SAT, respecting
   prerequisites, corequisites, credit limit, open seats, and blocked times; every course must count toward the
   degree (checked with the degree audit). Includes a greedy baseline and an independent validity checker.
@@ -40,7 +42,7 @@ Course project for COMP 365 (Project X).
 
 ### In progress
 - Prerequisites for the 201 non-COMP courses (`data/prereq_todo.csv` lists them).
-- Verifying and extending the transfer map against the UNC System Transfer Course Guide, for all majors.
+- Cross-checking the transfer map against the UNC System Transfer Course Guide.
 - Approved elective lists for ISE, Civil, and part of ME (the catalog gives no machine-readable list).
 
 ### Planned
@@ -55,6 +57,8 @@ Course project for COMP 365 (Project X).
 | `data/lists.json` | Named approved-course lists used by elective slots |
 | `data/transfer/` | `transfer_map.json` (community college to A&T equivalencies) and `institutions.json` |
 | `data/prereq_todo.csv` | Worksheet of courses whose prerequisites still need to be entered |
+| `tools/` | Data builders; `build_transfer.py` rebuilds the transfer map from saved Articulation Tool pages |
+| `examples/transfer_student_demo.py` | Runs the audit for a synthetic Guilford Tech CS transfer student |
 | `src/audit/degree_audit.py` | The degree-audit engine |
 | `src/audit/validate_data.py` | Consistency checks for every data file |
 | `src/schedule/` | Schedule builder (CP-SAT + greedy baseline + checker) and its evaluation script |
