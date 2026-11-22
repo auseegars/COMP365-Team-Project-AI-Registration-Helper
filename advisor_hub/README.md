@@ -3,7 +3,34 @@
 COMP365 student project prototype, not an official NC A&T service. The Advisor Hub
 and Interface Developer owns student request classification, urgency triage,
 request management, appointment requests, and the Streamlit interface. All work
-is isolated in `advisor_hub/`; teammates' components are not implemented here.
+is centered in `advisor_hub/`. The interface calls the teammate-owned components
+under `src/`.
+
+## Checkpoint 3 unified application
+
+The sidebar opens Information Assistant, Degree Audit, Schedule Builder, and
+Elective Recommendations alongside the existing advising tools. The Advisor
+Queue also handles request management. Overview shows priority counts and charts.
+Use only fictional profiles and requests.
+
+```powershell
+py -3.12 -m venv .venv-cp3
+$python = ".\.venv-cp3\Scripts\python.exe"
+& $python -m pip install -r advisor_hub/requirements.txt -r requirements.txt rank-bm25
+& $python -m streamlit run advisor_hub/app.py --browser.gatherUsageStats false
+& $python -m pytest -q
+```
+
+For semantic retrieval, additionally install `requirements-information-assistant.txt`
+and run `& $python -m src.information_assistant.embeddings` from the root. This
+downloads MiniLM on the first run and creates the local index. Generation also
+requires a running local Ollama service with `llama3.2:3b`.
+The Information Assistant can show retrieved passages without generation.
+The scheduler can show greedy results without OR-Tools. Elective ranking
+uses the teammate's bag-of-words fallback when its optional model is unavailable.
+
+See [Checkpoint 3 evidence](checkpoint3_evidence/README.md) and the
+[submission files](checkpoint3_submission/).
 
 ## Implemented through Stages 3 and 4
 

@@ -30,7 +30,9 @@ def keyword_search(question, top_k=3):
 
 @lru_cache(maxsize=1)
 def embedding_model():
-    from src.information_assistant.retrieve import MODEL_NAME, SentenceTransformer
+    from sentence_transformers import SentenceTransformer
+
+    from src.information_assistant.retrieve import MODEL_NAME
 
     return SentenceTransformer(MODEL_NAME, local_files_only=True)
 

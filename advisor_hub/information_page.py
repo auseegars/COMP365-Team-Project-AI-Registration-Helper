@@ -27,7 +27,7 @@ def information_page(st, hub):
         with st.expander(question, expanded=index == 0):
             if result["answer"]:
                 st.subheader("Generated answer")
-                st.markdown(result["answer"])
+                st.text(result["answer"])
             else:
                 st.info(f"Retrieval only. {result['reason']}")
             st.subheader("Retrieved sources")

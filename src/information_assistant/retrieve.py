@@ -5,7 +5,6 @@ import json
 from pathlib import Path
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data" / "information_assistant"
@@ -24,6 +23,8 @@ def search(question, top_k=3, *, model=None):
         raise ValueError("Chunk and embedding counts do not match")
 
     if model is None:
+        from sentence_transformers import SentenceTransformer
+
         model = SentenceTransformer(MODEL_NAME)
 
     question_embedding = model.encode(
