@@ -82,6 +82,22 @@ class RealData(unittest.TestCase):
         self.assertIn(business, sat)
         self.assertEqual(r.transfer_unmatched, [])
 
+    def test_category_transfer_credit_used_before_shared_course(self):
+        # ECON 201 is on both the business and social-science lists; BUS 110 (seed row) gives business
+        # category credit.  The audit must spend the category credit on business and ECON 201 on social science.
+        r = run("CS", {"completed": ["ECON 201"], "transfer": [{"institution_id": "NCCCS", "course": "BUS 110"}]})
+        slot = {q.get("category"): q["id"] for q in cur["CS"]["requirements"] if q["type"] == "elective"}
+        self.assertIn(slot["business"], r.satisfied)
+        self.assertIn(slot["social_behavioral"], r.satisfied)
+
+    def test_course_fitting_fewer_slots_is_used_first(self):
+        # Guilford BUS 110 -> MGMT 110 (business only).  With ECON 201 also done, MGMT 110 should fill
+        # business and leave ECON 201 for social science.
+        r = run("CS", {"completed": ["ECON 201"], "transfer": [{"institution_id": "GTCC", "course": "BUS 110"}]})
+        slot = {q.get("category"): q["id"] for q in cur["CS"]["requirements"] if q["type"] == "elective"}
+        self.assertIn(slot["business"], r.satisfied)
+        self.assertIn(slot["social_behavioral"], r.satisfied)
+
     def test_net_pair_needs_both_courses(self):
         one = run("CS", {"completed": [], "transfer": [{"institution_id": "GTCC", "course": "NET 110"}]})
         self.assertEqual(len(one.transfer_unmatched), 1)

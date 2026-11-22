@@ -235,20 +235,30 @@ def audit(profile, curriculum, courses, transfer_map=None, lists=None):
     electives = [r for r in curriculum["requirements"] if r["type"] == "elective"]
     order = sorted(electives, key=lambda r: (r.get("fill") == "any", len(elective_pool(r, lists)) or 10**6, r["id"]))
     status = {}
-    for req in order:
+    pools = {r["id"]: elective_pool(r, lists) for r in electives}
+
+    def other_slots(code, current, pending):
+        """How many other still-open list slots this course could fill (fewer = use it here first)."""
+        return sum(1 for r in pending if r is not current and r.get("fill") not in ("any", "attest")
+                   and any(matches(code, p) for p in pools[r["id"]]))
+
+    for i, req in enumerate(order):
         need, fill, cat = float(req["credits"]), req.get("fill", "list"), req.get("category")
         got = carry.pop(cat, 0.0) if fill != "attest" else 0.0
         if fill == "attest":
             got = need if req["id"] in attested else 0.0
         else:
-            pool = elective_pool(req, lists)
-            for code in list(spare):
-                if got >= need:
-                    break
-                if fill == "any" or any(matches(code, p) for p in pool):
-                    got += courses[code]["credits"]; used.add(code); spare.remove(code)
+            pool = pools[req["id"]]
+            # Transfer category credit can only go to this category, so apply it before spending a
+            # completed course that might fill another slot (e.g. ECON 201 is on both business and social).
             if got < need and cat_pool.get(cat, 0) > 0:
                 take = min(need - got, cat_pool[cat]); got += take; cat_pool[cat] -= take
+            pending = order[i + 1:]
+            fits = [c for c in spare if fill == "any" or any(matches(c, p) for p in pool)]
+            for code in sorted(fits, key=lambda c: (other_slots(c, req, pending), c)):
+                if got >= need:
+                    break
+                got += courses[code]["credits"]; used.add(code); spare.remove(code)
             if got < need and fill == "any" and generic > 0:
                 take = min(need - got, generic); got += take; generic -= take
             if got > need:
