@@ -1,0 +1,361 @@
+{
+ "program_id": "EE",
+ "program_name": "B.S. Electrical Engineering",
+ "catalog_year": "2025-2026",
+ "total_credits": 122,
+ "source_url": "https://catalog.ncat.edu/preview_program.php?catoid=19&poid=3090&returnto=766",
+ "source_detail": "Saved catalog page (curriculum guide)",
+ "retrieved": "2026-10-25",
+ "requirements": [
+  {
+   "id": "EE-01",
+   "type": "course",
+   "code": "ENGL 100",
+   "term": 1
+  },
+  {
+   "id": "EE-02",
+   "type": "course",
+   "code": "ECEN 101",
+   "term": 1
+  },
+  {
+   "id": "EE-03",
+   "type": "course",
+   "code": "MATH 131",
+   "term": 1
+  },
+  {
+   "id": "EE-04",
+   "type": "course",
+   "code": "GEEN 100",
+   "term": 1
+  },
+  {
+   "id": "EE-05",
+   "type": "course",
+   "code": "GEEN 111",
+   "term": 1
+  },
+  {
+   "id": "EE-06",
+   "type": "course",
+   "code": "COMP 160",
+   "term": 1
+  },
+  {
+   "id": "EE-07",
+   "type": "course",
+   "code": "ENGL 101",
+   "term": 2
+  },
+  {
+   "id": "EE-08",
+   "type": "course",
+   "code": "ECEN 102",
+   "term": 2
+  },
+  {
+   "id": "EE-09",
+   "type": "course",
+   "code": "CHEM 106",
+   "term": 2
+  },
+  {
+   "id": "EE-10",
+   "type": "course",
+   "code": "CHEM 116",
+   "term": 2
+  },
+  {
+   "id": "EE-11",
+   "type": "course",
+   "code": "PHYS 241",
+   "term": 2
+  },
+  {
+   "id": "EE-12",
+   "type": "course",
+   "code": "PHYS 251",
+   "term": 2
+  },
+  {
+   "id": "EE-13",
+   "type": "course",
+   "code": "MATH 132",
+   "term": 2
+  },
+  {
+   "id": "EE-14",
+   "type": "course",
+   "code": "ECEN 200",
+   "term": 3
+  },
+  {
+   "id": "EE-15",
+   "type": "course",
+   "code": "ECEN 206",
+   "term": 3
+  },
+  {
+   "id": "EE-16",
+   "type": "course",
+   "code": "PHYS 242",
+   "term": 3
+  },
+  {
+   "id": "EE-17",
+   "type": "course",
+   "code": "PHYS 252",
+   "term": 3
+  },
+  {
+   "id": "EE-18",
+   "type": "course",
+   "code": "MATH 231",
+   "term": 3
+  },
+  {
+   "id": "EE-19",
+   "type": "course",
+   "code": "MATH 341",
+   "term": 3
+  },
+  {
+   "id": "EE-20",
+   "type": "course",
+   "code": "ECEN 212",
+   "term": 4
+  },
+  {
+   "id": "EE-21",
+   "type": "course",
+   "code": "ECEN 218",
+   "term": 4
+  },
+  {
+   "id": "EE-22",
+   "type": "course",
+   "code": "ECEN 300",
+   "term": 4
+  },
+  {
+   "id": "EE-23",
+   "type": "course",
+   "code": "ECEN 306",
+   "term": 4
+  },
+  {
+   "id": "EE-24",
+   "type": "elective",
+   "label": "Social/Behavioral Science",
+   "category": "social_behavioral",
+   "credits": 3.0,
+   "term": 4,
+   "fill": "list",
+   "list_ref": "GENED_SOC"
+  },
+  {
+   "id": "EE-25",
+   "type": "course",
+   "code": "MEEN 230",
+   "term": 4
+  },
+  {
+   "id": "EE-26",
+   "type": "course",
+   "code": "ECEN 320",
+   "term": 5
+  },
+  {
+   "id": "EE-27",
+   "type": "course",
+   "code": "ECEN 326",
+   "term": 5
+  },
+  {
+   "id": "EE-28",
+   "type": "course",
+   "code": "ECEN 325",
+   "term": 5
+  },
+  {
+   "id": "EE-29",
+   "type": "course",
+   "code": "ECEN 356",
+   "term": 5
+  },
+  {
+   "id": "EE-30",
+   "type": "course",
+   "code": "ISEN 260",
+   "term": 5
+  },
+  {
+   "id": "EE-31",
+   "type": "elective",
+   "label": "Knowledge of African-American Culture and History",
+   "category": "african_american",
+   "credits": 3.0,
+   "term": 5,
+   "fill": "list",
+   "list_ref": "GENED_AFAM"
+  },
+  {
+   "id": "EE-32",
+   "type": "course",
+   "code": "ECEN 351",
+   "term": 6
+  },
+  {
+   "id": "EE-33",
+   "type": "course",
+   "code": "ECEN 357",
+   "term": 6
+  },
+  {
+   "id": "EE-34",
+   "type": "course",
+   "code": "ECEN 400",
+   "term": 6
+  },
+  {
+   "id": "EE-35",
+   "type": "course",
+   "code": "ECEN 460",
+   "term": 6
+  },
+  {
+   "id": "EE-36",
+   "type": "course",
+   "code": "ECEN 466",
+   "term": 6
+  },
+  {
+   "id": "EE-37",
+   "type": "elective",
+   "label": "Global Awareness",
+   "category": "global_awareness",
+   "credits": 3.0,
+   "term": 6,
+   "fill": "list",
+   "list_ref": "GENED_GLOBAL"
+  },
+  {
+   "id": "EE-38",
+   "type": "course",
+   "code": "ECEN 478",
+   "term": 7
+  },
+  {
+   "id": "EE-39",
+   "type": "elective",
+   "label": "ECEN 4xx",
+   "category": "technical",
+   "credits": 3.0,
+   "term": 7,
+   "fill": "list",
+   "list_ref": "EE_TECH_B"
+  },
+  {
+   "id": "EE-40",
+   "type": "elective",
+   "label": "ECEN 4xx",
+   "category": "technical",
+   "credits": 3.0,
+   "term": 7,
+   "fill": "list",
+   "list_ref": "EE_TECH_B"
+  },
+  {
+   "id": "EE-41",
+   "type": "elective",
+   "label": "ECEN 4xx",
+   "category": "technical",
+   "credits": 3.0,
+   "term": 7,
+   "fill": "list",
+   "list_ref": "EE_TECH_B"
+  },
+  {
+   "id": "EE-42",
+   "type": "elective",
+   "label": "ECEN 4xx",
+   "category": "technical",
+   "credits": 3.0,
+   "term": 7,
+   "fill": "list",
+   "list_ref": "EE_TECH_C"
+  },
+  {
+   "id": "EE-43",
+   "type": "course",
+   "code": "ECEN 479",
+   "term": 8
+  },
+  {
+   "id": "EE-44",
+   "type": "elective",
+   "label": "ECEN 4xx",
+   "category": "technical",
+   "credits": 3.0,
+   "term": 8,
+   "fill": "list",
+   "list_ref": "EE_TECH_B"
+  },
+  {
+   "id": "EE-45",
+   "type": "elective",
+   "label": "ECEN 4xx",
+   "category": "technical",
+   "credits": 3.0,
+   "term": 8,
+   "fill": "list",
+   "list_ref": "EE_TECH_B"
+  },
+  {
+   "id": "EE-46",
+   "type": "elective",
+   "label": "ECEN 4xx",
+   "category": "technical",
+   "credits": 3.0,
+   "term": 8,
+   "fill": "list",
+   "list_ref": "EE_TECH_C"
+  },
+  {
+   "id": "EE-47",
+   "type": "course",
+   "code": "SPCH 250",
+   "term": 8
+  }
+ ],
+ "min_grade": {
+  "C-": [
+   "ECEN 101",
+   "ECEN 102",
+   "ECEN 200",
+   "ECEN 206",
+   "ECEN 212",
+   "ECEN 218",
+   "ECEN 300",
+   "ECEN 306",
+   "ECEN 320",
+   "ECEN 325",
+   "ECEN 326",
+   "ECEN 351",
+   "ECEN 356",
+   "ECEN 357",
+   "ECEN 400",
+   "ECEN 460",
+   "ECEN 466",
+   "ECEN 478",
+   "ECEN 479",
+   "COMP 160"
+  ]
+ },
+ "notes": [
+  "Technical electives: max 2 courses from a given area (lists EE_TECH_B groups); not enforced by the audit"
+ ],
+ "known_discrepancies": []
+}

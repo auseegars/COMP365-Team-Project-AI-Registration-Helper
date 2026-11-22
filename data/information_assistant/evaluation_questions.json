@@ -1,0 +1,23 @@
+
+[
+  {
+    "question": "What happens when a course section is closed?",
+    "expected_terms": ["closed", "enrollment"]
+  },
+  {
+    "question": "How do I get my advising PIN?",
+    "expected_terms": ["PIN", "advisor"]
+  },
+  {
+    "question": "How many credit hours make a student full-time?",
+    "expected_terms": ["twelve", "full-time"]
+  },
+  {
+    "question": "How do I add or drop a class?",
+    "expected_terms": ["ADD", "DROP", "CRN"]
+  },
+  {
+    "question": "What should I do if I have a registration hold?",
+    "expected_terms": ["hold", "registration"]
+  }
+]

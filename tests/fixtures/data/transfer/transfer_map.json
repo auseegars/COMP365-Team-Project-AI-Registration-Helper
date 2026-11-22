@@ -1,0 +1,11 @@
+{
+  "_note": "SYNTHETIC TEST FIXTURE.",
+  "equivalencies": [
+    {"institution_id": "CC1", "institution": "Test CC", "cc_course": "XYZ 110", "cc_title": "Intro",
+     "credits": 3, "status": "direct", "ncat_equivalent": ["TEST 101"], "source": "none", "guide_year": "0000"},
+    {"institution_id": "CC1", "institution": "Test CC", "cc_course": "XYZ 999", "cc_title": "Misc",
+     "credits": 3, "status": "elective", "ncat_equivalent": [], "source": "none", "guide_year": "0000"},
+    {"institution_id": "NCCCS", "institution": "Any", "cc_course": "ABC 100", "cc_title": "Generic",
+     "credits": 3, "status": "direct", "ncat_equivalent": ["TEST 102"], "source": "none", "guide_year": "0000"}
+  ]
+}

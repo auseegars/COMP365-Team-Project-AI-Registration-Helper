@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+# never commit real student records (FERPA)
+data/private/
+
+# Information assistant generated files
+data/information_assistant/embeddings.npy
+data/information_assistant/pages.json

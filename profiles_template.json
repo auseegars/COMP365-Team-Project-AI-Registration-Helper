@@ -1,0 +1,16 @@
+{
+  "_note": "EXAMPLE FORMAT ONLY - replace with real, hand-verified profiles checked against the curriculum JSON",
+  "profiles": [
+    {
+      "id": "P01",
+      "major": "REPLACE",
+      "is_transfer": false,
+      "completed_courses": ["REPLACE"],
+      "transfer_credits": [],
+      "current_term": "REPLACE",
+      "preferences": {"max_credits": 15, "avoid_times": []},
+      "advisor_plan_grad_term": "REPLACE",
+      "verified_by": "REPLACE"
+    }
+  ]
+}
