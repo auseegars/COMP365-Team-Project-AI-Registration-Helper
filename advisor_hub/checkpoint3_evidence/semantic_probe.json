@@ -1,0 +1,39 @@
+{
+  "input": "How do I add or drop a class?",
+  "ollama_on_path": false,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "index_sha256": "9060cac21c6482cf79dfa84915273e6ee0c1582656c4ebd88d30ee5adf2734bb",
+  "versions": {
+    "sentence-transformers": "6.3.0",
+    "torch": "2.15.0",
+    "numpy": "2.5.5",
+    "rank-bm25": "0.2.2"
+  },
+  "output": {
+    "answer": null,
+    "sources": [],
+    "excerpts": [
+      {
+        "score": 0.5909789204597473,
+        "text": "your Advising PIN, contact your advisor/department. Step 5 Select ‘SELECT TERM’. Step 6 From the drop down box, select the term you are registering for. Step 7 This registration form is the place to register and add/drop classes using the CRN (Course Reference Number). ADD/DROP Classes Use the ADD CLASS SECTION WORKSHEET to register for classes by entering the CRN (Course Reference Number). To drop a class, select the DROP action in the ACTION FIELD. When ADD/DROP is complete, click the SUBMIT button. Once submitted, the only confirmation you will get will be a refreshed updated screen. A common error in using the ADD CLASS dialog box is in the use of COURSE ID’s. (Example: 10024 PHYS 225 001 College Physics I; the CRN is the five (5) digit number on the left. To see your schedule with times and rooms, select ‘STUDENT SCHEDULE’ Very Important: Be sure to log off of Aggie Access by selecting the ‘EXIT’ button in the upper right hand corner of the page. If you just walk away, or use the back browser button, the",
+        "source_url": "https://www.ncat.edu/registrar/registration.php",
+        "title": "Registration"
+      },
+      {
+        "score": 0.33166855573654175,
+        "text": "cancelled. Note: Students are responsible for ensuring that they are on the official class roster for all courses for which they have registered. YOU ARE NOT VALIDATED IF YOU ARE NOT ON THE CLASS ROSTER. If you are not listed on the roster it is your responsibility to find out why in the Office of the Registrar. Validation To be validated at North Carolina A&T State University, you must complete the following: 1. COURSE SELECTION 2. PAYMENT (total required for tuition, fees and other charges) If you complete only one part, either course selection or pay less than the amount required at the time, please understand that you are NOT VALIDATED. Your name will not appear on the official class roster and you are not permitted to attend classes, live in University housing or otherwise, utilize University facilities. Receiving an award letter from Financial Aid, paying partial payment on your account or receiving an award letter for funds does not mean you are enrolled and validated.",
+        "source_url": "https://www.ncat.edu/registrar/registration.php",
+        "title": "Registration"
+      },
+      {
+        "score": 0.31144654750823975,
+        "text": "on the Academic Calendar. The payment of fees is part of the registration process. No student is eligible to attend classes until the required fees have been paid. A student who fails to complete registration during the scheduled dates will be required to pay a late registration fee of $50.00 during the late registration period that the bill is not validated. Prerequisite and Co-requisite Checking A course which is designed as a prerequisite to another course indicates that the prerequisite is required before taking the next course. Prerequisites are indicated in the online Undergraduate Bulletin. Students may pre-register for a course that required a prerequisite if the student is enrolled in the prerequisite course at the time of early registration. Once the final grade has been submitted for the course and the student has not passed the prerequisite, the course will be dropped from the students' schedule. A co-requisite course is a specific course that must be taken simultaneously with another course. Prerequisite and co-requisite courses are indicated for any course offered at North Carolina Agricultural and Technical State University",
+        "source_url": "https://www.ncat.edu/registrar/registration.php",
+        "title": "Registration"
+      }
+    ],
+    "method": "Semantic cosine similarity",
+    "reason": "The local Ollama service could not complete generation."
+  }
+}

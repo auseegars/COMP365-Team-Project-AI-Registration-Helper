@@ -11,8 +11,8 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL = "llama3.2:3b"
 
 
-def answer_question(question):
-    results = search(question, top_k=3)
+def answer_question(question, *, retrieve=search):
+    results = retrieve(question, top_k=3)
 
     if not results:
         return {

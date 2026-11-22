@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-11-22T18:52:17.519864+00:00",
+  "data_note": "Repository unit tests and synthetic demonstration profiles; NOT production AI accuracy.",
+  "evaluation_lead": "Jarren Woodward",
+  "checks": {
+    "metric_selftest": {
+      "command": "python evaluate.py selftest",
+      "returncode": 0,
+      "stdout": "selftest passed",
+      "stderr": ""
+    },
+    "audit_tests": {
+      "command": "python -m pytest -q tests/test_degree_audit.py tests/test_real_data.py",
+      "returncode": 0,
+      "stdout": "...........................                                              [100%]\n27 passed in 1.31s",
+      "stderr": ""
+    },
+    "schedule_comparison": {
+      "command": "python src/schedule/evaluate_schedules.py",
+      "returncode": 0,
+      "stdout": "metric                        CP-SAT    greedy\nn                                 15        15\nvalid_rate                      100%       93%\navg_credits                     16.6      15.9\navg_required                     5.2       5.8\navg_unlocks                     33.5      31.9\navg_score                     4296.7    4008.0\nwith_unverified_prereqs         100%      100%\nINVALID SYN-CS-03 [greedy]: ECON 201: does not count toward any unmet CS requirement\n\nwrote results\\schedule_results.csv  (synthetic profiles and sections; not project results)",
+      "stderr": ""
+    }
+  }
+}

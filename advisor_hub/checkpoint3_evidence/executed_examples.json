@@ -1,0 +1,1152 @@
+{
+  "data_note": "Fictional profiles, generated sections, synthetic ratings, and a fictional advising request. Registration excerpts come from the checked-in Registrar snapshot.",
+  "information_assistant": {
+    "input": "How do I add or drop a class?",
+    "output": {
+      "answer": null,
+      "sources": [],
+      "excerpts": [
+        {
+          "score": 9.467714014568609,
+          "text": "your Advising PIN, contact your advisor/department. Step 5 Select ‘SELECT TERM’. Step 6 From the drop down box, select the term you are registering for. Step 7 This registration form is the place to register and add/drop classes using the CRN (Course Reference Number). ADD/DROP Classes Use the ADD CLASS SECTION WORKSHEET to register for classes by entering the CRN (Course Reference Number). To drop a class, select the DROP action in the ACTION FIELD. When ADD/DROP is complete, click the SUBMIT button. Once submitted, the only confirmation you will get will be a refreshed updated screen. A common error in using the ADD CLASS dialog box is in the use of COURSE ID’s. (Example: 10024 PHYS 225 001 College Physics I; the CRN is the five (5) digit number on the left. To see your schedule with times and rooms, select ‘STUDENT SCHEDULE’ Very Important: Be sure to log off of Aggie Access by selecting the ‘EXIT’ button in the upper right hand corner of the page. If you just walk away, or use the back browser button, the",
+          "source_url": "https://www.ncat.edu/registrar/registration.php",
+          "title": "Registration"
+        },
+        {
+          "score": 2.3568568095114992,
+          "text": "hours. The maximum course load for a student with a GPA above 3.00 is 21 hours. Auditing a Class Students who intend to register for a course for which they do not want to earn credit may register as an audit student by picking up the Audit Registration Form from the Office of the Registrar. He or she must register officially for the course and pay the University Cashier. Attendance, preparation, and participation in the classroom discussion and laboratory exercises shall be at the discretion of the instructor. A student who audits courses is not required to take examinations and tests and he or she receives no credit. An auditor may not change his or her registration from audit to credit or from credit to audit after the end of the late registration process. Official and Late Registration Official Registration Registration is a time designated each semester to allow the students and his or her advisor to review the student's records and plan a course of study for the next semester. The student should discuss academic problems with the advisor",
+          "source_url": "https://www.ncat.edu/registrar/registration.php",
+          "title": "Registration"
+        },
+        {
+          "score": 1.8956810952804792,
+          "text": "off of Aggie Access by selecting the ‘EXIT’ button in the upper right hand corner of the page. If you just walk away, or use the back browser button, the session will still be live. PROTECT YOURSELF and LOG OFF. Closed Course Sections Each course/section has a specified enrollment limit. When enrollment in a course section reaches the limit, it is considered 'closed' and no further enrollments will be processed. Students wishing to enroll in a specific course/section which has been closed may contact the Department Chairperson or the Instructor of the course that has been closed and ask for special permission. The department will enroll the student in the course if permission has been granted. Please note that closed courses do not appear on Aggie Access. Course Loads Course Load According to Administrative Memorandum - Number 345, all full-time undergraduate students are expected to comply with the Board's 1993 Plan to Improve Graduation Rates by enrolling in an average of at least 15 semester hours per term in order to graduate in four years. Since the majority of North",
+          "source_url": "https://www.ncat.edu/registrar/registration.php",
+          "title": "Registration"
+        }
+      ],
+      "method": "BM25",
+      "reason": "Semantic search requires a usable local embedding model and index."
+    }
+  },
+  "degree_audit": {
+    "input": {
+      "student_id": "SYN-CS-03",
+      "major": "CS",
+      "is_transfer": true,
+      "completed": [],
+      "transfer": [
+        {
+          "institution_id": "GTCC",
+          "course": "ENG 111"
+        },
+        {
+          "institution_id": "GTCC",
+          "course": "ENG 112"
+        },
+        {
+          "institution_id": "GTCC",
+          "course": "MAT 271"
+        },
+        {
+          "institution_id": "GTCC",
+          "course": "MAT 272"
+        },
+        {
+          "institution_id": "GTCC",
+          "course": "CSC 151"
+        },
+        {
+          "institution_id": "GTCC",
+          "course": "CSC 251"
+        },
+        {
+          "institution_id": "GTCC",
+          "course": "MAT 167"
+        },
+        {
+          "institution_id": "GTCC",
+          "course": "BUS 110"
+        }
+      ],
+      "note": "Guilford Tech transfer (same 8 courses as checkpoint report)"
+    },
+    "output": {
+      "program_id": "CS",
+      "satisfied": [
+        "CS-01",
+        "CS-03",
+        "CS-05",
+        "CS-07",
+        "CS-09",
+        "CS-10",
+        "CS-11",
+        "CS-14"
+      ],
+      "remaining": [
+        {
+          "id": "CS-04",
+          "type": "course",
+          "code": "GEEN 111",
+          "term": 1
+        },
+        {
+          "id": "CS-06",
+          "type": "course",
+          "code": "COMP 121",
+          "term": 1
+        },
+        {
+          "id": "CS-12",
+          "type": "course",
+          "code": "SPCH 250",
+          "term": 3
+        },
+        {
+          "id": "CS-15",
+          "type": "course",
+          "code": "MATH 341",
+          "term": 3
+        },
+        {
+          "id": "CS-16",
+          "type": "course",
+          "code": "COMP 280",
+          "term": 3
+        },
+        {
+          "id": "CS-19",
+          "type": "course",
+          "code": "COMP 285",
+          "term": 4
+        },
+        {
+          "id": "CS-21",
+          "type": "course",
+          "code": "COMP 267",
+          "term": 4
+        },
+        {
+          "id": "CS-22",
+          "type": "course",
+          "code": "COMP 200",
+          "term": 4
+        },
+        {
+          "id": "CS-25",
+          "type": "course",
+          "code": "COMP 360",
+          "term": 5
+        },
+        {
+          "id": "CS-28",
+          "type": "course",
+          "code": "ENGL 331",
+          "term": 6
+        },
+        {
+          "id": "CS-29",
+          "type": "course",
+          "code": "COMP 322",
+          "term": 6
+        },
+        {
+          "id": "CS-30",
+          "type": "course",
+          "code": "COMP 365",
+          "term": 6
+        },
+        {
+          "id": "CS-31",
+          "type": "course",
+          "code": "COMP 350",
+          "term": 6
+        },
+        {
+          "id": "CS-32",
+          "type": "course",
+          "code": "COMP 410",
+          "term": 6
+        },
+        {
+          "id": "CS-33",
+          "type": "course",
+          "code": "COMP 300",
+          "term": 6
+        },
+        {
+          "id": "CS-34",
+          "type": "course",
+          "code": "COMP 385",
+          "term": 7
+        },
+        {
+          "id": "CS-35",
+          "type": "course",
+          "code": "COMP 390",
+          "term": 7
+        },
+        {
+          "id": "CS-36",
+          "type": "course",
+          "code": "COMP 476",
+          "term": 7
+        },
+        {
+          "id": "CS-37",
+          "type": "course",
+          "code": "COMP 495",
+          "term": 7
+        },
+        {
+          "id": "CS-38",
+          "type": "course",
+          "code": "COMP 496",
+          "term": 8
+        },
+        {
+          "id": "CS-02",
+          "type": "elective",
+          "label": "Social/Behavioral Sciences Elective",
+          "category": "social_behavioral",
+          "credits": 3.0,
+          "term": 1,
+          "fill": "list",
+          "list_ref": "GENED_SOC",
+          "credits_missing": 3.0
+        },
+        {
+          "id": "CS-08",
+          "type": "elective",
+          "label": "Knowledge of African-American Culture and History",
+          "category": "african_american",
+          "credits": 3.0,
+          "term": 2,
+          "fill": "list",
+          "list_ref": "GENED_AFAM",
+          "credits_missing": 3.0
+        },
+        {
+          "id": "CS-13",
+          "type": "elective",
+          "label": "Approved Science Elective",
+          "category": "cs_science",
+          "credits": 4.0,
+          "term": 3,
+          "fill": "list",
+          "list_ref": "CS_SCIENCE",
+          "credits_missing": 4.0
+        },
+        {
+          "id": "CS-17",
+          "type": "elective",
+          "label": "Global Awareness",
+          "category": "global_awareness",
+          "credits": 3.0,
+          "term": 4,
+          "fill": "list",
+          "list_ref": "GENED_GLOBAL",
+          "credits_missing": 3.0
+        },
+        {
+          "id": "CS-18",
+          "type": "elective",
+          "label": "Approved Science Elective",
+          "category": "cs_science",
+          "credits": 4.0,
+          "term": 4,
+          "fill": "list",
+          "list_ref": "CS_SCIENCE",
+          "credits_missing": 4.0
+        },
+        {
+          "id": "CS-20",
+          "type": "elective",
+          "label": "Approved Mathematics Elective",
+          "category": "cs_math",
+          "credits": 3.0,
+          "term": 4,
+          "fill": "list",
+          "list_ref": "CS_MATH",
+          "credits_missing": 3.0
+        },
+        {
+          "id": "CS-23",
+          "type": "elective",
+          "label": "Approved Science Elective",
+          "category": "cs_science",
+          "credits": 4.0,
+          "term": 5,
+          "fill": "list",
+          "list_ref": "CS_SCIENCE",
+          "credits_missing": 4.0
+        },
+        {
+          "id": "CS-24",
+          "type": "elective",
+          "label": "Approved Statistics Elective",
+          "category": "cs_stats",
+          "credits": 3.0,
+          "term": 5,
+          "fill": "list",
+          "list_ref": "CS_STATS",
+          "credits_missing": 3.0
+        },
+        {
+          "id": "CS-26",
+          "type": "elective",
+          "label": "Approved Computer Architecture Elective",
+          "category": "cs_arch",
+          "credits": 3.0,
+          "term": 5,
+          "fill": "list",
+          "list_ref": "CS_ARCH",
+          "credits_missing": 3.0
+        },
+        {
+          "id": "CS-27",
+          "type": "elective",
+          "label": "Approved COMP Elective",
+          "category": "cs_comp_elective",
+          "credits": 3.0,
+          "term": 5,
+          "fill": "list",
+          "list_ref": "CS_COMP_ELECTIVES",
+          "credits_missing": 3.0
+        },
+        {
+          "id": "CS-39",
+          "type": "elective",
+          "label": "Approved COMP Elective",
+          "category": "cs_comp_elective",
+          "credits": 3.0,
+          "term": 8,
+          "fill": "list",
+          "list_ref": "CS_COMP_ELECTIVES",
+          "credits_missing": 3.0
+        },
+        {
+          "id": "CS-40",
+          "type": "elective",
+          "label": "Approved COMP Elective",
+          "category": "cs_comp_elective",
+          "credits": 3.0,
+          "term": 8,
+          "fill": "list",
+          "list_ref": "CS_COMP_ELECTIVES",
+          "credits_missing": 3.0
+        },
+        {
+          "id": "CS-41",
+          "type": "elective",
+          "label": "Free Elective",
+          "category": "free",
+          "credits": 3.0,
+          "term": 8,
+          "fill": "any",
+          "credits_missing": 3.0
+        }
+      ],
+      "remaining_courses": [
+        "COMP 121",
+        "COMP 200",
+        "COMP 300",
+        "COMP 390",
+        "ENGL 331",
+        "GEEN 111",
+        "MATH 341",
+        "SPCH 250",
+        "COMP 476",
+        "COMP 280",
+        "COMP 267",
+        "COMP 285",
+        "COMP 322",
+        "COMP 350",
+        "COMP 360",
+        "COMP 365",
+        "COMP 385",
+        "COMP 410",
+        "COMP 495",
+        "COMP 496"
+      ],
+      "eligible_now": [
+        "COMP 121",
+        "COMP 200",
+        "COMP 300",
+        "COMP 390",
+        "ENGL 331",
+        "GEEN 111",
+        "MATH 341",
+        "SPCH 250",
+        "COMP 280"
+      ],
+      "elective_options": {
+        "CS-02": [
+          "ECON 200",
+          "ECON 201",
+          "FCS 135",
+          "FCS 181",
+          "FCS 260",
+          "FIN 279",
+          "HIST 103",
+          "HIST 104",
+          "HIST 105",
+          "HIST 106",
+          "HIST 107",
+          "HIST 130",
+          "HIST 206",
+          "HIST 207",
+          "HIST 216",
+          "HIST 231",
+          "JOMC 240",
+          "POLI 110",
+          "PSYC 101",
+          "SOCI 100",
+          "SOCI 200",
+          "SSFM 226"
+        ],
+        "CS-08": [
+          "ENGL 211",
+          "ENGL 212",
+          "HIST 103",
+          "HIST 106",
+          "HIST 107",
+          "LIBS 202",
+          "MUSI 220"
+        ],
+        "CS-13": [
+          "BIOL 100",
+          "BIOL 101",
+          "CHEM 106",
+          "CHEM 107",
+          "CHEM 116",
+          "CHEM 117",
+          "PHYS 241",
+          "PHYS 242",
+          "PHYS 251",
+          "PHYS 252",
+          "SLMG 200"
+        ],
+        "CS-17": [
+          "HIST 130",
+          "HIST 206",
+          "HIST 207",
+          "HIST 216",
+          "HIST 231",
+          "MGMT 221",
+          "PHIL 103",
+          "PHIL 201"
+        ],
+        "CS-18": [
+          "BIOL 100",
+          "BIOL 101",
+          "CHEM 106",
+          "CHEM 107",
+          "CHEM 116",
+          "CHEM 117",
+          "PHYS 241",
+          "PHYS 242",
+          "PHYS 251",
+          "PHYS 252",
+          "SLMG 200"
+        ],
+        "CS-20": [
+          "MATH 340",
+          "MATH 351"
+        ],
+        "CS-23": [
+          "BIOL 100",
+          "BIOL 101",
+          "CHEM 106",
+          "CHEM 107",
+          "CHEM 116",
+          "CHEM 117",
+          "PHYS 241",
+          "PHYS 242",
+          "PHYS 251",
+          "PHYS 252",
+          "SLMG 200"
+        ],
+        "CS-24": [
+          "ECEN 356",
+          "ISEN 370",
+          "MATH 224"
+        ],
+        "CS-26": [
+          "ECEN 375"
+        ],
+        "CS-27": [
+          "BUAN 335",
+          "COMP 320",
+          "COMP 323",
+          "COMP 356",
+          "COMP 485",
+          "COMP 494",
+          "CST 340",
+          "ECEN 427",
+          "ISEN 415",
+          "MATH 365"
+        ],
+        "CS-39": [
+          "BUAN 335",
+          "COMP 320",
+          "COMP 323",
+          "COMP 356",
+          "COMP 485",
+          "COMP 494",
+          "CST 340",
+          "ECEN 427",
+          "ISEN 415",
+          "MATH 365"
+        ],
+        "CS-40": [
+          "BUAN 335",
+          "COMP 320",
+          "COMP 323",
+          "COMP 356",
+          "COMP 485",
+          "COMP 494",
+          "CST 340",
+          "ECEN 427",
+          "ISEN 415",
+          "MATH 365"
+        ],
+        "CS-41": [
+          "BIOL 100",
+          "BIOL 101",
+          "BUAN 132",
+          "BUAN 335",
+          "CAEE 101",
+          "CAEE 121",
+          "CAEE 204",
+          "CAEE 230",
+          "CAEE 231",
+          "CAEE 232",
+          "CAEE 240",
+          "CAEE 304",
+          "CAEE 325",
+          "CAEE 330",
+          "CAEE 334",
+          "CAEE 335",
+          "CAEE 362",
+          "CAEE 363",
+          "CAEE 401",
+          "CAEE 430",
+          "CAEE 436",
+          "CAEE 481",
+          "CHEM 106",
+          "CHEM 107",
+          "CHEM 116",
+          "CHEM 117",
+          "CIEN 281",
+          "CIEN 310",
+          "CIEN 311",
+          "CIEN 320",
+          "CIEN 321",
+          "CIEN 350",
+          "CIEN 364",
+          "CIEN 405",
+          "CIEN 412",
+          "CIEN 422",
+          "CIEN 453",
+          "CIEN 483",
+          "CIEN 484",
+          "COMP 120",
+          "COMP 121",
+          "COMP 160",
+          "COMP 161",
+          "COMP 170",
+          "COMP 200",
+          "COMP 280",
+          "COMP 300",
+          "COMP 320",
+          "COMP 323",
+          "COMP 356",
+          "COMP 390",
+          "COMP 397",
+          "COMP 485",
+          "COMP 494",
+          "CST 340",
+          "ECEN 101",
+          "ECEN 102",
+          "ECEN 200",
+          "ECEN 206",
+          "ECEN 212",
+          "ECEN 218",
+          "ECEN 227",
+          "ECEN 300",
+          "ECEN 306",
+          "ECEN 320",
+          "ECEN 323",
+          "ECEN 325",
+          "ECEN 326",
+          "ECEN 327",
+          "ECEN 329",
+          "ECEN 340",
+          "ECEN 351",
+          "ECEN 356",
+          "ECEN 357",
+          "ECEN 375",
+          "ECEN 377",
+          "ECEN 381",
+          "ECEN 400",
+          "ECEN 408",
+          "ECEN 410",
+          "ECEN 415",
+          "ECEN 421",
+          "ECEN 424",
+          "ECEN 426",
+          "ECEN 427",
+          "ECEN 430",
+          "ECEN 441",
+          "ECEN 447",
+          "ECEN 449",
+          "ECEN 450",
+          "ECEN 452",
+          "ECEN 457",
+          "ECEN 459",
+          "ECEN 460",
+          "ECEN 461",
+          "ECEN 462",
+          "ECEN 466",
+          "ECEN 468",
+          "ECEN 470",
+          "ECEN 472",
+          "ECEN 474",
+          "ECEN 477",
+          "ECEN 478",
+          "ECEN 479",
+          "ECEN 485",
+          "ECON 200",
+          "ECON 201",
+          "ENGL 200",
+          "ENGL 201",
+          "ENGL 211",
+          "ENGL 212",
+          "ENGL 230",
+          "ENGL 231",
+          "ENGL 331",
+          "FCS 135",
+          "FCS 181",
+          "FCS 260",
+          "FIN 279",
+          "GEEN 100",
+          "GEEN 111",
+          "HIST 103",
+          "HIST 104",
+          "HIST 105",
+          "HIST 106",
+          "HIST 107",
+          "HIST 130",
+          "HIST 206",
+          "HIST 207",
+          "HIST 216",
+          "HIST 231",
+          "ISEN 102",
+          "ISEN 121",
+          "ISEN 162",
+          "ISEN 246",
+          "ISEN 255",
+          "ISEN 260",
+          "ISEN 286",
+          "ISEN 324",
+          "ISEN 361",
+          "ISEN 370",
+          "ISEN 380",
+          "ISEN 386",
+          "ISEN 400",
+          "ISEN 415",
+          "ISEN 425",
+          "ISEN 430",
+          "ISEN 435",
+          "ISEN 440",
+          "ISEN 455",
+          "ISEN 465",
+          "ISEN 471",
+          "ISEN 472",
+          "ISEN 475",
+          "ISEN 480",
+          "ISEN 486",
+          "ISEN 495",
+          "JOMC 240",
+          "LIBS 202",
+          "MATH 110",
+          "MATH 123",
+          "MATH 224",
+          "MATH 231",
+          "MATH 340",
+          "MATH 341",
+          "MATH 351",
+          "MATH 365",
+          "MEEN 104",
+          "MEEN 202",
+          "MEEN 210",
+          "MEEN 230",
+          "MEEN 231",
+          "MEEN 232",
+          "MEEN 233",
+          "MEEN 241",
+          "MEEN 260",
+          "MEEN 261",
+          "MEEN 267",
+          "MEEN 316",
+          "MEEN 317",
+          "MEEN 321",
+          "MEEN 324",
+          "MEEN 341",
+          "MEEN 343",
+          "MEEN 361",
+          "MEEN 363",
+          "MEEN 421",
+          "MEEN 424",
+          "MEEN 425",
+          "MEEN 480",
+          "MEEN 481",
+          "MEEN 492",
+          "MGMT 110",
+          "MGMT 221",
+          "MKTG 230",
+          "MUSI 216",
+          "MUSI 220",
+          "PHIL 101",
+          "PHIL 103",
+          "PHIL 104",
+          "PHIL 201",
+          "PHIL 266",
+          "PHIL 267",
+          "PHYS 241",
+          "PHYS 242",
+          "PHYS 251",
+          "PHYS 252",
+          "POLI 110",
+          "PSYC 101",
+          "SLMG 200",
+          "SOCI 100",
+          "SOCI 200",
+          "SPCH 250",
+          "SSFM 226"
+        ]
+      },
+      "credits_remaining": 94.0,
+      "credits_applied": 26.0,
+      "transfer_unmatched": [],
+      "unverified_prereqs": [
+        "ENGL 331",
+        "MATH 341",
+        "SPCH 250"
+      ],
+      "warnings": []
+    }
+  },
+  "schedule_builder": {
+    "input": {
+      "profile": {
+        "student_id": "SYN-CS-03",
+        "major": "CS",
+        "is_transfer": true,
+        "completed": [],
+        "transfer": [
+          {
+            "institution_id": "GTCC",
+            "course": "ENG 111"
+          },
+          {
+            "institution_id": "GTCC",
+            "course": "ENG 112"
+          },
+          {
+            "institution_id": "GTCC",
+            "course": "MAT 271"
+          },
+          {
+            "institution_id": "GTCC",
+            "course": "MAT 272"
+          },
+          {
+            "institution_id": "GTCC",
+            "course": "CSC 151"
+          },
+          {
+            "institution_id": "GTCC",
+            "course": "CSC 251"
+          },
+          {
+            "institution_id": "GTCC",
+            "course": "MAT 167"
+          },
+          {
+            "institution_id": "GTCC",
+            "course": "BUS 110"
+          }
+        ],
+        "note": "Guilford Tech transfer (same 8 courses as checkpoint report)"
+      },
+      "sections": "data/sections/sample_term.json"
+    },
+    "output": [
+      {
+        "student_id": "SYN-CS-03",
+        "method": "greedy",
+        "term": "Spring 2027 (SYNTHETIC)",
+        "items": [
+          {
+            "crn": "S0071",
+            "course": "COMP 121",
+            "title": "Computer Science Freshmen Colloquium",
+            "credits": 1.0,
+            "fills": "CS-06",
+            "meetings": [
+              {
+                "days": "MWF",
+                "start": "14:00",
+                "end": "14:50"
+              }
+            ]
+          },
+          {
+            "crn": "S0086",
+            "course": "COMP 200",
+            "title": "Computer Science Sophomore Colloquium",
+            "credits": 1.0,
+            "fills": "CS-22",
+            "meetings": [
+              {
+                "days": "MWF",
+                "start": "10:00",
+                "end": "10:50"
+              }
+            ]
+          },
+          {
+            "crn": "S0089",
+            "course": "COMP 280",
+            "title": "Data Structures",
+            "credits": 3.0,
+            "fills": "CS-16",
+            "meetings": [
+              {
+                "days": "MWF",
+                "start": "12:00",
+                "end": "12:50"
+              }
+            ]
+          },
+          {
+            "crn": "S0260",
+            "course": "ECON 201",
+            "title": "Principles of Economics (Macro)",
+            "credits": 3.0,
+            "fills": "CS-02",
+            "meetings": [
+              {
+                "days": "TR",
+                "start": "14:00",
+                "end": "15:15"
+              }
+            ]
+          },
+          {
+            "crn": "S0286",
+            "course": "GEEN 111",
+            "title": "College of Engineering Colloquium I",
+            "credits": 1.0,
+            "fills": "CS-04",
+            "meetings": [
+              {
+                "days": "MWF",
+                "start": "13:00",
+                "end": "13:50"
+              }
+            ]
+          },
+          {
+            "crn": "S0362",
+            "course": "MATH 341",
+            "title": "Introduction to Differential Equations",
+            "credits": 3.0,
+            "fills": "CS-15",
+            "meetings": [
+              {
+                "days": "TR",
+                "start": "11:00",
+                "end": "12:15"
+              }
+            ]
+          },
+          {
+            "crn": "S0454",
+            "course": "SPCH 250",
+            "title": "Speech Fundamentals",
+            "credits": 3.0,
+            "fills": "CS-12",
+            "meetings": [
+              {
+                "days": "TR",
+                "start": "15:30",
+                "end": "16:45"
+              }
+            ]
+          }
+        ],
+        "total_credits": 15.0,
+        "score": 3000,
+        "status": "GREEDY",
+        "notes": [
+          "ECON 201: prerequisites not in our data yet; confirm with advisor before registering",
+          "MATH 341: prerequisites not in our data yet; confirm with advisor before registering",
+          "SPCH 250: prerequisites not in our data yet; confirm with advisor before registering"
+        ],
+        "independent_check": {
+          "valid": false,
+          "problems": [
+            "ECON 201: does not count toward any unmet CS requirement"
+          ],
+          "warnings": [
+            "ECON 201: prerequisites not in data (unverified)",
+            "MATH 341: prerequisites not in data (unverified)",
+            "SPCH 250: prerequisites not in data (unverified)"
+          ],
+          "credits": 15.0
+        }
+      },
+      {
+        "student_id": "SYN-CS-03",
+        "method": "cpsat",
+        "term": "Spring 2027 (SYNTHETIC)",
+        "items": [
+          {
+            "crn": "S0071",
+            "course": "COMP 121",
+            "title": "Computer Science Freshmen Colloquium",
+            "credits": 1.0,
+            "fills": "CS-06",
+            "meetings": [
+              {
+                "days": "MWF",
+                "start": "14:00",
+                "end": "14:50"
+              }
+            ]
+          },
+          {
+            "crn": "S0089",
+            "course": "COMP 280",
+            "title": "Data Structures",
+            "credits": 3.0,
+            "fills": "CS-16",
+            "meetings": [
+              {
+                "days": "MWF",
+                "start": "12:00",
+                "end": "12:50"
+              }
+            ]
+          },
+          {
+            "crn": "S0270",
+            "course": "ENGL 211",
+            "title": "(title not in provided sources)",
+            "credits": 3.0,
+            "fills": "CS-08",
+            "meetings": [
+              {
+                "days": "TR",
+                "start": "14:00",
+                "end": "15:15"
+              }
+            ]
+          },
+          {
+            "crn": "S0281",
+            "course": "FCS 181",
+            "title": "(title not in provided sources)",
+            "credits": 3.0,
+            "fills": "CS-02",
+            "meetings": [
+              {
+                "days": "MWF",
+                "start": "08:00",
+                "end": "08:50"
+              }
+            ]
+          },
+          {
+            "crn": "S0287",
+            "course": "GEEN 111",
+            "title": "College of Engineering Colloquium I",
+            "credits": 1.0,
+            "fills": "CS-04",
+            "meetings": [
+              {
+                "days": "MWF",
+                "start": "10:00",
+                "end": "10:50"
+              }
+            ]
+          },
+          {
+            "crn": "S0362",
+            "course": "MATH 341",
+            "title": "Introduction to Differential Equations",
+            "credits": 3.0,
+            "fills": "CS-15",
+            "meetings": [
+              {
+                "days": "TR",
+                "start": "11:00",
+                "end": "12:15"
+              }
+            ]
+          },
+          {
+            "crn": "S0454",
+            "course": "SPCH 250",
+            "title": "Speech Fundamentals",
+            "credits": 3.0,
+            "fills": "CS-12",
+            "meetings": [
+              {
+                "days": "TR",
+                "start": "15:30",
+                "end": "16:45"
+              }
+            ]
+          }
+        ],
+        "total_credits": 17.0,
+        "score": 3330,
+        "status": "OPTIMAL",
+        "notes": [
+          "ENGL 211: prerequisites not in our data yet; confirm with advisor before registering",
+          "FCS 181: prerequisites not in our data yet; confirm with advisor before registering",
+          "MATH 341: prerequisites not in our data yet; confirm with advisor before registering",
+          "SPCH 250: prerequisites not in our data yet; confirm with advisor before registering",
+          "Re-solved without ECON 201 (the degree audit would not count them for this student)"
+        ],
+        "independent_check": {
+          "valid": true,
+          "problems": [],
+          "warnings": [
+            "ENGL 211: prerequisites not in data (unverified)",
+            "FCS 181: prerequisites not in data (unverified)",
+            "MATH 341: prerequisites not in data (unverified)",
+            "SPCH 250: prerequisites not in data (unverified)"
+          ],
+          "credits": 17.0
+        }
+      }
+    ],
+    "warning": ""
+  },
+  "elective_recommendations": {
+    "input": {
+      "profile": {
+        "student_id": "SYN-CS-02",
+        "major": "CS",
+        "is_transfer": false,
+        "completed": [
+          "ENGL 100",
+          "COMP 163",
+          "GEEN 111",
+          "MATH 131",
+          "COMP 121",
+          "ENGL 101",
+          "COMP 167",
+          "COMP 180",
+          "MATH 132",
+          "ECON 200",
+          "HIST 106"
+        ],
+        "note": "finished first year"
+      },
+      "interests": [
+        "cybersecurity"
+      ]
+    },
+    "output": [
+      {
+        "code": "COMP 320",
+        "title": "Fundamentals of Cybersecurity",
+        "score": 0.5028,
+        "interest_similarity": 0.3381,
+        "peer_rating": 4.0,
+        "n_ratings": 1,
+        "slots": [
+          "CS-27",
+          "CS-39",
+          "CS-40",
+          "CS-41"
+        ],
+        "why": "matches your interest in Cybersecurity; rated 4.0/5 by 1 peer; counts toward an open elective slot"
+      },
+      {
+        "code": "COMP 323",
+        "title": "Introduction to Health Care Information Systems",
+        "score": 0.3143,
+        "interest_similarity": 0.0,
+        "peer_rating": 4.14,
+        "n_ratings": 14,
+        "slots": [
+          "CS-27",
+          "CS-39",
+          "CS-40",
+          "CS-41"
+        ],
+        "why": "rated 4.1/5 by 14 peers; counts toward an open elective slot"
+      },
+      {
+        "code": "COMP 356",
+        "title": "Computational Hip-Hop and Object-Oriented Design",
+        "score": 0.3,
+        "interest_similarity": 0.0,
+        "peer_rating": 4.0,
+        "n_ratings": 1,
+        "slots": [
+          "CS-27",
+          "CS-39",
+          "CS-40",
+          "CS-41"
+        ],
+        "why": "rated 4.0/5 by 1 peer; counts toward an open elective slot"
+      },
+      {
+        "code": "BUAN 335",
+        "title": "(title not in provided sources)",
+        "score": 0.2429,
+        "interest_similarity": 0.0,
+        "peer_rating": 3.43,
+        "n_ratings": 7,
+        "slots": [
+          "CS-27",
+          "CS-39",
+          "CS-40",
+          "CS-41"
+        ],
+        "why": "rated 3.4/5 by 7 peers; counts toward an open elective slot"
+      },
+      {
+        "code": "BIOL 100",
+        "title": "Biological Science",
+        "score": 0.2,
+        "interest_similarity": 0.0,
+        "peer_rating": null,
+        "n_ratings": 0,
+        "slots": [
+          "CS-13",
+          "CS-18",
+          "CS-23",
+          "CS-41"
+        ],
+        "why": "counts toward an open elective slot"
+      }
+    ]
+  },
+  "student_request": {
+    "input": "I have a registration hold and registration closes tomorrow.",
+    "output": {
+      "category": "Registration Holds",
+      "urgency": "High",
+      "status": "Open"
+    }
+  }
+}

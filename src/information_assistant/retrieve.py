@@ -5,7 +5,6 @@ import json
 from pathlib import Path
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data" / "information_assistant"
@@ -13,7 +12,7 @@ DATA = ROOT / "data" / "information_assistant"
 MODEL_NAME = "all-MiniLM-L6-v2"
 
 
-def search(question, top_k=3):
+def search(question, top_k=3, *, model=None):
     chunks = json.loads(
         (DATA / "chunks.json").read_text(encoding="utf-8")
     )
@@ -23,7 +22,10 @@ def search(question, top_k=3):
     if len(chunks) != len(embeddings):
         raise ValueError("Chunk and embedding counts do not match")
 
-    model = SentenceTransformer(MODEL_NAME)
+    if model is None:
+        from sentence_transformers import SentenceTransformer
+
+        model = SentenceTransformer(MODEL_NAME)
 
     question_embedding = model.encode(
         question,
