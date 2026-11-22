@@ -176,7 +176,8 @@ def main() -> None:
     with st.sidebar:
         st.title("Aggies Enroll")
         st.caption("ADVISOR HUB · COMP365")
-        page = st.radio("Navigation", ("Overview", "Information Assistant", "Student Requests", "Appointments", "Advisor Queue"))
+        page = st.radio("Navigation", ("Overview", "Information Assistant", "Degree Audit", "Schedule Builder",
+                                       "Student Requests", "Appointments", "Advisor Queue"))
         st.divider()
         st.subheader("Demonstration tools")
         st.caption("Optional fictional records. Repeated loads do not add duplicates.")
@@ -189,12 +190,20 @@ def main() -> None:
             st.warning("Synthetic demonstration records are loaded.")
         st.divider()
         st.caption("Temporary session storage. Closing or resetting the session may remove all records. Use no real student or protected academic information.")
-    st.title("Advisor Hub")
+    st.title("Aggies Enroll Advisor Hub")
     st.caption("Aggies Enroll · Student project prototype · Not an official NC A&T university service")
     if page == "Information Assistant":
         from advisor_hub.information_page import information_page
 
         information_page(st, hub)
+    elif page in {"Degree Audit", "Schedule Builder"}:
+        from advisor_hub.audit_page import degree_audit_page
+        from advisor_hub.schedule_page import schedule_page
+
+        try:
+            {"Degree Audit": degree_audit_page, "Schedule Builder": schedule_page}[page](st, hub)
+        except (OSError, ValueError, KeyError, ImportError):
+            st.error(f"{page} is unavailable. Check the component dependencies and project data files.")
     else:
         {"Overview": overview, "Student Requests": student_requests,
          "Advisor Queue": advisor_queue, "Appointments": appointments}[page](st, hub)
