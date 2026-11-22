@@ -48,6 +48,10 @@ All course codes are normalised `DEPT NNN` (upper-case, one space), e.g. `COMP 1
   `category`) · `elective` (generic elective credit; free electives only) · `none`.
 * `NCCCS` rows use NC Common Course Library codes and apply to every NC community college; a college-specific
   row (same `cc_course`, that college's id) takes precedence.
+* College rows (from the A&T tool) add: `alternatives` (list of code lists; present only for "X OR Y", each
+  inner list is awarded together, `ncat_equivalent` = the first one; the audit picks the one the curriculum still
+  needs), `ncat_credits` (credits A&T awards per code), `tool_listing` (the tool's own text, e.g. `CHEM 106 AND CHEM 116`),
+  `retrieved` (date), `verified: true`.
 * `also_requires`: courses that must also be in the student's transfer list (e.g., NET 110 + NET 125).
 * `institutions.json`: the team's 10 colleges and their ids.
 
