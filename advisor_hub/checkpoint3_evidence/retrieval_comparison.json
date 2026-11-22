@@ -1,0 +1,644 @@
+{
+  "top_k": 3,
+  "question_count": 5,
+  "chunk_count": 11,
+  "corpus_sha256": "1224de71cd06849e4da40fa7eb44db7006ba26ae554dceda924bfcc220d7cc70",
+  "question_set_sha256": "403baf31966db9a16bf85eebfbab46a170548e581b2cf6fae396d6cd45fe5172",
+  "metric_note": "Case-insensitive whole-term matches in the union of retrieved passages. Question fixtures contain expected terms and no relevance judgments. Coverage measures a retrieval diagnostic, not answer accuracy.",
+  "methods": {
+    "keyword_overlap": {
+      "status": "executed",
+      "all_terms_at_k": 4,
+      "mean_term_coverage_at_k": 0.9,
+      "questions": [
+        {
+          "question": "What happens when a course section is closed?",
+          "expected_terms": [
+            "closed",
+            "enrollment"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "closed",
+                "enrollment"
+              ],
+              "score": 6,
+              "passage_sha256": "f90c5f5a8f734556ed18af50690b65bc4c138b279e67c24c6880cad818a9827f"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 5,
+              "passage_sha256": "e5b29a7ee0a73fda9f4cbf146b5a6b34e9ebaa2b7c69c75ffdc354bd21ce840e"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 5,
+              "passage_sha256": "0e2bbb554a4ba8a3a8df885b21bbcbf7cfe2adb82e03fc9921faf27f2e7e6e3d"
+            }
+          ],
+          "missing_terms": [],
+          "term_coverage": 1.0
+        },
+        {
+          "question": "How do I get my advising PIN?",
+          "expected_terms": [
+            "PIN",
+            "advisor"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "PIN",
+                "advisor"
+              ],
+              "score": 4,
+              "passage_sha256": "0e2bbb554a4ba8a3a8df885b21bbcbf7cfe2adb82e03fc9921faf27f2e7e6e3d"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "PIN",
+                "advisor"
+              ],
+              "score": 2,
+              "passage_sha256": "e5b29a7ee0a73fda9f4cbf146b5a6b34e9ebaa2b7c69c75ffdc354bd21ce840e"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "PIN",
+                "advisor"
+              ],
+              "score": 2,
+              "passage_sha256": "ae893d3171d75c428509a8df7a2956a77908f099202a26a25413aa6c6879d205"
+            }
+          ],
+          "missing_terms": [],
+          "term_coverage": 1.0
+        },
+        {
+          "question": "How many credit hours make a student full-time?",
+          "expected_terms": [
+            "twelve",
+            "full-time"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "full-time"
+              ],
+              "score": 5,
+              "passage_sha256": "f90c5f5a8f734556ed18af50690b65bc4c138b279e67c24c6880cad818a9827f"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "twelve",
+                "full-time"
+              ],
+              "score": 5,
+              "passage_sha256": "6519fa9cab6c5212ebd56a8f7cbf8c5133bae5dd74dc96510477b2b9b9e0e85e"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 5,
+              "passage_sha256": "0b939999eb8552eda883d0bbc135b607bd179b42fd6814be977e045d8f3adf75"
+            }
+          ],
+          "missing_terms": [],
+          "term_coverage": 1.0
+        },
+        {
+          "question": "How do I add or drop a class?",
+          "expected_terms": [
+            "ADD",
+            "DROP",
+            "CRN"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "ADD",
+                "DROP",
+                "CRN"
+              ],
+              "score": 6,
+              "passage_sha256": "0e2bbb554a4ba8a3a8df885b21bbcbf7cfe2adb82e03fc9921faf27f2e7e6e3d"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 4,
+              "passage_sha256": "0b939999eb8552eda883d0bbc135b607bd179b42fd6814be977e045d8f3adf75"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 3,
+              "passage_sha256": "e5b29a7ee0a73fda9f4cbf146b5a6b34e9ebaa2b7c69c75ffdc354bd21ce840e"
+            }
+          ],
+          "missing_terms": [],
+          "term_coverage": 1.0
+        },
+        {
+          "question": "What should I do if I have a registration hold?",
+          "expected_terms": [
+            "hold",
+            "registration"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "registration"
+              ],
+              "score": 4,
+              "passage_sha256": "e5b29a7ee0a73fda9f4cbf146b5a6b34e9ebaa2b7c69c75ffdc354bd21ce840e"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "registration"
+              ],
+              "score": 4,
+              "passage_sha256": "0e2bbb554a4ba8a3a8df885b21bbcbf7cfe2adb82e03fc9921faf27f2e7e6e3d"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "registration"
+              ],
+              "score": 4,
+              "passage_sha256": "0b939999eb8552eda883d0bbc135b607bd179b42fd6814be977e045d8f3adf75"
+            }
+          ],
+          "missing_terms": [
+            "hold"
+          ],
+          "term_coverage": 0.5
+        }
+      ]
+    },
+    "bm25": {
+      "status": "executed",
+      "all_terms_at_k": 4,
+      "mean_term_coverage_at_k": 0.9,
+      "questions": [
+        {
+          "question": "What happens when a course section is closed?",
+          "expected_terms": [
+            "closed",
+            "enrollment"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "closed",
+                "enrollment"
+              ],
+              "score": 7.28225,
+              "passage_sha256": "f90c5f5a8f734556ed18af50690b65bc4c138b279e67c24c6880cad818a9827f"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 3.066125,
+              "passage_sha256": "0e2bbb554a4ba8a3a8df885b21bbcbf7cfe2adb82e03fc9921faf27f2e7e6e3d"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 2.944181,
+              "passage_sha256": "e5b29a7ee0a73fda9f4cbf146b5a6b34e9ebaa2b7c69c75ffdc354bd21ce840e"
+            }
+          ],
+          "missing_terms": [],
+          "term_coverage": 1.0
+        },
+        {
+          "question": "How do I get my advising PIN?",
+          "expected_terms": [
+            "PIN",
+            "advisor"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "PIN",
+                "advisor"
+              ],
+              "score": 5.084368,
+              "passage_sha256": "0e2bbb554a4ba8a3a8df885b21bbcbf7cfe2adb82e03fc9921faf27f2e7e6e3d"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "PIN",
+                "advisor"
+              ],
+              "score": 2.935877,
+              "passage_sha256": "ae893d3171d75c428509a8df7a2956a77908f099202a26a25413aa6c6879d205"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "PIN",
+                "advisor"
+              ],
+              "score": 1.389989,
+              "passage_sha256": "e5b29a7ee0a73fda9f4cbf146b5a6b34e9ebaa2b7c69c75ffdc354bd21ce840e"
+            }
+          ],
+          "missing_terms": [],
+          "term_coverage": 1.0
+        },
+        {
+          "question": "How many credit hours make a student full-time?",
+          "expected_terms": [
+            "twelve",
+            "full-time"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "twelve",
+                "full-time"
+              ],
+              "score": 5.801483,
+              "passage_sha256": "6519fa9cab6c5212ebd56a8f7cbf8c5133bae5dd74dc96510477b2b9b9e0e85e"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 5.323639,
+              "passage_sha256": "0b939999eb8552eda883d0bbc135b607bd179b42fd6814be977e045d8f3adf75"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "full-time"
+              ],
+              "score": 3.412219,
+              "passage_sha256": "f90c5f5a8f734556ed18af50690b65bc4c138b279e67c24c6880cad818a9827f"
+            }
+          ],
+          "missing_terms": [],
+          "term_coverage": 1.0
+        },
+        {
+          "question": "How do I add or drop a class?",
+          "expected_terms": [
+            "ADD",
+            "DROP",
+            "CRN"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "ADD",
+                "DROP",
+                "CRN"
+              ],
+              "score": 9.467714,
+              "passage_sha256": "0e2bbb554a4ba8a3a8df885b21bbcbf7cfe2adb82e03fc9921faf27f2e7e6e3d"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 2.356857,
+              "passage_sha256": "0b939999eb8552eda883d0bbc135b607bd179b42fd6814be977e045d8f3adf75"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 1.895681,
+              "passage_sha256": "f90c5f5a8f734556ed18af50690b65bc4c138b279e67c24c6880cad818a9827f"
+            }
+          ],
+          "missing_terms": [],
+          "term_coverage": 1.0
+        },
+        {
+          "question": "What should I do if I have a registration hold?",
+          "expected_terms": [
+            "hold",
+            "registration"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "registration"
+              ],
+              "score": 5.052353,
+              "passage_sha256": "0e2bbb554a4ba8a3a8df885b21bbcbf7cfe2adb82e03fc9921faf27f2e7e6e3d"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "registration"
+              ],
+              "score": 3.101667,
+              "passage_sha256": "0b939999eb8552eda883d0bbc135b607bd179b42fd6814be977e045d8f3adf75"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "registration"
+              ],
+              "score": 2.695081,
+              "passage_sha256": "3fa53122d3e80ae840dee50dbf5e30836570acf2e0dea5227fba86289dc44f62"
+            }
+          ],
+          "missing_terms": [
+            "hold"
+          ],
+          "term_coverage": 0.5
+        }
+      ]
+    },
+    "semantic": {
+      "status": "executed",
+      "all_terms_at_k": 4,
+      "mean_term_coverage_at_k": 0.9,
+      "questions": [
+        {
+          "question": "What happens when a course section is closed?",
+          "expected_terms": [
+            "closed",
+            "enrollment"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "closed",
+                "enrollment"
+              ],
+              "score": 0.615179,
+              "passage_sha256": "f90c5f5a8f734556ed18af50690b65bc4c138b279e67c24c6880cad818a9827f"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 0.416158,
+              "passage_sha256": "b8c1c2a0d2c0dc50e20ee227c463da4a4b3b73756232c7c20c4d7fd14588b71d"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "enrollment"
+              ],
+              "score": 0.403368,
+              "passage_sha256": "3fa53122d3e80ae840dee50dbf5e30836570acf2e0dea5227fba86289dc44f62"
+            }
+          ],
+          "missing_terms": [],
+          "term_coverage": 1.0
+        },
+        {
+          "question": "How do I get my advising PIN?",
+          "expected_terms": [
+            "PIN",
+            "advisor"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "PIN",
+                "advisor"
+              ],
+              "score": 0.444034,
+              "passage_sha256": "0e2bbb554a4ba8a3a8df885b21bbcbf7cfe2adb82e03fc9921faf27f2e7e6e3d"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "PIN",
+                "advisor"
+              ],
+              "score": 0.38443,
+              "passage_sha256": "ae893d3171d75c428509a8df7a2956a77908f099202a26a25413aa6c6879d205"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "PIN",
+                "advisor"
+              ],
+              "score": 0.327308,
+              "passage_sha256": "6ec95f22ee30db7dd7fc967828315dc0b34a85428d76eb65623741632b282fc2"
+            }
+          ],
+          "missing_terms": [],
+          "term_coverage": 1.0
+        },
+        {
+          "question": "How many credit hours make a student full-time?",
+          "expected_terms": [
+            "twelve",
+            "full-time"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "twelve",
+                "full-time"
+              ],
+              "score": 0.584016,
+              "passage_sha256": "6519fa9cab6c5212ebd56a8f7cbf8c5133bae5dd74dc96510477b2b9b9e0e85e"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 0.521954,
+              "passage_sha256": "0b939999eb8552eda883d0bbc135b607bd179b42fd6814be977e045d8f3adf75"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 0.432704,
+              "passage_sha256": "3fa53122d3e80ae840dee50dbf5e30836570acf2e0dea5227fba86289dc44f62"
+            }
+          ],
+          "missing_terms": [],
+          "term_coverage": 1.0
+        },
+        {
+          "question": "How do I add or drop a class?",
+          "expected_terms": [
+            "ADD",
+            "DROP",
+            "CRN"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "ADD",
+                "DROP",
+                "CRN"
+              ],
+              "score": 0.590979,
+              "passage_sha256": "0e2bbb554a4ba8a3a8df885b21bbcbf7cfe2adb82e03fc9921faf27f2e7e6e3d"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 0.331669,
+              "passage_sha256": "ab0705ecfd81c445fdd966f16c8ca2693fc3d83677721fd6e382ba1d78e9fa55"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 0.311447,
+              "passage_sha256": "b8c1c2a0d2c0dc50e20ee227c463da4a4b3b73756232c7c20c4d7fd14588b71d"
+            }
+          ],
+          "missing_terms": [],
+          "term_coverage": 1.0
+        },
+        {
+          "question": "What should I do if I have a registration hold?",
+          "expected_terms": [
+            "hold",
+            "registration"
+          ],
+          "passages": [
+            {
+              "rank": 1,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "registration"
+              ],
+              "score": 0.501982,
+              "passage_sha256": "e5b29a7ee0a73fda9f4cbf146b5a6b34e9ebaa2b7c69c75ffdc354bd21ce840e"
+            },
+            {
+              "rank": 2,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [
+                "registration"
+              ],
+              "score": 0.485538,
+              "passage_sha256": "ae893d3171d75c428509a8df7a2956a77908f099202a26a25413aa6c6879d205"
+            },
+            {
+              "rank": 3,
+              "title": "Registration",
+              "url": "https://www.ncat.edu/registrar/registration.php",
+              "matched_terms": [],
+              "score": 0.475253,
+              "passage_sha256": "7c537c43e542fb445d67d8809011fb89ad2c0ac6bf15ac957d2baf7028b6de89"
+            }
+          ],
+          "missing_terms": [
+            "hold"
+          ],
+          "term_coverage": 0.5
+        }
+      ]
+    }
+  }
+}

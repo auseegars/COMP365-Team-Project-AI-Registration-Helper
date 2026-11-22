@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\NCAT\\COMP365-Team-Project-AI-Registration-Helper\\advisor_hub\\.venv\\Scripts\\python.exe",
+    "-m",
+    "streamlit",
+    "run",
+    "advisor_hub/app.py",
+    "--server.headless",
+    "true",
+    "--server.address",
+    "127.0.0.1",
+    "--server.port",
+    "56756",
+    "--browser.gatherUsageStats",
+    "false"
+  ],
+  "health_status": 200,
+  "health_body": "ok",
+  "server_output": "2026-11-10 11:07:32.694 Uvicorn server started on 127.0.0.1:56756\n\n  You can now view your Streamlit app in your browser.\n\n  URL: http://127.0.0.1:56756\n\n",
+  "passed": true,
+  "scope": "Startup and health only; widget behavior is covered separately by AppTest."
+}

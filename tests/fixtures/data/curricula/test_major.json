@@ -1,0 +1,15 @@
+{
+  "program_id": "TEST",
+  "program_name": "SYNTHETIC TEST MAJOR",
+  "catalog_year": "0000-0000",
+  "total_credits": 15,
+  "source_url": "none",
+  "retrieved": "2026-10-22",
+  "requirements": [
+    {"id": "r1", "type": "course", "code": "TEST 101"},
+    {"id": "r2", "type": "course", "code": "TEST 201"},
+    {"id": "r3", "type": "course", "code": "TEST 202"},
+    {"id": "r4", "type": "one_of", "label": "Choice", "options": ["TEST 301", "TEST 302"]},
+    {"id": "r5", "type": "elective", "category": "technical", "credits": 3, "approved": ["TEST 401", "TEST 402"]}
+  ]
+}

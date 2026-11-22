@@ -1,0 +1,3770 @@
+{
+ "_note": "Hand-encoded from catalog.ncat.edu 2025-2026 guides and the CS handbook; see docs/DATA_DICTIONARY.md",
+ "courses": {
+  "BIOL 100": {
+   "title": "Biological Science",
+   "credits": 4,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_SCIENCE"
+   ]
+  },
+  "BIOL 101": {
+   "title": "Concepts of Biology",
+   "credits": 4,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_SCIENCE"
+   ]
+  },
+  "BUAN 132": {
+   "title": "Introduction to Management Information Systems",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_BUSINESS"
+   ]
+  },
+  "BUAN 335": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "CAEE 101": {
+   "title": "Graphics in CAEE",
+   "credits": 2.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 121": {
+   "title": "CAEE Colloquium",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 204": {
+   "title": "Fundamentals of Surveying",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 230": {
+   "title": "Engineering Statics Lab",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 231": {
+   "title": "Engineering Statics",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 232": {
+   "title": "Solid Mechanics",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 240": {
+   "title": "Numerical Methods and Programming",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 304": {
+   "title": "Statistics and Reliability in CAEE",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 325": {
+   "title": "Structural Analysis",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 330": {
+   "title": "Construction Materials and Methods",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 334": {
+   "title": "Engineering Dynamics",
+   "credits": 2.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 335": {
+   "title": "Construction Materials and Methods Lab",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 362": {
+   "title": "Engineering Fluid Mechanics and Hydraulics",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 363": {
+   "title": "Engineering Fluids Mechanics Lab",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 401": {
+   "title": "FE General Topics Review",
+   "credits": 0.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 430": {
+   "title": "Structural Design in Steel",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 436": {
+   "title": "Reinforced Concrete Design",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CAEE 481": {
+   "title": "Construction Engineering",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CHEM 106": {
+   "title": "General Chemistry VI",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME"
+   ],
+   "used_in": [
+    "CE",
+    "EE",
+    "ISE",
+    "ME",
+    "list:CS_SCIENCE"
+   ]
+  },
+  "CHEM 107": {
+   "title": "General Chemistry VII",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_SCIENCE"
+   ]
+  },
+  "CHEM 116": {
+   "title": "General Chemistry VI Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME"
+   ],
+   "used_in": [
+    "CE",
+    "EE",
+    "ISE",
+    "ME",
+    "list:CS_SCIENCE"
+   ]
+  },
+  "CHEM 117": {
+   "title": "General Chemistry VII Laboratory",
+   "credits": 1,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_SCIENCE"
+   ]
+  },
+  "CIEN 281": {
+   "title": "Civil Engineering Land CAD",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CIEN 310": {
+   "title": "Introduction to Environmental Engineering",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CIEN 311": {
+   "title": "Environmental Engineering Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CIEN 320": {
+   "title": "Geotechnical Engineering",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CIEN 321": {
+   "title": "Geotechnical Engineering Lab",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CIEN 350": {
+   "title": "Transportation Engineering",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CIEN 364": {
+   "title": "Engineering Hydrology",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CIEN 405": {
+   "title": "FE Civil Topics Review",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CIEN 412": {
+   "title": "Environmental Engineering Design",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CIEN 422": {
+   "title": "Geotechnical Engineering Design",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CIEN 453": {
+   "title": "Transportation Engineering Design",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CIEN 483": {
+   "title": "Civil Engineering Capstone Design I",
+   "credits": 2.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "CIEN 484": {
+   "title": "Civil Engineering Capstone Design II",
+   "credits": 2.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE"
+   ],
+   "used_in": [
+    "CE"
+   ]
+  },
+  "COMP 120": {
+   "title": "Computers and Their Use",
+   "credits": 3,
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "Not for credit by CS majors",
+   "used_in": []
+  },
+  "COMP 121": {
+   "title": "Computer Science Freshmen Colloquium",
+   "credits": 1,
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "CS"
+   ]
+  },
+  "COMP 160": {
+   "title": "C Programming for Engineers",
+   "credits": 3.0,
+   "prereq": [],
+   "prereq_status": "none_listed",
+   "coreq": [],
+   "sources": [
+    "catalog:EE",
+    "handbook"
+   ],
+   "formerly": "GEEN 160",
+   "used_in": [
+    "EE"
+   ]
+  },
+  "COMP 161": {
+   "title": "Python for Data Science",
+   "credits": 3,
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": []
+  },
+  "COMP 163": {
+   "title": "Introduction to Computer Programming",
+   "credits": 3.0,
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "handbook"
+   ],
+   "formerly": "GEEN 163",
+   "min_grade": "C",
+   "used_in": [
+    "CPE",
+    "CS"
+   ]
+  },
+  "COMP 167": {
+   "title": "Computer Program Design",
+   "credits": 3.0,
+   "prereq": [
+    [
+     "COMP 163"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "handbook"
+   ],
+   "formerly": "GEEN 165",
+   "min_grade": "C",
+   "used_in": [
+    "CPE",
+    "CS"
+   ]
+  },
+  "COMP 170": {
+   "title": "Introduction to Web Engineering",
+   "credits": 4,
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": []
+  },
+  "COMP 180": {
+   "title": "Discrete Structures",
+   "credits": 3,
+   "prereq": [
+    [
+     "MATH 110",
+     "MATH 131"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "CS"
+   ]
+  },
+  "COMP 200": {
+   "title": "Computer Science Sophomore Colloquium",
+   "credits": 1,
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "Sophomore standing",
+   "used_in": [
+    "CS"
+   ]
+  },
+  "COMP 267": {
+   "title": "Database Design",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "CS"
+   ]
+  },
+  "COMP 280": {
+   "title": "Data Structures",
+   "credits": 3.0,
+   "prereq": [
+    [
+     "COMP 167"
+    ],
+    [
+     "MATH 123",
+     "COMP 180",
+     "ECEN 227"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "handbook"
+   ],
+   "min_grade": "C",
+   "used_in": [
+    "CPE",
+    "CS"
+   ]
+  },
+  "COMP 285": {
+   "title": "Design and Analysis of Computer Algorithms",
+   "credits": 3.0,
+   "prereq": [
+    [
+     "COMP 280"
+    ],
+    [
+     "MATH 131"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "handbook"
+   ],
+   "min_grade": "C",
+   "used_in": [
+    "CPE",
+    "CS"
+   ]
+  },
+  "COMP 300": {
+   "title": "Computer Science Junior Colloquium",
+   "credits": 1,
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "Junior standing",
+   "used_in": [
+    "CS"
+   ]
+  },
+  "COMP 320": {
+   "title": "Fundamentals of Cybersecurity",
+   "credits": 3,
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "Elective table (p.19) says Junior standing; course description says None",
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 321": {
+   "title": "Computer System Security",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 285"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 322": {
+   "title": "Internet Systems",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook",
+    "list"
+   ],
+   "used_in": [
+    "CS",
+    "list:CPE_TECH_BC"
+   ]
+  },
+  "COMP 323": {
+   "title": "Introduction to Health Care Information Systems",
+   "credits": 3,
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "Junior standing",
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 340": {
+   "title": "Game Intelligence",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 350": {
+   "title": "Operating Systems",
+   "credits": 3.0,
+   "prereq": [
+    [
+     "COMP 280"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "handbook"
+   ],
+   "used_in": [
+    "CPE",
+    "CS"
+   ]
+  },
+  "COMP 356": {
+   "title": "Computational Hip-Hop and Object-Oriented Design",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 163"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "or instructor's permission",
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 360": {
+   "title": "Programming Languages",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook",
+    "list"
+   ],
+   "used_in": [
+    "CS",
+    "list:CPE_TECH_BC"
+   ]
+  },
+  "COMP 361": {
+   "title": "Data Analytics in Python",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280"
+    ],
+    [
+     "MATH 351"
+    ],
+    [
+     "MATH 224",
+     "ISEN 370",
+     "ECEN 356"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "'Statistics Electives' interpreted as the handbook's approved statistics list",
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 363": {
+   "title": "Object Oriented Programming",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 365": {
+   "title": "Artificial Intelligence & Machine Learning",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 285"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "CS"
+   ]
+  },
+  "COMP 368": {
+   "title": "Object-Oriented Software Development",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 375": {
+   "title": "Computer Architecture and Organization",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280",
+     "ECEN 327"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_ARCH"
+   ]
+  },
+  "COMP 385": {
+   "title": "Theory of Computing",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 360"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "CS"
+   ]
+  },
+  "COMP 390": {
+   "title": "Social Implications of Computing",
+   "credits": 3,
+   "prereq": [],
+   "prereq_status": "none_listed",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "CS"
+   ]
+  },
+  "COMP 397": {
+   "title": "Co-operative Industrial Experience I",
+   "credits": 3,
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "Permission of advisor",
+   "used_in": []
+  },
+  "COMP 410": {
+   "title": "Software Engineering",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 285"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "CS"
+   ]
+  },
+  "COMP 411": {
+   "title": "Introduction to System Testing and Evaluation",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 410"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 420": {
+   "title": "Applied Network Security",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "or instructor's permission (elective table)",
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 421": {
+   "title": "Security Management for Information Systems",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 285"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 422": {
+   "title": "Information Privacy and Security",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "or instructor's permission (elective table)",
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 423": {
+   "title": "Web Security",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "or instructor's permission (elective table)",
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 440": {
+   "title": "Game Design",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 285"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 452": {
+   "title": "Network Science",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 285"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 453": {
+   "title": "Introduction to Computer Graphics",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 285"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 454": {
+   "title": "Virtual and Augmented Reality",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 463": {
+   "title": "Introduction to Compiler Design",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 285"
+    ],
+    [
+     "COMP 375"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 468": {
+   "title": "Introduction to Data Mining",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "or instructor's permission (elective table)",
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 469": {
+   "title": "Introduction to Parallel Programming",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 350"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "or consent of instructor",
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 476": {
+   "title": "Networked Computer Systems",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 280",
+     "ECEN 327"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "CS"
+   ]
+  },
+  "COMP 485": {
+   "title": "Special Topics in Computer Science",
+   "credits": 3,
+   "prereq": [],
+   "prereq_status": "none_listed",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "Instructor's permission (elective table)",
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 494": {
+   "title": "Independent Study",
+   "credits": 3,
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "prereq_note": "Permission of instructor",
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "COMP 495": {
+   "title": "Senior Project I",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 285"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "COMP 410"
+   ],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "CS"
+   ]
+  },
+  "COMP 496": {
+   "title": "Senior Project II",
+   "credits": 3,
+   "prereq": [
+    [
+     "COMP 410"
+    ],
+    [
+     "COMP 495"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "CS"
+   ]
+  },
+  "CST 340": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "ECEN 101": {
+   "title": "Introduction to Problem Solving for Electrical and Computer Engineers I",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 102": {
+   "title": "Introduction to Problem Solving for Electrical and Computer Engineers II",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 200": {
+   "title": "Electric Circuit Analysis",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 206": {
+   "title": "Instrumentation and Networks Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 212": {
+   "title": "Digital Logic",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 218": {
+   "title": "Digital Logic Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 227": {
+   "title": "Discrete Systems Modeling",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "handbook"
+   ],
+   "used_in": [
+    "CPE"
+   ]
+  },
+  "ECEN 300": {
+   "title": "Electric Circuit Analysis II",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 306": {
+   "title": "Circuits and Systems Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 320": {
+   "title": "Electronics I",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 323": {
+   "title": "Digital Systems Design I",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "list"
+   ],
+   "used_in": [
+    "CPE",
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 325": {
+   "title": "Introduction to Electromagnetics",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:EE"
+   ],
+   "used_in": [
+    "EE"
+   ]
+  },
+  "ECEN 326": {
+   "title": "Electronics I Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 327": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": []
+  },
+  "ECEN 329": {
+   "title": "Digital Systems Design I Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE"
+   ],
+   "used_in": [
+    "CPE"
+   ]
+  },
+  "ECEN 340": {
+   "title": "Electrical Circuits and Systems",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "ECEN 351": {
+   "title": "Introduction to Microprocessor-based Systems",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 356": {
+   "title": "Probability and Random Variables",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE",
+    "handbook"
+   ],
+   "used_in": [
+    "CPE",
+    "EE",
+    "list:CS_STATS"
+   ]
+  },
+  "ECEN 357": {
+   "title": "Microprocessor Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 375": {
+   "title": "Computer Architecture and Organization",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "handbook"
+   ],
+   "used_in": [
+    "CPE",
+    "list:CS_ARCH"
+   ]
+  },
+  "ECEN 377": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:CPE_TECH_B",
+    "list:CPE_TECH_BC"
+   ]
+  },
+  "ECEN 381": {
+   "title": "Computer Architecture Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE"
+   ],
+   "used_in": [
+    "CPE"
+   ]
+  },
+  "ECEN 400": {
+   "title": "Linear Systems and Signals",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 408": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 410": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_C"
+   ]
+  },
+  "ECEN 415": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:CPE_TECH_B",
+    "list:CPE_TECH_BC"
+   ]
+  },
+  "ECEN 421": {
+   "title": "Embedded Systems Design",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "list"
+   ],
+   "used_in": [
+    "CPE",
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 424": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:CPE_TECH_B",
+    "list:CPE_TECH_BC"
+   ]
+  },
+  "ECEN 426": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 427": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "ECEN 430": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_C"
+   ]
+  },
+  "ECEN 441": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:CPE_TECH_B",
+    "list:CPE_TECH_BC",
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 447": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:CPE_TECH_B",
+    "list:CPE_TECH_BC",
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 449": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 450": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 452": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 457": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:CPE_TECH_B",
+    "list:CPE_TECH_BC"
+   ]
+  },
+  "ECEN 459": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:CPE_TECH_B",
+    "list:CPE_TECH_BC",
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 460": {
+   "title": "Electronics II",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:EE"
+   ],
+   "used_in": [
+    "EE"
+   ]
+  },
+  "ECEN 461": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 462": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_C"
+   ]
+  },
+  "ECEN 466": {
+   "title": "Electronics II Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:EE"
+   ],
+   "used_in": [
+    "EE"
+   ]
+  },
+  "ECEN 468": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 470": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 472": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_C"
+   ]
+  },
+  "ECEN 474": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 477": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:EE_TECH_B"
+   ]
+  },
+  "ECEN 478": {
+   "title": "Senior Design Project I",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 479": {
+   "title": "Senior Design Project II",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "EE"
+   ]
+  },
+  "ECEN 485": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:CPE_TECH_B",
+    "list:CPE_TECH_BC"
+   ]
+  },
+  "ECON 200": {
+   "title": "Principles of Economics (Micro)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_BUSINESS",
+    "list:GENED_SOC"
+   ]
+  },
+  "ECON 201": {
+   "title": "Principles of Economics (Macro)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_BUSINESS",
+    "list:GENED_SOC"
+   ]
+  },
+  "ENGL 100": {
+   "title": "Ideas and Their Expression I",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:CPE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME"
+   ],
+   "used_in": [
+    "CE",
+    "CPE",
+    "CS",
+    "EE",
+    "ISE",
+    "ME"
+   ]
+  },
+  "ENGL 101": {
+   "title": "Ideas and Their Expression II",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:CPE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME"
+   ],
+   "used_in": [
+    "CE",
+    "CPE",
+    "CS",
+    "EE",
+    "ISE",
+    "ME"
+   ]
+  },
+  "ENGL 200": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_HUM"
+   ]
+  },
+  "ENGL 201": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_HUM"
+   ]
+  },
+  "ENGL 211": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_AFAM",
+    "list:GENED_HUM"
+   ]
+  },
+  "ENGL 212": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_AFAM",
+    "list:GENED_HUM"
+   ]
+  },
+  "ENGL 230": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_HUM"
+   ]
+  },
+  "ENGL 231": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_HUM"
+   ]
+  },
+  "ENGL 331": {
+   "title": "Writing Science & Technology",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "CS"
+   ]
+  },
+  "FCS 135": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_SOC"
+   ]
+  },
+  "FCS 181": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_SOC"
+   ]
+  },
+  "FCS 260": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_SOC"
+   ]
+  },
+  "FIN 279": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_SOC"
+   ]
+  },
+  "GEEN 100": {
+   "title": "Engineering Design and Ethics",
+   "credits": 2.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:CPE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME"
+   ],
+   "used_in": [
+    "CE",
+    "CPE",
+    "EE",
+    "ISE",
+    "ME"
+   ]
+  },
+  "GEEN 111": {
+   "title": "College of Engineering Colloquium I",
+   "credits": 1.0,
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:CPE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME",
+    "handbook"
+   ],
+   "prereq_note": "Freshman standing",
+   "used_in": [
+    "CE",
+    "CPE",
+    "CS",
+    "EE",
+    "ISE",
+    "ME"
+   ]
+  },
+  "HIST 103": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_AFAM",
+    "list:GENED_SOC"
+   ]
+  },
+  "HIST 104": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_SOC"
+   ]
+  },
+  "HIST 105": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_SOC"
+   ]
+  },
+  "HIST 106": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_AFAM",
+    "list:GENED_SOC"
+   ]
+  },
+  "HIST 107": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_AFAM",
+    "list:GENED_SOC"
+   ]
+  },
+  "HIST 130": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_GLOBAL",
+    "list:GENED_SOC"
+   ]
+  },
+  "HIST 206": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_GLOBAL",
+    "list:GENED_SOC"
+   ]
+  },
+  "HIST 207": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_GLOBAL",
+    "list:GENED_SOC"
+   ]
+  },
+  "HIST 216": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_GLOBAL",
+    "list:GENED_SOC"
+   ]
+  },
+  "HIST 231": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_GLOBAL",
+    "list:GENED_SOC"
+   ]
+  },
+  "ISEN 102": {
+   "title": "Graphical Visualization for Industrial and Systems Engineers",
+   "credits": 2.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 121": {
+   "title": "Industrial and Systems Engineering Colloquium",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 162": {
+   "title": "Computer Programming for Industrial and Systems Engineers",
+   "credits": 2.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 246": {
+   "title": "Industrial Production Processes",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 255": {
+   "title": "Methods Engineering",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 260": {
+   "title": "Engineering Economy",
+   "credits": 2.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:EE",
+    "catalog:ME"
+   ],
+   "used_in": [
+    "EE",
+    "ME"
+   ]
+  },
+  "ISEN 286": {
+   "title": "Engineering Teams and Leadership",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 324": {
+   "title": "Computer Aided Design and Manufacturing",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 361": {
+   "title": "Engineering Economic and Cost Analysis",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 370": {
+   "title": "Engineering Statistics",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE",
+    "catalog:ME",
+    "handbook"
+   ],
+   "credits_note": "catalog lists '0 or 3'",
+   "used_in": [
+    "ISE",
+    "ME",
+    "list:CS_STATS"
+   ]
+  },
+  "ISEN 380": {
+   "title": "Information Systems for Industrial and Systems Engineers",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 386": {
+   "title": "Systems Approaches for Industrial and Systems Engineers",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 400": {
+   "title": "Problem Solving in Industrial and Systems Engineering",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 415": {
+   "title": "Discrete Event Systems Modeling and Simulation",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE",
+    "handbook"
+   ],
+   "used_in": [
+    "ISE",
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "ISEN 425": {
+   "title": "Quality Engineering",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 430": {
+   "title": "Deterministic Operations Research",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 435": {
+   "title": "Stochastic Operations Research",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 440": {
+   "title": "Decision Support Systems for Industrial and Systems Engineers",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 455": {
+   "title": "Production Control",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 465": {
+   "title": "Facilities Design",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 471": {
+   "title": "Ergonomics",
+   "credits": 2.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 472": {
+   "title": "Cognitive Human Factors Engineering",
+   "credits": 2.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 475": {
+   "title": "Design of Experiments",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 480": {
+   "title": "Systems Engineering",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 486": {
+   "title": "Professionalism and Ethics for Industrial and Systems Engineers",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "ISEN 495": {
+   "title": "Design Projects in Industrial and Systems Engineering",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "JOMC 240": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_SOC"
+   ]
+  },
+  "LIBS 202": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_AFAM",
+    "list:GENED_HUM"
+   ]
+  },
+  "MATH 110": {
+   "title": "Pre-Calculus",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "credits_inferred": true,
+   "used_in": []
+  },
+  "MATH 123": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": []
+  },
+  "MATH 131": {
+   "title": "Calculus I",
+   "credits": 4.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:CPE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME"
+   ],
+   "min_grade_cs": "C-",
+   "used_in": [
+    "CE",
+    "CPE",
+    "CS",
+    "EE",
+    "ISE",
+    "ME"
+   ]
+  },
+  "MATH 132": {
+   "title": "Calculus II",
+   "credits": 4.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:CPE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME"
+   ],
+   "used_in": [
+    "CE",
+    "CPE",
+    "CS",
+    "EE",
+    "ISE",
+    "ME"
+   ]
+  },
+  "MATH 224": {
+   "title": "Probability & Statistics",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_STATS"
+   ]
+  },
+  "MATH 231": {
+   "title": "Calculus III",
+   "credits": 4.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:CPE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME"
+   ],
+   "used_in": [
+    "CE",
+    "CPE",
+    "EE",
+    "ISE",
+    "ME"
+   ]
+  },
+  "MATH 340": {
+   "title": "Numerical Methods",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_MATH"
+   ]
+  },
+  "MATH 341": {
+   "title": "Introduction to Differential Equations",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:CPE",
+    "catalog:EE",
+    "catalog:ME"
+   ],
+   "formerly": "MATH 431",
+   "used_in": [
+    "CE",
+    "CPE",
+    "CS",
+    "EE",
+    "ME"
+   ]
+  },
+  "MATH 351": {
+   "title": "Linear Algebra and Matrix Theory",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE",
+    "handbook"
+   ],
+   "formerly": "MATH 450",
+   "used_in": [
+    "ISE",
+    "list:CS_MATH"
+   ]
+  },
+  "MATH 365": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_COMP_ELECTIVES"
+   ]
+  },
+  "MEEN 104": {
+   "title": "Graphics for Mechanical Engineering",
+   "credits": 2.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 202": {
+   "title": "Mechanical Engineering Project Lab",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 210": {
+   "title": "Numerical Methods Using MATLAB",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 230": {
+   "title": "Statics and Mechanics of Materials",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:EE",
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "EE",
+    "ISE"
+   ]
+  },
+  "MEEN 231": {
+   "title": "Mechanics I, Statics",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 232": {
+   "title": "Strength of Materials",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 233": {
+   "title": "Mechanics II, Dynamics",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 241": {
+   "title": "Fundamentals of Thermodynamics",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 260": {
+   "title": "Materials Science",
+   "credits": 2.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "used_in": [
+    "ISE"
+   ]
+  },
+  "MEEN 261": {
+   "title": "Fundamentals of Materials Science",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 267": {
+   "title": "Mechanics and Materials Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 316": {
+   "title": "Fluid Mechanics",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 317": {
+   "title": "Thermal-Fluid Systems Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 321": {
+   "title": "Mechanical Engineering Design",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 324": {
+   "title": "System Dynamics",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 341": {
+   "title": "Applied Thermodynamics",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 343": {
+   "title": "Heat Transfer",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 361": {
+   "title": "Modern Engineering Materials",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 363": {
+   "title": "Manufacturing Processes",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 421": {
+   "title": "Design of Machine Elements",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 424": {
+   "title": "Vibrations and Controls",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 425": {
+   "title": "Mechanical Systems Laboratory",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 480": {
+   "title": "Mechanical Engineering Senior Project I",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 481": {
+   "title": "Mechanical Engineering Senior Project II",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MEEN 492": {
+   "title": "Senior Seminar",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ME"
+   ],
+   "used_in": [
+    "ME"
+   ]
+  },
+  "MGMT 110": {
+   "title": "Business Environment",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_BUSINESS"
+   ]
+  },
+  "MGMT 221": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_GLOBAL"
+   ]
+  },
+  "MKTG 230": {
+   "title": "Marketing",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "credits_inferred": true,
+   "used_in": [
+    "list:CS_BUSINESS"
+   ]
+  },
+  "MUSI 216": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_HUM"
+   ]
+  },
+  "MUSI 220": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_AFAM",
+    "list:GENED_HUM"
+   ]
+  },
+  "PHIL 101": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_HUM"
+   ]
+  },
+  "PHIL 103": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_GLOBAL",
+    "list:GENED_HUM"
+   ]
+  },
+  "PHIL 104": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_HUM"
+   ]
+  },
+  "PHIL 201": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_GLOBAL",
+    "list:GENED_HUM"
+   ]
+  },
+  "PHIL 266": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_HUM"
+   ]
+  },
+  "PHIL 267": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_HUM"
+   ]
+  },
+  "PHYS 241": {
+   "title": "General Physics I",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:CPE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME"
+   ],
+   "used_in": [
+    "CE",
+    "CPE",
+    "EE",
+    "ISE",
+    "ME",
+    "list:CS_SCIENCE"
+   ]
+  },
+  "PHYS 242": {
+   "title": "General Physics II",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:CPE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME"
+   ],
+   "used_in": [
+    "CE",
+    "CPE",
+    "EE",
+    "ISE",
+    "ME",
+    "list:CS_SCIENCE"
+   ]
+  },
+  "PHYS 251": {
+   "title": "General Physics I Lab",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:CPE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME"
+   ],
+   "used_in": [
+    "CE",
+    "CPE",
+    "EE",
+    "ISE",
+    "ME",
+    "list:CS_SCIENCE"
+   ]
+  },
+  "PHYS 252": {
+   "title": "General Physics II Lab",
+   "credits": 1.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CE",
+    "catalog:CPE",
+    "catalog:EE",
+    "catalog:ISE",
+    "catalog:ME"
+   ],
+   "used_in": [
+    "CE",
+    "CPE",
+    "EE",
+    "ISE",
+    "ME",
+    "list:CS_SCIENCE"
+   ]
+  },
+  "POLI 110": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_SOC"
+   ]
+  },
+  "PSYC 101": {
+   "title": "General Psychology",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:ISE"
+   ],
+   "formerly": "PSYC 320",
+   "used_in": [
+    "ISE",
+    "list:GENED_SOC"
+   ]
+  },
+  "SLMG 200": {
+   "title": "Soil Science",
+   "credits": 4,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "handbook"
+   ],
+   "used_in": [
+    "list:CS_SCIENCE"
+   ]
+  },
+  "SOCI 100": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_SOC"
+   ]
+  },
+  "SOCI 200": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_SOC"
+   ]
+  },
+  "SPCH 250": {
+   "title": "Speech Fundamentals",
+   "credits": 3.0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "catalog:CPE",
+    "catalog:EE"
+   ],
+   "used_in": [
+    "CPE",
+    "CS",
+    "EE",
+    "list:GENED_HUM"
+   ]
+  },
+  "SSFM 226": {
+   "title": "(title not in provided sources)",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "list"
+   ],
+   "title_missing": true,
+   "credits_inferred": true,
+   "used_in": [
+    "list:GENED_SOC"
+   ]
+  }
+ }
+}

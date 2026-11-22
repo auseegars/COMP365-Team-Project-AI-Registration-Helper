@@ -1,0 +1,349 @@
+{
+ "program_id": "CE",
+ "program_name": "B.S. Civil Engineering",
+ "catalog_year": "2025-2026",
+ "total_credits": 120,
+ "source_url": "https://catalog.ncat.edu/preview_program.php?catoid=19&poid=3086&returnto=766",
+ "source_detail": "Saved catalog page (curriculum guide)",
+ "retrieved": "2026-10-25",
+ "requirements": [
+  {
+   "id": "CE-01",
+   "type": "course",
+   "code": "GEEN 100",
+   "term": 1
+  },
+  {
+   "id": "CE-02",
+   "type": "course",
+   "code": "GEEN 111",
+   "term": 1
+  },
+  {
+   "id": "CE-03",
+   "type": "course",
+   "code": "CAEE 101",
+   "term": 1
+  },
+  {
+   "id": "CE-04",
+   "type": "course",
+   "code": "MATH 131",
+   "term": 1
+  },
+  {
+   "id": "CE-05",
+   "type": "course",
+   "code": "CHEM 106",
+   "term": 1
+  },
+  {
+   "id": "CE-06",
+   "type": "course",
+   "code": "CHEM 116",
+   "term": 1
+  },
+  {
+   "id": "CE-07",
+   "type": "course",
+   "code": "ENGL 100",
+   "term": 1
+  },
+  {
+   "id": "CE-08",
+   "type": "course",
+   "code": "MATH 132",
+   "term": 2
+  },
+  {
+   "id": "CE-09",
+   "type": "course",
+   "code": "ENGL 101",
+   "term": 2
+  },
+  {
+   "id": "CE-10",
+   "type": "course",
+   "code": "PHYS 241",
+   "term": 2
+  },
+  {
+   "id": "CE-11",
+   "type": "course",
+   "code": "PHYS 251",
+   "term": 2
+  },
+  {
+   "id": "CE-12",
+   "type": "course",
+   "code": "CAEE 121",
+   "term": 2
+  },
+  {
+   "id": "CE-13",
+   "type": "elective",
+   "label": "African American Electives",
+   "category": "african_american",
+   "credits": 3.0,
+   "term": 2,
+   "fill": "list",
+   "list_ref": "GENED_AFAM"
+  },
+  {
+   "id": "CE-14",
+   "type": "course",
+   "code": "MATH 231",
+   "term": 3
+  },
+  {
+   "id": "CE-15",
+   "type": "course",
+   "code": "CAEE 231",
+   "term": 3
+  },
+  {
+   "id": "CE-16",
+   "type": "course",
+   "code": "CAEE 230",
+   "term": 3
+  },
+  {
+   "id": "CE-17",
+   "type": "course",
+   "code": "PHYS 242",
+   "term": 3
+  },
+  {
+   "id": "CE-18",
+   "type": "course",
+   "code": "PHYS 252",
+   "term": 3
+  },
+  {
+   "id": "CE-19",
+   "type": "course",
+   "code": "CAEE 204",
+   "term": 3
+  },
+  {
+   "id": "CE-20",
+   "type": "course",
+   "code": "MATH 341",
+   "term": 4
+  },
+  {
+   "id": "CE-21",
+   "type": "course",
+   "code": "CIEN 281",
+   "term": 4
+  },
+  {
+   "id": "CE-22",
+   "type": "course",
+   "code": "CAEE 362",
+   "term": 4
+  },
+  {
+   "id": "CE-23",
+   "type": "course",
+   "code": "CAEE 363",
+   "term": 4
+  },
+  {
+   "id": "CE-24",
+   "type": "course",
+   "code": "CAEE 232",
+   "term": 4
+  },
+  {
+   "id": "CE-25",
+   "type": "course",
+   "code": "CAEE 240",
+   "term": 4
+  },
+  {
+   "id": "CE-26",
+   "type": "elective",
+   "label": "Global Studies Electives",
+   "category": "global_awareness",
+   "credits": 3.0,
+   "term": 4,
+   "fill": "list",
+   "list_ref": "GENED_GLOBAL"
+  },
+  {
+   "id": "CE-27",
+   "type": "course",
+   "code": "CAEE 325",
+   "term": 5
+  },
+  {
+   "id": "CE-28",
+   "type": "course",
+   "code": "CAEE 330",
+   "term": 5
+  },
+  {
+   "id": "CE-29",
+   "type": "course",
+   "code": "CAEE 335",
+   "term": 5
+  },
+  {
+   "id": "CE-30",
+   "type": "course",
+   "code": "CIEN 350",
+   "term": 5
+  },
+  {
+   "id": "CE-31",
+   "type": "course",
+   "code": "CIEN 320",
+   "term": 5
+  },
+  {
+   "id": "CE-32",
+   "type": "course",
+   "code": "CIEN 321",
+   "term": 5
+  },
+  {
+   "id": "CE-33",
+   "type": "course",
+   "code": "CAEE 401",
+   "term": 5
+  },
+  {
+   "id": "CE-34",
+   "type": "course",
+   "code": "CIEN 310",
+   "term": 6
+  },
+  {
+   "id": "CE-35",
+   "type": "course",
+   "code": "CIEN 311",
+   "term": 6
+  },
+  {
+   "id": "CE-36",
+   "type": "course",
+   "code": "CIEN 422",
+   "term": 6
+  },
+  {
+   "id": "CE-37",
+   "type": "course",
+   "code": "CAEE 304",
+   "term": 6
+  },
+  {
+   "id": "CE-38",
+   "type": "course",
+   "code": "CIEN 364",
+   "term": 6
+  },
+  {
+   "id": "CE-39",
+   "type": "course",
+   "code": "CAEE 430",
+   "term": 6
+  },
+  {
+   "id": "CE-40",
+   "type": "course",
+   "code": "CIEN 483",
+   "term": 7
+  },
+  {
+   "id": "CE-41",
+   "type": "course",
+   "code": "CAEE 436",
+   "term": 7
+  },
+  {
+   "id": "CE-42",
+   "type": "course",
+   "code": "CAEE 481",
+   "term": 7
+  },
+  {
+   "id": "CE-43",
+   "type": "course",
+   "code": "CIEN 412",
+   "term": 7
+  },
+  {
+   "id": "CE-44",
+   "type": "course",
+   "code": "CAEE 334",
+   "term": 7
+  },
+  {
+   "id": "CE-45",
+   "type": "elective",
+   "label": "Humanities Elective",
+   "category": "humanities",
+   "credits": 3.0,
+   "term": 7,
+   "fill": "list",
+   "list_ref": "GENED_HUM"
+  },
+  {
+   "id": "CE-46",
+   "type": "course",
+   "code": "CIEN 484",
+   "term": 8
+  },
+  {
+   "id": "CE-47",
+   "type": "course",
+   "code": "CIEN 453",
+   "term": 8
+  },
+  {
+   "id": "CE-48",
+   "type": "course",
+   "code": "CIEN 405",
+   "term": 8
+  },
+  {
+   "id": "CE-49",
+   "type": "elective",
+   "label": "Social Science Elective",
+   "category": "science",
+   "credits": 3.0,
+   "term": 8,
+   "fill": "attest"
+  },
+  {
+   "id": "CE-50",
+   "type": "elective",
+   "label": "Science Electives",
+   "category": "science",
+   "credits": 3.0,
+   "term": 8,
+   "fill": "attest"
+  }
+ ],
+ "min_grade": {
+  "C-": [
+   "MATH 131",
+   "MATH 132",
+   "MATH 231",
+   "PHYS 241",
+   "CHEM 106",
+   "CAEE 231",
+   "CAEE 232",
+   "CAEE 362"
+  ]
+ },
+ "notes": [
+  "CIEN 483 is increased to 2 credits (from 1)",
+  "CAEE 334 is reduced to 2 credits (from 3)"
+ ],
+ "known_discrepancies": [
+  "Freshman Year Second Semester: catalog Semester Total says 14 but the listed courses sum to 15.0",
+  "Listed courses sum to 121 credits but the catalog states 120"
+ ]
+}

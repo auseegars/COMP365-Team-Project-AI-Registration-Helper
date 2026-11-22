@@ -1,0 +1,17 @@
+{
+  "health": 200,
+  "workflows": {
+    "overview": "Loaded synthetic records and rendered recent requests.",
+    "information": {
+      "question": "How do I add or drop a class?",
+      "source": "https://www.ncat.edu/registrar/registration.php",
+      "mode": "Retrieval only. Semantic search requires a usable local embedding model and index."
+    },
+    "electives": {
+      "top_result": "1. COMP 320 · Fundamentals of Cybersecurity",
+      "top_score": "Ranking score 0.503 · Interest similarity 0.338 · Synthetic peer rating 4.00/5 (1 ratings)"
+    },
+    "advisor_queue": "Loaded synthetic high urgency requests."
+  },
+  "page_errors": []
+}
