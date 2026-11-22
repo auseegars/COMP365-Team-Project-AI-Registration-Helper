@@ -1,0 +1,468 @@
+{
+ "_note": "SYNTHETIC survey responses for developing/testing the elective recommender (owner: Ryan Kevena). No real students; generated with a fixed seed. Replace with real volunteer responses before reporting results.",
+ "instrument_version": 1,
+ "n": 28,
+ "responses": [
+  {
+   "student_id": "SRV-01",
+   "major": "CS",
+   "interests": [
+    "computer_graphics",
+    "data_analytics",
+    "management_business"
+   ],
+   "ratings": {
+    "BUAN 335": 3,
+    "COMP 323": 4,
+    "COMP 361": 4,
+    "COMP 421": 4,
+    "COMP 440": 3,
+    "COMP 452": 5,
+    "COMP 454": 5,
+    "COMP 468": 4,
+    "COMP 469": 2
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-02",
+   "major": "CS",
+   "interests": [
+    "software_engineering"
+   ],
+   "ratings": {
+    "COMP 321": 2,
+    "COMP 340": 1,
+    "COMP 356": 5,
+    "COMP 363": 3,
+    "COMP 368": 3,
+    "COMP 411": 4,
+    "COMP 469": 2
+   },
+   "goal": "software engineer"
+  },
+  {
+   "student_id": "SRV-03",
+   "major": "CS",
+   "interests": [
+    "systems_programming",
+    "data_analytics"
+   ],
+   "ratings": {
+    "COMP 323": 5,
+    "COMP 356": 2,
+    "COMP 361": 5,
+    "COMP 411": 3,
+    "COMP 463": 4,
+    "COMP 468": 5,
+    "COMP 469": 5
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-04",
+   "major": "CS",
+   "interests": [
+    "networks"
+   ],
+   "ratings": {
+    "COMP 420": 4,
+    "COMP 452": 5,
+    "COMP 463": 3
+   },
+   "goal": "network engineer"
+  },
+  {
+   "student_id": "SRV-05",
+   "major": "CS",
+   "interests": [
+    "management_business",
+    "game_design"
+   ],
+   "ratings": {
+    "BUAN 335": 5,
+    "COMP 323": 4,
+    "COMP 340": 5,
+    "COMP 421": 4,
+    "COMP 440": 5,
+    "COMP 454": 3,
+    "COMP 468": 2
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-06",
+   "major": "CS",
+   "interests": [
+    "computer_graphics",
+    "game_design"
+   ],
+   "ratings": {
+    "BUAN 335": 1,
+    "COMP 340": 4,
+    "COMP 420": 3,
+    "COMP 440": 4,
+    "COMP 453": 5,
+    "COMP 454": 4,
+    "COMP 469": 1
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-07",
+   "major": "CS",
+   "interests": [
+    "hci_ar_vr",
+    "cybersecurity",
+    "software_engineering"
+   ],
+   "ratings": {
+    "COMP 320": 4,
+    "COMP 321": 5,
+    "COMP 356": 4,
+    "COMP 368": 5,
+    "COMP 411": 5,
+    "COMP 421": 5,
+    "COMP 422": 5,
+    "COMP 440": 4,
+    "COMP 453": 2,
+    "COMP 454": 4
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-08",
+   "major": "CS",
+   "interests": [
+    "data_analytics"
+   ],
+   "ratings": {
+    "COMP 323": 4,
+    "COMP 422": 2,
+    "COMP 468": 3
+   },
+   "goal": "data scientist"
+  },
+  {
+   "student_id": "SRV-09",
+   "major": "CS",
+   "interests": [
+    "hci_ar_vr",
+    "systems_programming"
+   ],
+   "ratings": {
+    "COMP 340": 1,
+    "COMP 440": 5,
+    "COMP 454": 5,
+    "COMP 463": 5,
+    "COMP 469": 5
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-10",
+   "major": "CS",
+   "interests": [
+    "software_engineering"
+   ],
+   "ratings": {
+    "COMP 356": 4,
+    "COMP 363": 5,
+    "COMP 368": 4,
+    "COMP 411": 5
+   },
+   "goal": "software engineer"
+  },
+  {
+   "student_id": "SRV-11",
+   "major": "CS",
+   "interests": [
+    "management_business"
+   ],
+   "ratings": {
+    "BUAN 335": 5,
+    "COMP 323": 4,
+    "COMP 421": 5,
+    "COMP 453": 3,
+    "COMP 454": 2
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-12",
+   "major": "CS",
+   "interests": [
+    "networks"
+   ],
+   "ratings": {
+    "COMP 321": 2,
+    "COMP 420": 4,
+    "COMP 452": 3,
+    "COMP 453": 2
+   },
+   "goal": "network engineer"
+  },
+  {
+   "student_id": "SRV-13",
+   "major": "CS",
+   "interests": [
+    "management_business"
+   ],
+   "ratings": {
+    "BUAN 335": 3,
+    "COMP 320": 2,
+    "COMP 323": 4,
+    "COMP 421": 3,
+    "COMP 423": 3
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-14",
+   "major": "CS",
+   "interests": [
+    "game_design"
+   ],
+   "ratings": {
+    "COMP 321": 2,
+    "COMP 340": 4,
+    "COMP 440": 5,
+    "COMP 454": 5
+   },
+   "goal": "game developer"
+  },
+  {
+   "student_id": "SRV-15",
+   "major": "CS",
+   "interests": [
+    "hci_ar_vr",
+    "management_business"
+   ],
+   "ratings": {
+    "BUAN 335": 3,
+    "COMP 323": 5,
+    "COMP 421": 5,
+    "COMP 423": 3,
+    "COMP 440": 4,
+    "COMP 454": 4
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-16",
+   "major": "CS",
+   "interests": [
+    "bioinformatics_health",
+    "game_design"
+   ],
+   "ratings": {
+    "COMP 323": 5,
+    "COMP 340": 3,
+    "COMP 361": 4,
+    "COMP 454": 5
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-17",
+   "major": "CS",
+   "interests": [
+    "computer_graphics"
+   ],
+   "ratings": {
+    "COMP 440": 4,
+    "COMP 453": 3,
+    "COMP 454": 5,
+    "COMP 468": 3,
+    "COMP 469": 1
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-18",
+   "major": "CS",
+   "interests": [
+    "software_engineering",
+    "hci_ar_vr"
+   ],
+   "ratings": {
+    "COMP 356": 4,
+    "COMP 363": 4,
+    "COMP 368": 4,
+    "COMP 411": 3,
+    "COMP 440": 5,
+    "COMP 453": 2,
+    "COMP 454": 5
+   },
+   "goal": "software engineer"
+  },
+  {
+   "student_id": "SRV-19",
+   "major": "CS",
+   "interests": [
+    "computer_graphics",
+    "bioinformatics_health"
+   ],
+   "ratings": {
+    "COMP 323": 4,
+    "COMP 361": 4,
+    "COMP 453": 5,
+    "COMP 454": 4
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-20",
+   "major": "CS",
+   "interests": [
+    "networks"
+   ],
+   "ratings": {
+    "COMP 320": 2,
+    "COMP 368": 2,
+    "COMP 420": 3,
+    "COMP 452": 4
+   },
+   "goal": "network engineer"
+  },
+  {
+   "student_id": "SRV-21",
+   "major": "CS",
+   "interests": [
+    "bioinformatics_health",
+    "data_analytics"
+   ],
+   "ratings": {
+    "COMP 320": 2,
+    "COMP 323": 3,
+    "COMP 361": 4,
+    "COMP 421": 3,
+    "COMP 463": 3,
+    "COMP 468": 4
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-22",
+   "major": "CS",
+   "interests": [
+    "hci_ar_vr",
+    "ai_ml"
+   ],
+   "ratings": {
+    "COMP 340": 4,
+    "COMP 422": 3,
+    "COMP 440": 4,
+    "COMP 452": 4,
+    "COMP 454": 4,
+    "COMP 468": 4
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-23",
+   "major": "CS",
+   "interests": [
+    "management_business"
+   ],
+   "ratings": {
+    "BUAN 335": 4,
+    "COMP 323": 4,
+    "COMP 420": 3,
+    "COMP 454": 1
+   },
+   "goal": ""
+  },
+  {
+   "student_id": "SRV-24",
+   "major": "CS",
+   "interests": [
+    "game_design",
+    "systems_programming"
+   ],
+   "ratings": {
+    "COMP 340": 5,
+    "COMP 361": 1,
+    "COMP 440": 4,
+    "COMP 454": 4,
+    "COMP 463": 5,
+    "COMP 469": 4
+   },
+   "goal": "game developer"
+  },
+  {
+   "student_id": "SRV-25",
+   "major": "CS",
+   "interests": [
+    "game_design",
+    "software_engineering"
+   ],
+   "ratings": {
+    "COMP 340": 3,
+    "COMP 356": 4,
+    "COMP 363": 5,
+    "COMP 368": 4,
+    "COMP 411": 4,
+    "COMP 440": 4,
+    "COMP 468": 3
+   },
+   "goal": "game developer"
+  },
+  {
+   "student_id": "SRV-26",
+   "major": "CS",
+   "interests": [
+    "data_analytics",
+    "software_engineering"
+   ],
+   "ratings": {
+    "COMP 323": 4,
+    "COMP 356": 3,
+    "COMP 361": 3,
+    "COMP 363": 4,
+    "COMP 368": 4,
+    "COMP 411": 4,
+    "COMP 422": 1,
+    "COMP 452": 4,
+    "COMP 468": 4
+   },
+   "goal": "data scientist"
+  },
+  {
+   "student_id": "SRV-27",
+   "major": "CS",
+   "interests": [
+    "networks",
+    "computer_graphics"
+   ],
+   "ratings": {
+    "COMP 323": 3,
+    "COMP 423": 5,
+    "COMP 440": 5,
+    "COMP 452": 3,
+    "COMP 454": 3,
+    "COMP 463": 1,
+    "COMP 468": 2
+   },
+   "goal": "network engineer"
+  },
+  {
+   "student_id": "SRV-28",
+   "major": "CS",
+   "interests": [
+    "networks",
+    "management_business"
+   ],
+   "ratings": {
+    "COMP 323": 5,
+    "COMP 363": 2,
+    "COMP 420": 5,
+    "COMP 421": 4,
+    "COMP 423": 3,
+    "COMP 452": 3,
+    "COMP 454": 1
+   },
+   "goal": "network engineer"
+  }
+ ]
+}

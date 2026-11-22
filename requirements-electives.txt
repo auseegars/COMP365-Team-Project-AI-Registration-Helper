@@ -1,0 +1,5 @@
+# Optional dependencies for the elective recommender (owner: Ryan Kevena).
+# The recommender runs without these (it falls back to a bag-of-words similarity);
+# install them to use sentence-transformer embeddings for interest matching.
+numpy
+sentence-transformers
