@@ -48,18 +48,39 @@ class RealData(unittest.TestCase):
     def test_cs_senior_project_needs_410_corequisite_data(self):
         self.assertEqual(courses["COMP 495"]["coreq"], ["COMP 410"])
 
-    def test_cs_transfer_student_via_generic_codes(self):
-        # Guilford Tech student with the handbook's CS transfer courses
+    def test_cs_transfer_student_guilford_tool_rows(self):
+        # Rows taken from the A&T Transfer Articulation Tool for Guilford Tech (retrieved 2026-11-10)
         tr = [{"institution_id": "GTCC", "course": c} for c in
-              ("ENG 111", "ENG 112", "MAT 271", "MAT 272", "CSC 151", "CSC 251", "MAT 167", "BUS 110")]
+              ("ENG 111", "ENG 112", "MAT 271", "MAT 272", "CSC 151", "CSC 251", "MAT 167")]
         r = run("CS", {"completed": [], "transfer": tr})
         sat = set(r.satisfied)
         codes = {q["code"] for q in cur["CS"]["requirements"] if q["type"] == "course" and q["id"] in sat}
-        self.assertTrue({"ENGL 100", "ENGL 101", "MATH 131", "MATH 132", "COMP 163", "COMP 167", "COMP 180"} <= codes)
-        business = next(q["id"] for q in cur["CS"]["requirements"] if q.get("category") == "business")
-        self.assertIn(business, sat)                      # BUS 110 -> business elective
+        self.assertTrue({"ENGL 100", "ENGL 101", "MATH 131", "MATH 132", "COMP 163", "COMP 167"} <= codes)
+        # the 2016 handbook said MAT 167 -> COMP 180; the A&T tool says MATH 123, so COMP 180 stays open
+        self.assertNotIn("COMP 180", codes)
         self.assertEqual(r.transfer_unmatched, [])
-        self.assertIn("COMP 280", r.eligible_now)         # COMP 167 + COMP 180 now done
+
+    def test_or_alternative_picks_the_one_the_curriculum_needs(self):
+        # Alamance/Guilford list "CSC 151 -> COMP 163 OR CST 240"; only COMP 163 is in the CS curriculum
+        gt = tmap[("GTCC", "CSC 151")]
+        self.assertIn("COMP 163", gt["ncat_equivalent"])
+        # a synthetic OR entry: both options real courses, the audit should take the one still needed
+        fake = dict(gt, alternatives=[["COMP 163"], ["COMP 167"]], ncat_equivalent=["COMP 163"])
+        m = {**tmap, ("GTCC", "CSC 151"): fake}
+        r = da.audit({"completed": ["COMP 163"], "transfer": [{"institution_id": "GTCC", "course": "CSC 151"}]},
+                     cur["CS"], courses, m, lists)
+        self.assertIn(next(q["id"] for q in cur["CS"]["requirements"] if q.get("code") == "COMP 167"), r.satisfied)
+
+    def test_seed_rows_still_apply_to_unlisted_colleges(self):
+        # 2016 handbook seed (institution 'NCCCS') is the fallback when a college has no row of its own
+        tr = [{"institution_id": "NCCCS", "course": c} for c in ("ENG 111", "MAT 167", "BUS 110")]
+        r = run("CS", {"completed": [], "transfer": tr})
+        sat = set(r.satisfied)
+        codes = {q["code"] for q in cur["CS"]["requirements"] if q["type"] == "course" and q["id"] in sat}
+        self.assertTrue({"ENGL 100", "COMP 180"} <= codes)
+        business = next(q["id"] for q in cur["CS"]["requirements"] if q.get("category") == "business")
+        self.assertIn(business, sat)
+        self.assertEqual(r.transfer_unmatched, [])
 
     def test_net_pair_needs_both_courses(self):
         one = run("CS", {"completed": [], "transfer": [{"institution_id": "GTCC", "course": "NET 110"}]})
