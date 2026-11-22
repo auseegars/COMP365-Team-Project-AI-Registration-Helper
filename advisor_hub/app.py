@@ -175,9 +175,9 @@ def main() -> None:
     hub = st.session_state.hub
     with st.sidebar:
         st.title("Aggies Enroll")
-        st.caption("ADVISOR HUB · COMP365")
+        st.caption("Student and advisor workspace · COMP 365")
         page = st.radio("Navigation", ("Overview", "Information Assistant", "Degree Audit", "Schedule Builder",
-                                       "Student Requests", "Appointments", "Advisor Queue"))
+                                       "Elective Recommendations", "Student Requests", "Appointments", "Advisor Queue"))
         st.divider()
         st.subheader("Demonstration tools")
         st.caption("Optional fictional records. Repeated loads do not add duplicates.")
@@ -196,12 +196,14 @@ def main() -> None:
         from advisor_hub.information_page import information_page
 
         information_page(st, hub)
-    elif page in {"Degree Audit", "Schedule Builder"}:
+    elif page in {"Degree Audit", "Schedule Builder", "Elective Recommendations"}:
         from advisor_hub.audit_page import degree_audit_page
+        from advisor_hub.elective_page import elective_page
         from advisor_hub.schedule_page import schedule_page
 
         try:
-            {"Degree Audit": degree_audit_page, "Schedule Builder": schedule_page}[page](st, hub)
+            {"Degree Audit": degree_audit_page, "Schedule Builder": schedule_page,
+             "Elective Recommendations": elective_page}[page](st, hub)
         except (OSError, ValueError, KeyError, ImportError):
             st.error(f"{page} is unavailable. Check the component dependencies and project data files.")
     else:
