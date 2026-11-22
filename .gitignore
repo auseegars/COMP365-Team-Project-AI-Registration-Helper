@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .venv/
+.venv-cp3/
 .DS_Store
 # never commit real student records (FERPA)
 data/private/

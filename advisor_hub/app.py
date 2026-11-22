@@ -176,7 +176,7 @@ def main() -> None:
     with st.sidebar:
         st.title("Aggies Enroll")
         st.caption("ADVISOR HUB · COMP365")
-        page = st.radio("Navigation", ("Overview", "Student Requests", "Advisor Queue", "Appointments"))
+        page = st.radio("Navigation", ("Overview", "Information Assistant", "Student Requests", "Appointments", "Advisor Queue"))
         st.divider()
         st.subheader("Demonstration tools")
         st.caption("Optional fictional records. Repeated loads do not add duplicates.")
@@ -191,8 +191,13 @@ def main() -> None:
         st.caption("Temporary session storage. Closing or resetting the session may remove all records. Use no real student or protected academic information.")
     st.title("Advisor Hub")
     st.caption("Aggies Enroll · Student project prototype · Not an official NC A&T university service")
-    {"Overview": overview, "Student Requests": student_requests,
-     "Advisor Queue": advisor_queue, "Appointments": appointments}[page](st, hub)
+    if page == "Information Assistant":
+        from advisor_hub.information_page import information_page
+
+        information_page(st, hub)
+    else:
+        {"Overview": overview, "Student Requests": student_requests,
+         "Advisor Queue": advisor_queue, "Appointments": appointments}[page](st, hub)
 
 
 if __name__ == "__main__":
