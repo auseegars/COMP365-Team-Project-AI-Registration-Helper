@@ -1,0 +1,8 @@
+﻿Elective recommender - evaluation (synthetic survey data)
+  respondents scored : 28
+  precision@5 hybrid : 0.436
+  precision@5 popular: 0.329  (most-popular baseline)
+  hybrid beats baseline: True
+  eligibility         : 75/75 recommendations eligible (100%)
+
+Note: synthetic responses only; rerun on the 40 real profiles / real survey before reporting.
