@@ -1,0 +1,39 @@
+{
+  "_note": "Student interest + elective-rating survey for the elective recommender (owner: Ryan Kevena). Collected from volunteers; no grades or records are used.",
+  "title": "Aggies Enroll - Elective Interest Survey",
+  "version": 1,
+  "retrieved": "2026-11-22",
+  "instructions": "Pick the areas you are most interested in, then rate any electives you have taken or know about from 1 (not for me) to 5 (loved it). Skip anything you have not taken.",
+  "interest_question": {
+    "id": "interests",
+    "prompt": "Which areas are you most interested in? (choose any)",
+    "type": "multi_select",
+    "options": [
+      {"tag": "ai_ml", "label": "AI & Machine Learning"},
+      {"tag": "cybersecurity", "label": "Cybersecurity"},
+      {"tag": "data_analytics", "label": "Data Analytics & Data Science"},
+      {"tag": "software_engineering", "label": "Software Engineering"},
+      {"tag": "systems_programming", "label": "Systems & Low-level Programming"},
+      {"tag": "networks", "label": "Networking"},
+      {"tag": "computer_graphics", "label": "Computer Graphics"},
+      {"tag": "game_design", "label": "Game Design"},
+      {"tag": "theory_algorithms", "label": "Theory & Algorithms"},
+      {"tag": "hci_ar_vr", "label": "HCI, AR & VR"},
+      {"tag": "hardware_embedded", "label": "Hardware & Embedded"},
+      {"tag": "simulation_modeling", "label": "Simulation & Modeling"},
+      {"tag": "bioinformatics_health", "label": "Health & Bioinformatics"},
+      {"tag": "management_business", "label": "Tech Management & Business"}
+    ]
+  },
+  "rating_question": {
+    "id": "ratings",
+    "prompt": "Rate electives you have taken or know (1-5).",
+    "type": "course_ratings",
+    "scale": {"min": 1, "max": 5}
+  },
+  "optional_free_text": {
+    "id": "goal",
+    "prompt": "In one line, what do you want to do after graduation? (optional)",
+    "type": "text"
+  }
+}
