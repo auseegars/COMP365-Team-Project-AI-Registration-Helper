@@ -1,6 +1,24 @@
 """Degree-audit rule engine for Aggies Enroll.
 
-Owner: Ayana Seegars.  Consumed by: Ryan Travers (schedule builder)
+Owner: Ayana Seegars.  Consumed by: Ryan Travers (schedule builder), Ryan Kevena (elective recommender).
+Standard library only.
+
+Data files (see docs/DATA_DICTIONARY.md):
+  data/courses.json               {code: {title, credits, prereq, prereq_status, coreq, ...}}
+  data/lists.json                 named approved-course lists used by elective slots
+  data/curricula/<id>.json        one program's requirements
+  data/transfer/transfer_map.json community-college -> A&T equivalencies
+
+Prerequisites are in conjunctive normal form: a list of OR-groups that must ALL
+be satisfied.  [["MATH 131"], ["COMP 167", "COMP 165"]] = MATH 131 AND (COMP 167 OR COMP 165).
+[] = no prerequisite.  null (with prereq_status "unknown") = not yet entered from the catalog;
+the engine does not block on it but reports it in `unverified_prereqs`.
+
+Known limits (reported in docs, not silently ignored):
+  * minimum-grade rules (C / C-) are stored in the curricula but not enforced (profiles carry no grades)
+  * non-course prerequisites (standing, permission) live in `prereq_note` and are not enforced
+  * "pick N from group" rules inside a footnote (e.g. EE max 2 per area, CS science Group 1/2)
+    are checked by credits from the approved pool only
 """
 from __future__ import annotations
 
@@ -51,13 +69,39 @@ def matches(code: str, pattern: str) -> bool:
 
 
 # ---------------------------------------------------------------- transfer
-def apply_transfer_credit(profile, transfer_map):
+def _alternatives(e):
+    """List of alternative A&T code sets for a direct entry (each set = courses awarded together)."""
+    return e.get("alternatives") or [e.get("ncat_equivalent", [])]
+
+
+def _pick_alternative(alts, done, want_fixed, want_patterns):
+    """When A&T lists 'X OR Y', the student ends up with one of them.  Pick the one that helps most:
+    +2 per code that fills a still-open fixed requirement, +1 per code that fits an elective pool."""
+    def score(alt):
+        sc = 0
+        for c in alt:
+            c = norm(c)
+            if c in done:
+                continue
+            if c in want_fixed:
+                sc += 2
+            elif any(matches(c, p) for p in want_patterns):
+                sc += 1
+        return sc
+    return max(alts, key=score)          # max() keeps the first listed alternative on ties
+
+
+def apply_transfer_credit(profile, transfer_map, want_fixed=None, want_patterns=None, done=None):
     """Translate transfer courses into A&T credit.
 
     profile["transfer"] = [{"institution_id": "GTCC", "course": "MAT 271"}, ...]
     Lookup tries (institution, course) then ('NCCCS', course).
+    An entry may carry "alternatives" (A&T 'OR' options, each a list of codes awarded together);
+    `want_fixed` / `want_patterns` / `done` tell the engine which alternative is most useful.
     Returns (ncat_codes_earned, generic_elective_credits, {category: credits}, unmatched).
     """
+    want_fixed, want_patterns = set(want_fixed or ()), list(want_patterns or ())
+    done = set(done or ())
     by_inst = {}
     for t in profile.get("transfer", []):
         by_inst.setdefault(t["institution_id"], set()).add(norm(t["course"]))
@@ -73,7 +117,8 @@ def apply_transfer_credit(profile, transfer_map):
             unmatched.append({**t, "reason": "needs " + ", ".join(e["also_requires"])})
             continue
         if e["status"] == "direct":
-            earned.update(norm(c) for c in e["ncat_equivalent"])
+            alt = _pick_alternative(_alternatives(e), done | earned, want_fixed, want_patterns)
+            earned.update(norm(c) for c in alt)
         elif e["status"] == "category":
             cats[e["category"]] = cats.get(e["category"], 0.0) + float(e["credits"])
         elif e["status"] == "elective":
@@ -94,7 +139,7 @@ def prereqs_met(code, courses, done):
 
 def prereq_depth(code, courses, _memo=None, _stack=None):
     """Length of the longest prerequisite chain ending at `code` (shallowest option inside an OR-group).
-    Used by Caleb's planner to order courses along the critical path."""
+    Used by planners to order courses along the critical path."""
     memo = {} if _memo is None else _memo
     stack = set() if _stack is None else _stack
     if code in memo:
@@ -157,7 +202,10 @@ def audit(profile, curriculum, courses, transfer_map=None, lists=None):
     lists = lists or {}
     done = {norm(c) for c in profile.get("completed", [])}
     in_prog = {norm(c) for c in profile.get("in_progress", [])}
-    t_codes, t_generic, t_cats, unmatched = apply_transfer_credit(profile, transfer_map)
+    want_fixed = {norm(r["code"]) for r in curriculum["requirements"] if r["type"] == "course"}
+    want_fixed |= {norm(o) for r in curriculum["requirements"] if r["type"] == "one_of" for o in r["options"]}
+    want_patterns = [p for r in curriculum["requirements"] if r["type"] == "elective" for p in elective_pool(r, lists)]
+    t_codes, t_generic, t_cats, unmatched = apply_transfer_credit(profile, transfer_map, want_fixed, want_patterns, done)
     done |= t_codes
     attested = set(profile.get("satisfied_electives", []))
 
@@ -187,20 +235,30 @@ def audit(profile, curriculum, courses, transfer_map=None, lists=None):
     electives = [r for r in curriculum["requirements"] if r["type"] == "elective"]
     order = sorted(electives, key=lambda r: (r.get("fill") == "any", len(elective_pool(r, lists)) or 10**6, r["id"]))
     status = {}
-    for req in order:
+    pools = {r["id"]: elective_pool(r, lists) for r in electives}
+
+    def other_slots(code, current, pending):
+        """How many other still-open list slots this course could fill (fewer = use it here first)."""
+        return sum(1 for r in pending if r is not current and r.get("fill") not in ("any", "attest")
+                   and any(matches(code, p) for p in pools[r["id"]]))
+
+    for i, req in enumerate(order):
         need, fill, cat = float(req["credits"]), req.get("fill", "list"), req.get("category")
         got = carry.pop(cat, 0.0) if fill != "attest" else 0.0
         if fill == "attest":
             got = need if req["id"] in attested else 0.0
         else:
-            pool = elective_pool(req, lists)
-            for code in list(spare):
-                if got >= need:
-                    break
-                if fill == "any" or any(matches(code, p) for p in pool):
-                    got += courses[code]["credits"]; used.add(code); spare.remove(code)
+            pool = pools[req["id"]]
+            # Transfer category credit can only go to this category, so apply it before spending a
+            # completed course that might fill another slot (e.g. ECON 201 is on both business and social).
             if got < need and cat_pool.get(cat, 0) > 0:
                 take = min(need - got, cat_pool[cat]); got += take; cat_pool[cat] -= take
+            pending = order[i + 1:]
+            fits = [c for c in spare if fill == "any" or any(matches(c, p) for p in pool)]
+            for code in sorted(fits, key=lambda c: (other_slots(c, req, pending), c)):
+                if got >= need:
+                    break
+                got += courses[code]["credits"]; used.add(code); spare.remove(code)
             if got < need and fill == "any" and generic > 0:
                 take = min(need - got, generic); got += take; generic -= take
             if got > need:

@@ -4,7 +4,7 @@
 
 Exits non-zero (and prints every problem) if anything is inconsistent.
 Warnings (unknown prerequisites, inferred credits, documented catalog discrepancies) never fail the run.
-Owner: Ayana Seegars.
+Owner: Ayana Seegars.  Standard library only.
 """
 from __future__ import annotations
 
@@ -164,6 +164,14 @@ def validate_transfer(path, courses, inst_path):
             for c in e.get("ncat_equivalent", []):
                 if norm(c) not in courses:
                     errs.append(f"{w}: {c} not in courses.json")
+            for alt in e.get("alternatives", []):
+                if not alt:
+                    errs.append(f"{w}: empty alternative")
+                for c in alt:
+                    if norm(c) not in courses:
+                        errs.append(f"{w}: alternative code {c} not in courses.json")
+            if e.get("alternatives") and e["ncat_equivalent"] != e["alternatives"][0]:
+                errs.append(f"{w}: ncat_equivalent must equal the first alternative")
         if e.get("status") == "category" and not e.get("category"):
             errs.append(f"{w}: category status needs 'category'")
         for r in e.get("also_requires", []):
