@@ -59,243 +59,416 @@
   "CAEE 101": {
    "title": "Graphics in CAEE",
    "credits": 2.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "None",
+   "coreq_text": "None Pre/Co-requisite(s): None",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 121": {
    "title": "CAEE Colloquium",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 204": {
    "title": "Fundamentals of Surveying",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "Sophomore Standing.",
+   "prereq_note": "Sophomore Standing",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 230": {
    "title": "Engineering Statics Lab",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "PHYS 241"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "CAEE 231"
+   ],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "PHYS 241.",
+   "coreq_text": "CAEE 231",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 231": {
    "title": "Engineering Statics",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "PHYS 241"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "CAEE 230"
+   ],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "PHYS241. Corequisite: CAEE 230.",
+   "coreq_text": "CAEE 230.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 232": {
    "title": "Solid Mechanics",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CAEE 231"
+    ],
+    [
+     "MATH 132"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 231 and MATH 132.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 240": {
    "title": "Numerical Methods and Programming",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "MATH 231"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "MATH 341"
+   ],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "MATH 231. Corequisite: MATH 341.",
+   "coreq_text": "MATH 341.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 304": {
    "title": "Statistics and Reliability in CAEE",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 132"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "MATH 132.",
+   "coreq_text": "NA",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 325": {
    "title": "Structural Analysis",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CAEE 232"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 232 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 330": {
    "title": "Construction Materials and Methods",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "CAEE 231"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "CAEE 335"
+   ],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 231. Corequisite: CAEE 335.",
+   "coreq_text": "CAEE 335.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 334": {
    "title": "Engineering Dynamics",
    "credits": 2.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CAEE 231"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 231.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 335": {
    "title": "Construction Materials and Methods Lab",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "CAEE 232"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "CAEE 330"
+   ],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 232. Corequisite: CAEE 330.",
+   "coreq_text": "CAEE 330.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 362": {
    "title": "Engineering Fluid Mechanics and Hydraulics",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "CAEE 231"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "CAEE 363"
+   ],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 231. Corequisite: CAEE 363.",
+   "coreq_text": "CAEE 363.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 363": {
    "title": "Engineering Fluids Mechanics Lab",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "CAEE 231"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "CAEE 362"
+   ],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 231. Corequisite: CAEE 362.",
+   "coreq_text": "CAEE 362.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 401": {
    "title": "FE General Topics Review",
    "credits": 0.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "Junior Standing",
+   "prereq_note": "Junior Standing",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 430": {
    "title": "Structural Design in Steel",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CAEE 232"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 232.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 436": {
    "title": "Reinforced Concrete Design",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CAEE 325"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 325.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CAEE 481": {
    "title": "Construction Engineering",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "Senior standing.",
+   "prereq_note": "Senior standing",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CAEE.html)"
+   }
   },
   "CHEM 106": {
    "title": "General Chemistry VI",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [
+    "CHEM 116"
+   ],
    "sources": [
     "catalog:CE",
     "catalog:EE",
@@ -308,28 +481,50 @@
     "ISE",
     "ME",
     "list:CS_SCIENCE"
-   ]
+   ],
+   "prereq_text": "2 units of high school algebra or equivalent, and 1 unit of high school chemistry or CHEM 103 .",
+   "coreq_text": "CHEM 116 .",
+   "prereq_note": "2 units of high school algebra or equivalent, and 1 unit of high school chemistry or CHEM 103 (high-school alternative, not enforced).",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CHEM.html)"
+   }
   },
   "CHEM 107": {
    "title": "General Chemistry VII",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "CHEM 106"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "CHEM 117"
+   ],
    "sources": [
     "handbook"
    ],
    "credits_inferred": true,
    "used_in": [
     "list:CS_SCIENCE"
-   ]
+   ],
+   "prereq_text": "CHEM 106 or equivalent.",
+   "coreq_text": "CHEM 117 .",
+   "prereq_note": "CHEM 106 or equivalent.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CHEM.html)"
+   }
   },
   "CHEM 116": {
    "title": "General Chemistry VI Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [
+    "CHEM 106"
+   ],
    "sources": [
     "catalog:CE",
     "catalog:EE",
@@ -342,190 +537,404 @@
     "ISE",
     "ME",
     "list:CS_SCIENCE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "coreq_text": "CHEM 106 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CHEM.html)"
+   }
   },
   "CHEM 117": {
    "title": "General Chemistry VII Laboratory",
    "credits": 1,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "CHEM 116"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "CHEM 107"
+   ],
    "sources": [
     "handbook"
    ],
    "credits_inferred": true,
    "used_in": [
     "list:CS_SCIENCE"
-   ]
+   ],
+   "prereq_text": "CHEM 116 .",
+   "coreq_text": "CHEM 107 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CHEM.html)"
+   }
   },
   "CIEN 281": {
    "title": "Civil Engineering Land CAD",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CAEE 101"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 101 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
   },
   "CIEN 310": {
    "title": "Introduction to Environmental Engineering",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "CHEM 106"
+    ],
+    [
+     "MATH 341"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "CIEN 311"
+   ],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CHEM 106; MATH 341. Corequisite: CIEN 311.",
+   "coreq_text": "CIEN 311.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
   },
   "CIEN 311": {
    "title": "Environmental Engineering Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "CHEM 106"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "CIEN 310"
+   ],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CHEM 106. Corequisite: CIEN 310.",
+   "coreq_text": "CIEN 310.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
   },
   "CIEN 320": {
    "title": "Geotechnical Engineering",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "CAEE 362"
+    ],
+    [
+     "MATH 341"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "CIEN 321"
+   ],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 362; MATH 341. Corequisite: CIEN 321.",
+   "coreq_text": "CIEN 321.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
   },
   "CIEN 321": {
    "title": "Geotechnical Engineering Lab",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "CAEE 363"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "CIEN 320"
+   ],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 363. Corequisite: CIEN 320.",
+   "coreq_text": "CIEN 320.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
+  },
+  "CIEN 325": {
+   "title": "(title not in provided sources)",
+   "credits": 0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "prereq-reference"
+   ],
+   "used_in": [],
+   "stub": true,
+   "title_missing": true
   },
   "CIEN 350": {
    "title": "Transportation Engineering",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CAEE 204"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 204.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
   },
   "CIEN 364": {
    "title": "Engineering Hydrology",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CAEE 362"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CAEE 362.",
+   "coreq_text": "NA",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
   },
   "CIEN 405": {
    "title": "FE Civil Topics Review",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "Senior Standing.",
+   "prereq_note": "Senior Standing",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
   },
   "CIEN 412": {
    "title": "Environmental Engineering Design",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
   },
   "CIEN 422": {
    "title": "Geotechnical Engineering Design",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CIEN 320"
+    ],
+    [
+     "CIEN 321"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CIEN 320 and CIEN 321.",
+   "coreq_text": "NA",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
   },
   "CIEN 453": {
    "title": "Transportation Engineering Design",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CIEN 350"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "CIEN 350.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
   },
   "CIEN 483": {
    "title": "Civil Engineering Capstone Design I",
    "credits": 2.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CIEN 310",
+     "CIEN 320",
+     "CIEN 350"
+    ],
+    [
+     "CIEN 310",
+     "CIEN 320",
+     "CIEN 364"
+    ],
+    [
+     "CIEN 310",
+     "CIEN 320",
+     "CIEN 325"
+    ],
+    [
+     "CIEN 310",
+     "CIEN 350",
+     "CIEN 364"
+    ],
+    [
+     "CIEN 310",
+     "CIEN 350",
+     "CIEN 325"
+    ],
+    [
+     "CIEN 310",
+     "CIEN 364",
+     "CIEN 325"
+    ],
+    [
+     "CIEN 320",
+     "CIEN 350",
+     "CIEN 364"
+    ],
+    [
+     "CIEN 320",
+     "CIEN 350",
+     "CIEN 325"
+    ],
+    [
+     "CIEN 320",
+     "CIEN 364",
+     "CIEN 325"
+    ],
+    [
+     "CIEN 350",
+     "CIEN 364",
+     "CIEN 325"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "Senior Standing and at least 3 of CIEN 310, 320, 350, 364, 325.",
+   "coreq_text": "NA",
+   "prereq_note": "Senior Standing; at least 3 of CIEN 310, 320, 350, 364, 325 (encoded exactly as every 3-course group containing one completed course).",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
   },
   "CIEN 484": {
    "title": "Civil Engineering Capstone Design II",
    "credits": 2.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CIEN 483"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE"
    ],
    "used_in": [
     "CE"
-   ]
+   ],
+   "prereq_text": "Senior Standing and CIEN 483.",
+   "prereq_note": "Senior Standing",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: CIEN.html)"
+   }
   },
   "COMP 120": {
    "title": "Computers and Their Use",
@@ -1326,6 +1735,19 @@
     "CS"
    ]
   },
+  "CST 101": {
+   "title": "(title not in provided sources)",
+   "credits": 0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "prereq-reference"
+   ],
+   "used_in": [],
+   "stub": true,
+   "title_missing": true
+  },
   "CST 340": {
    "title": "(title not in provided sources)",
    "credits": 3,
@@ -1344,8 +1766,8 @@
   "ECEN 101": {
    "title": "Introduction to Problem Solving for Electrical and Computer Engineers I",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -1354,13 +1776,22 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 102": {
    "title": "Introduction to Problem Solving for Electrical and Computer Engineers II",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 101"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -1369,13 +1800,25 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 101 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 200": {
    "title": "Electric Circuit Analysis",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 101"
+    ],
+    [
+     "MATH 132"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -1384,14 +1827,28 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 101 and MATH 132 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 206": {
    "title": "Instrumentation and Networks Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "ECEN 101"
+    ],
+    [
+     "MATH 132"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "ECEN 200"
+   ],
    "sources": [
     "catalog:CPE",
     "catalog:EE"
@@ -1399,14 +1856,22 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 101 and MATH 132 .",
+   "coreq_text": "ECEN 200 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 212": {
    "title": "Digital Logic",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [
+    "ECEN 218"
+   ],
    "sources": [
     "catalog:CPE",
     "catalog:EE"
@@ -1414,14 +1879,22 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "coreq_text": "ECEN 218 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 218": {
    "title": "Digital Logic Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [
+    "ECEN 212"
+   ],
    "sources": [
     "catalog:CPE",
     "catalog:EE"
@@ -1429,13 +1902,23 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "coreq_text": "ECEN 212 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 227": {
    "title": "Discrete Systems Modeling",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 101"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -1443,13 +1926,25 @@
    ],
    "used_in": [
     "CPE"
-   ]
+   ],
+   "prereq_text": "ECEN 101 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 300": {
    "title": "Electric Circuit Analysis II",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 200"
+    ],
+    [
+     "MATH 341"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -1458,14 +1953,28 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 200 and MATH 341 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 306": {
    "title": "Circuits and Systems Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "ECEN 200"
+    ],
+    [
+     "ECEN 206"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "ECEN 300"
+   ],
    "sources": [
     "catalog:CPE",
     "catalog:EE"
@@ -1473,13 +1982,26 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 200 and ECEN 206 .",
+   "coreq_text": "ECEN 300 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 320": {
    "title": "Electronics I",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 200"
+    ],
+    [
+     "PHYS 242"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -1488,13 +2010,22 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 200 and PHYS 242 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 323": {
    "title": "Digital Systems Design I",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 212"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -1503,27 +2034,47 @@
    "used_in": [
     "CPE",
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 212 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 325": {
    "title": "Introduction to Electromagnetics",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 231"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:EE"
    ],
    "used_in": [
     "EE"
-   ]
+   ],
+   "prereq_text": "MATH 231 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 326": {
    "title": "Electronics I Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "ECEN 206"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "ECEN 320"
+   ],
    "sources": [
     "catalog:CPE",
     "catalog:EE"
@@ -1531,7 +2082,13 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 206 .",
+   "coreq_text": "ECEN 320 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 327": {
    "title": "(title not in provided sources)",
@@ -1549,34 +2106,68 @@
   "ECEN 329": {
    "title": "Digital Systems Design I Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "ECEN 212"
+    ],
+    [
+     "ECEN 218"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "ECEN 323"
+   ],
    "sources": [
     "catalog:CPE"
    ],
    "used_in": [
     "CPE"
-   ]
+   ],
+   "prereq_text": "ECEN 212 and ECEN 218 .",
+   "coreq_text": "ECEN 323 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 340": {
    "title": "Electrical Circuits and Systems",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 341"
+    ],
+    [
+     "PHYS 242"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MATH 341 and PHYS 242 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 351": {
    "title": "Introduction to Microprocessor-based Systems",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 200"
+    ],
+    [
+     "ECEN 212"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -1585,13 +2176,22 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 200 and ECEN 212 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 356": {
    "title": "Probability and Random Variables",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 341"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -1602,14 +2202,28 @@
     "CPE",
     "EE",
     "list:CS_STATS"
-   ]
+   ],
+   "prereq_text": "MATH 341 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 357": {
    "title": "Microprocessor Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "ECEN 206"
+    ],
+    [
+     "ECEN 218"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "ECEN 351"
+   ],
    "sources": [
     "catalog:CPE",
     "catalog:EE"
@@ -1617,13 +2231,26 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 206 and ECEN 218 .",
+   "coreq_text": "ECEN 351 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 375": {
    "title": "Computer Architecture and Organization",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 212"
+    ],
+    [
+     "ECEN 227"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -1632,42 +2259,80 @@
    "used_in": [
     "CPE",
     "list:CS_ARCH"
-   ]
+   ],
+   "prereq_text": "ECEN 212 and ECEN 227",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 377": {
-   "title": "(title not in provided sources)",
+   "title": "Engineering Applications of Artificial Intelligence",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 131"
+    ],
+    [
+     "COMP 163"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:CPE_TECH_B",
     "list:CPE_TECH_BC"
-   ]
+   ],
+   "prereq_text": "MATH 131 and COMP 163 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 381": {
    "title": "Computer Architecture Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "ECEN 212"
+    ],
+    [
+     "ECEN 218"
+    ],
+    [
+     "ECEN 227"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "ECEN 375"
+   ],
    "sources": [
     "catalog:CPE"
    ],
    "used_in": [
     "CPE"
-   ]
+   ],
+   "prereq_text": "ECEN 212 , ECEN 218 , and ECEN 227 .",
+   "coreq_text": "ECEN 375",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 400": {
    "title": "Linear Systems and Signals",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 300"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -1676,59 +2341,96 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 300 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 408": {
-   "title": "(title not in provided sources)",
+   "title": "Analog Electronics",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 460"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 460 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 410": {
-   "title": "(title not in provided sources)",
+   "title": "Linear Control Systems",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 300"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_C"
-   ]
+   ],
+   "prereq_text": "ECEN 300 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 415": {
-   "title": "(title not in provided sources)",
+   "title": "Application Development for Smart Devices",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 351",
+     "ECEN 375"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:CPE_TECH_B",
     "list:CPE_TECH_BC"
-   ]
+   ],
+   "prereq_text": "ECEN 351 or ECEN 375",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 421": {
    "title": "Embedded Systems Design",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 351"
+    ],
+    [
+     "ECEN 375"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -1737,38 +2439,60 @@
    "used_in": [
     "CPE",
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 351 and ECEN 375",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 424": {
-   "title": "(title not in provided sources)",
+   "title": "Digital Systems Design II",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 323"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:CPE_TECH_B",
     "list:CPE_TECH_BC"
-   ]
+   ],
+   "prereq_text": "ECEN 323 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 426": {
-   "title": "(title not in provided sources)",
+   "title": "Introduction to Microwave Engineering",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 450"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 450 (with C or higher grade).",
+   "prereq_note": "ECEN 450 (with C or higher grade",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 427": {
    "title": "(title not in provided sources)",
@@ -1786,268 +2510,429 @@
    ]
   },
   "ECEN 430": {
-   "title": "(title not in provided sources)",
+   "title": "Power Systems, Energy Conversion and Electric Machinery",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 300"
+    ],
+    [
+     "ECEN 325"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_C"
-   ]
+   ],
+   "prereq_text": "ECEN 300 and ECEN 325 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 441": {
-   "title": "(title not in provided sources)",
+   "title": "Very Large Scale Integrated Circuits",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 212"
+    ],
+    [
+     "ECEN 320"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:CPE_TECH_B",
     "list:CPE_TECH_BC",
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 212 and ECEN 320 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 447": {
-   "title": "(title not in provided sources)",
+   "title": "Introduction to Telecommunication Networks",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 300"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:CPE_TECH_B",
     "list:CPE_TECH_BC",
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 300 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 449": {
-   "title": "(title not in provided sources)",
+   "title": "Introduction to Communication Systems",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 356"
+    ],
+    [
+     "ECEN 400"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 356 and ECEN 400 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 450": {
-   "title": "(title not in provided sources)",
+   "title": "Electromagnetic Wave Propagation and Transmission",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 325"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 325 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 452": {
-   "title": "(title not in provided sources)",
+   "title": "Wireless Communication Systems",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 400"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 400 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 457": {
-   "title": "(title not in provided sources)",
+   "title": "Digital Image Processing",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 400"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:CPE_TECH_B",
     "list:CPE_TECH_BC"
-   ]
+   ],
+   "prereq_text": "ECEN 400 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 459": {
-   "title": "(title not in provided sources)",
+   "title": "Digital and Data Communications",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 356"
+    ],
+    [
+     "ECEN 400"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:CPE_TECH_B",
     "list:CPE_TECH_BC",
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 356 and ECEN 400 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 460": {
    "title": "Electronics II",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 320"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:EE"
    ],
    "used_in": [
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 320 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 461": {
-   "title": "(title not in provided sources)",
+   "title": "Power System Analysis",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 300"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 300 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 462": {
-   "title": "(title not in provided sources)",
+   "title": "Industrial Controls and Manufacturing",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 300",
+     "ECEN 340"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_C"
-   ]
+   ],
+   "prereq_text": "ECEN 300 or ECEN 340 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 466": {
    "title": "Electronics II Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "ECEN 306"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "ECEN 460"
+   ],
    "sources": [
     "catalog:EE"
    ],
    "used_in": [
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 306 .",
+   "coreq_text": "ECEN 460 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 468": {
-   "title": "(title not in provided sources)",
+   "title": "Theory of Linear Control Systems",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 410"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 410 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 470": {
-   "title": "(title not in provided sources)",
+   "title": "Properties of Materials for Electrical Engineering",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 325"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 325 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 472": {
-   "title": "(title not in provided sources)",
+   "title": "Modeling and Control of Autonomous Vehicles",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 400"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_C"
-   ]
+   ],
+   "prereq_text": "ECEN 400 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 474": {
-   "title": "(title not in provided sources)",
+   "title": "Genetic Algorithms",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 410"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 410 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 477": {
-   "title": "(title not in provided sources)",
+   "title": "Introduction to Artificial Neural Networks",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 400"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:EE_TECH_B"
-   ]
+   ],
+   "prereq_text": "ECEN 400 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 478": {
    "title": "Senior Design Project I",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 326"
+    ],
+    [
+     "ECEN 357"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -2056,13 +2941,22 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 326 and ECEN 357 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 479": {
    "title": "Senior Design Project II",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ECEN 478"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -2071,29 +2965,39 @@
    "used_in": [
     "CPE",
     "EE"
-   ]
+   ],
+   "prereq_text": "ECEN 478 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECEN 485": {
-   "title": "(title not in provided sources)",
+   "title": "Selected Topics in Engineering",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:CPE_TECH_B",
     "list:CPE_TECH_BC"
-   ]
+   ],
+   "prereq_text": "Consent of instructor.",
+   "prereq_note": "Consent of instructor",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ECEN.html)"
+   }
   },
   "ECON 200": {
    "title": "Principles of Economics (Micro)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "handbook"
@@ -2102,13 +3006,18 @@
    "used_in": [
     "list:CS_BUSINESS",
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2024-2025",
+    "url": "https://catalog.ncat.edu/preview_course_nopop.php?catoid=16&coid=40315"
+   }
   },
   "ECON 201": {
    "title": "Principles of Economics (Macro)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "handbook"
@@ -2117,13 +3026,18 @@
    "used_in": [
     "list:CS_BUSINESS",
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2024-2025",
+    "url": "https://catalog.ncat.edu/preview_course_nopop.php?catoid=16&coid=40316"
+   }
   },
   "ENGL 100": {
    "title": "Ideas and Their Expression I",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "catalog:CE",
@@ -2139,13 +3053,22 @@
     "EE",
     "ISE",
     "ME"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ENGL.html)"
+   }
   },
   "ENGL 101": {
    "title": "Ideas and Their Expression II",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ENGL 100"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE",
@@ -2161,112 +3084,174 @@
     "EE",
     "ISE",
     "ME"
-   ]
+   ],
+   "prereq_text": "ENGL 100 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ENGL.html)"
+   }
   },
   "ENGL 200": {
-   "title": "(title not in provided sources)",
+   "title": "Survey of Humanities I",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ENGL 101"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "ENGL 101 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ENGL.html)"
+   }
   },
   "ENGL 201": {
-   "title": "(title not in provided sources)",
+   "title": "Survey of Humanities II",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ENGL 101"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "ENGL 101 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ENGL.html)"
+   }
   },
   "ENGL 211": {
-   "title": "(title not in provided sources)",
+   "title": "Survey of African-American Literature I",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ENGL 101"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_AFAM",
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "ENGL 101 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ENGL.html)"
+   }
   },
   "ENGL 212": {
-   "title": "(title not in provided sources)",
+   "title": "Survey of African-American Literature II",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ENGL 101"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_AFAM",
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "ENGL 101 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ENGL.html)"
+   }
   },
   "ENGL 230": {
-   "title": "(title not in provided sources)",
+   "title": "World Literature I",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ENGL 101"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "ENGL 101 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ENGL.html)"
+   }
   },
   "ENGL 231": {
-   "title": "(title not in provided sources)",
+   "title": "World Literature II",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ENGL 101"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "ENGL 101 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ENGL.html)"
+   }
   },
   "ENGL 331": {
    "title": "Writing Science & Technology",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CST 101"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "handbook"
    ],
    "used_in": [
     "CS"
-   ]
+   ],
+   "prereq_text": "CST 101",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ENGL.html)"
+   }
   },
   "FCS 135": {
    "title": "(title not in provided sources)",
@@ -2331,8 +3316,8 @@
   "GEEN 100": {
    "title": "Engineering Design and Ethics",
    "credits": 2.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "catalog:CE",
@@ -2347,13 +3332,18 @@
     "EE",
     "ISE",
     "ME"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: GEEN.html)"
+   }
   },
   "GEEN 111": {
    "title": "College of Engineering Colloquium I",
    "credits": 1.0,
    "prereq": [],
-   "prereq_status": "stated",
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "catalog:CE",
@@ -2371,236 +3361,314 @@
     "EE",
     "ISE",
     "ME"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: GEEN.html)"
+   }
   },
   "HIST 103": {
-   "title": "(title not in provided sources)",
+   "title": "North Carolina A&T State University: A Legacy of Social Activism and Aggie Pride (formerly HIST 203)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_AFAM",
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: HIST.html)"
+   }
   },
   "HIST 104": {
-   "title": "(title not in provided sources)",
+   "title": "U.S. History From 1492-1877 (formerly HIST 204)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: HIST.html)"
+   }
   },
   "HIST 105": {
-   "title": "(title not in provided sources)",
+   "title": "U.S. History Since 1877 (formerly HIST 205)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: HIST.html)"
+   }
   },
   "HIST 106": {
-   "title": "(title not in provided sources)",
+   "title": "African-American History to 1877 (formerly HIST 201)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_AFAM",
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: HIST.html)"
+   }
   },
   "HIST 107": {
-   "title": "(title not in provided sources)",
+   "title": "African-American History Since 1877 (formerly HIST 202)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_AFAM",
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: HIST.html)"
+   }
   },
   "HIST 130": {
-   "title": "(title not in provided sources)",
+   "title": "The Contemporary Global Experience",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_GLOBAL",
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: HIST.html)"
+   }
   },
   "HIST 206": {
-   "title": "(title not in provided sources)",
+   "title": "The World to 1400 (formerly HIST 100)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_GLOBAL",
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: HIST.html)"
+   }
   },
   "HIST 207": {
-   "title": "(title not in provided sources)",
+   "title": "The World Since 1400 (formerly HIST 101)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_GLOBAL",
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: HIST.html)"
+   }
   },
   "HIST 216": {
-   "title": "(title not in provided sources)",
+   "title": "History of Africa Since 1800",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_GLOBAL",
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: HIST.html)"
+   }
   },
   "HIST 231": {
-   "title": "(title not in provided sources)",
+   "title": "Genocide",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_GLOBAL",
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: HIST.html)"
+   }
   },
   "ISEN 102": {
    "title": "Graphical Visualization for Industrial and Systems Engineers",
    "credits": 2.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 121": {
    "title": "Industrial and Systems Engineering Colloquium",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 162": {
    "title": "Computer Programming for Industrial and Systems Engineers",
    "credits": 2.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 246": {
    "title": "Industrial Production Processes",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "GEEN 100"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "GEEN 100 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 255": {
    "title": "Methods Engineering",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "GEEN 100"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "GEEN 100 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 260": {
    "title": "Engineering Economy",
    "credits": 2.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:EE",
@@ -2609,52 +3677,89 @@
    "used_in": [
     "EE",
     "ME"
-   ]
+   ],
+   "prereq_text": "Sophomore standing.",
+   "prereq_note": "Sophomore standing",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 286": {
    "title": "Engineering Teams and Leadership",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "GEEN 100"
+    ],
+    [
+     "ENGL 100"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "GEEN 100 and ENGL 100 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 324": {
    "title": "Computer Aided Design and Manufacturing",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ISEN 246"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "ISEN 246 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 361": {
    "title": "Engineering Economic and Cost Analysis",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "Sophomore standing.",
+   "prereq_note": "Sophomore standing",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 370": {
    "title": "Engineering Statistics",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 132"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE",
@@ -2666,52 +3771,82 @@
     "ISE",
     "ME",
     "list:CS_STATS"
-   ]
+   ],
+   "prereq_text": "MATH 132 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 380": {
    "title": "Information Systems for Industrial and Systems Engineers",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ISEN 162"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "ISEN 162 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 386": {
    "title": "Systems Approaches for Industrial and Systems Engineers",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "Junior standing as ISEN major.",
+   "prereq_note": "Junior standing as ISEN major",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 400": {
    "title": "Problem Solving in Industrial and Systems Engineering",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "Senior standing as ISE major.",
+   "prereq_note": "Senior standing as ISE major",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 415": {
    "title": "Discrete Event Systems Modeling and Simulation",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ISEN 370"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE",
@@ -2720,163 +3855,284 @@
    "used_in": [
     "ISE",
     "list:CS_COMP_ELECTIVES"
-   ]
+   ],
+   "prereq_text": "ISEN 370 , senior standing.",
+   "prereq_note": "senior standing",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 425": {
    "title": "Quality Engineering",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ISEN 370"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "ISEN 370 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 430": {
    "title": "Deterministic Operations Research",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [
+    "MATH 351"
+   ],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "coreq_text": "MATH 351",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 435": {
    "title": "Stochastic Operations Research",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "ISEN 370"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "MATH 351"
+   ],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "ISEN 370 . Pre/Co-requisite(s): MATH 351",
+   "coreq_text": "MATH 351",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 440": {
    "title": "Decision Support Systems for Industrial and Systems Engineers",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ISEN 380"
+    ],
+    [
+     "ISEN 430"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "ISEN 380 , ISEN 430 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 455": {
    "title": "Production Control",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [
+    "ISEN 430"
+   ],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "coreq_text": "ISEN 430",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 465": {
    "title": "Facilities Design",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ISEN 255"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "ISEN 255 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 471": {
    "title": "Ergonomics",
    "credits": 2.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "Junior standing as ISE major.",
+   "prereq_note": "Junior standing as ISE major",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 472": {
    "title": "Cognitive Human Factors Engineering",
    "credits": 2.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "Junior standing as ISE major.",
+   "prereq_note": "Junior standing as ISE major",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 475": {
    "title": "Design of Experiments",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ISEN 370"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "ISEN 370 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 480": {
    "title": "Systems Engineering",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ISEN 361",
+     "ISEN 260"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "ISEN 361 or ISEN 260 and senior standing.",
+   "prereq_note": "senior standing",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 486": {
    "title": "Professionalism and Ethics for Industrial and Systems Engineers",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "Senior standing.",
+   "prereq_note": "Senior standing",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "ISEN 495": {
    "title": "Design Projects in Industrial and Systems Engineering",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "ISEN 361"
+    ],
+    [
+     "ISEN 430"
+    ],
+    [
+     "ISEN 465"
+    ],
+    [
+     "ISEN 471"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "Senior standing as ISE major, ISEN 361 , ISEN 430 , ISEN 465 , ISEN 471 and senior standing.",
+   "prereq_note": "Senior standing as ISE major; senior standing",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: ISEN.html)"
+   }
   },
   "JOMC 240": {
    "title": "(title not in provided sources)",
@@ -2909,36 +4165,77 @@
     "list:GENED_HUM"
    ]
   },
+  "MATH 104": {
+   "title": "College Algebra and Trigonometry for Engineers and Scientists II",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "prereq-reference"
+   ],
+   "used_in": [],
+   "stub": true
+  },
   "MATH 110": {
    "title": "Pre-Calculus",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "handbook"
    ],
    "credits_inferred": true,
-   "used_in": []
+   "used_in": [],
+   "prereq_text": "An SAT Math score 520-570 or an ACT Math score 21-23 or a Math Department Algebra Test score at least 20 or a Math Department Pre-calculus Test score 13-16, or at least a \u201cC\u201d in MATH 102 .",
+   "prereq_note": "SAT/ACT/Math Department placement score, or at least C in MATH 102 (placement alternative, not enforced).",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MATH.html)"
+   }
+  },
+  "MATH 111": {
+   "title": "College Algebra and Trigonometry",
+   "credits": 4,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "prereq-reference"
+   ],
+   "used_in": [],
+   "stub": true
   },
   "MATH 123": {
-   "title": "(title not in provided sources)",
+   "title": "Discrete Mathematics I",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 104",
+     "MATH 110",
+     "MATH 111",
+     "MATH 131"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "handbook"
    ],
-   "title_missing": true,
    "credits_inferred": true,
-   "used_in": []
+   "used_in": [],
+   "prereq_text": "MATH 104 or MATH 110 or MATH 111 or MATH 131 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MATH.html)"
+   }
   },
   "MATH 131": {
    "title": "Calculus I",
    "credits": 4.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE",
@@ -2955,13 +4252,23 @@
     "EE",
     "ISE",
     "ME"
-   ]
+   ],
+   "prereq_text": "At least \u201cC-\u201d in one of the following courses: MATH 104 , MATH 110 and MATH 111 , or an ACT Math score at least 24 or a Math Department Pre-calculus Test score at least 17.",
+   "prereq_note": "At least C- in MATH 104, or in MATH 110 and MATH 111, or ACT Math >= 24, or Math Dept Pre-calculus Test >= 17 (placement alternative, not enforced).",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MATH.html)"
+   }
   },
   "MATH 132": {
    "title": "Calculus II",
    "credits": 4.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 131"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE",
@@ -2977,13 +4284,25 @@
     "EE",
     "ISE",
     "ME"
-   ]
+   ],
+   "prereq_text": "MATH 131 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MATH.html)"
+   }
   },
   "MATH 224": {
    "title": "Probability & Statistics",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 104",
+     "MATH 110",
+     "MATH 111",
+     "MATH 131"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "handbook"
@@ -2991,13 +4310,22 @@
    "credits_inferred": true,
    "used_in": [
     "list:CS_STATS"
-   ]
+   ],
+   "prereq_text": "MATH 104 or MATH 110 or MATH 111 or MATH 131 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MATH.html)"
+   }
   },
   "MATH 231": {
    "title": "Calculus III",
    "credits": 4.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 132"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE",
@@ -3012,13 +4340,37 @@
     "EE",
     "ISE",
     "ME"
-   ]
+   ],
+   "prereq_text": "MATH 132 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MATH.html)"
+   }
+  },
+  "MATH 240": {
+   "title": "Introduction to Scientific Programming for Mathematics Majors",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "prereq-reference"
+   ],
+   "used_in": [],
+   "stub": true
   },
   "MATH 340": {
    "title": "Numerical Methods",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 132"
+    ],
+    [
+     "MATH 240"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "handbook"
@@ -3026,13 +4378,22 @@
    "credits_inferred": true,
    "used_in": [
     "list:CS_MATH"
-   ]
+   ],
+   "prereq_text": "MATH 132 and MATH 240 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MATH.html)"
+   }
   },
   "MATH 341": {
    "title": "Introduction to Differential Equations",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 132"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:CE",
@@ -3047,13 +4408,22 @@
     "CS",
     "EE",
     "ME"
-   ]
+   ],
+   "prereq_text": "MATH 132 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MATH.html)"
+   }
   },
   "MATH 351": {
    "title": "Linear Algebra and Matrix Theory",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 132"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE",
@@ -3063,67 +4433,111 @@
    "used_in": [
     "ISE",
     "list:CS_MATH"
-   ]
+   ],
+   "prereq_text": "MATH 132 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MATH.html)"
+   }
   },
   "MATH 365": {
-   "title": "(title not in provided sources)",
+   "title": "Introduction to Data Science",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "STAT 214",
+     "MATH 224"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "handbook"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:CS_COMP_ELECTIVES"
-   ]
+   ],
+   "prereq_text": "STAT 214 or MATH 224 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MATH.html)"
+   }
   },
   "MEEN 104": {
    "title": "Graphics for Mechanical Engineering",
    "credits": 2.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 202": {
    "title": "Mechanical Engineering Project Lab",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 104"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 104",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 210": {
    "title": "Numerical Methods Using MATLAB",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 132"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MATH 132",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 230": {
    "title": "Statics and Mechanics of Materials",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 131"
+    ],
+    [
+     "PHYS 241"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:EE",
@@ -3132,280 +4546,549 @@
    "used_in": [
     "EE",
     "ISE"
-   ]
+   ],
+   "prereq_text": "MATH 131 PHYS 241",
+   "prereq_note": "Catalog line lists \"MATH 131 PHYS 241\" with no connective; read as AND (same as MEEN 231).",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 231": {
    "title": "Mechanics I, Statics",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 131"
+    ],
+    [
+     "PHYS 241"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MATH 131 and PHYS 241",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 232": {
    "title": "Strength of Materials",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 231"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 231",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 233": {
    "title": "Mechanics II, Dynamics",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 231"
+    ],
+    [
+     "MEEN 231"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MATH 231, MEEN 231.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 241": {
    "title": "Fundamentals of Thermodynamics",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MATH 132"
+    ],
+    [
+     "CHEM 106"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MATH 132 and CHEM 106",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 260": {
    "title": "Materials Science",
    "credits": 2.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CHEM 106"
+    ],
+    [
+     "MATH 131"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
    ],
    "used_in": [
     "ISE"
-   ]
+   ],
+   "prereq_text": "CHEM 106, MATH 131",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 261": {
    "title": "Fundamentals of Materials Science",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "CHEM 106"
+    ],
+    [
+     "MATH 131"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "CHEM 106 and MATH 131",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 267": {
    "title": "Mechanics and Materials Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 231"
+    ],
+    [
+     "MEEN 261"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 231 and MEEN 261",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
+  },
+  "MEEN 315": {
+   "title": "Aerodynamics",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "prereq-reference"
+   ],
+   "used_in": [],
+   "stub": true
   },
   "MEEN 316": {
    "title": "Fluid Mechanics",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "PHYS 241"
+    ],
+    [
+     "MATH 231"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "PHYS 241, MATH 231.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 317": {
    "title": "Thermal-Fluid Systems Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 316"
+    ],
+    [
+     "MEEN 241"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 316 and MEEN 241",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
+  },
+  "MEEN 318": {
+   "title": "Propulsion",
+   "credits": 3,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "prereq-reference"
+   ],
+   "used_in": [],
+   "stub": true
   },
   "MEEN 321": {
    "title": "Mechanical Engineering Design",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 232"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 232.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 324": {
    "title": "System Dynamics",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 210"
+    ],
+    [
+     "MEEN 233"
+    ],
+    [
+     "MATH 341"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 210, MEEN 233, and MATH 341.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 341": {
    "title": "Applied Thermodynamics",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 241"
+    ],
+    [
+     "MATH 231"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 241 and MATH 231",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 343": {
    "title": "Heat Transfer",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 316",
+     "MEEN 315"
+    ],
+    [
+     "MEEN 241"
+    ],
+    [
+     "MATH 341"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 316 or MEEN 315, MEEN 241, MATH 341.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 361": {
    "title": "Modern Engineering Materials",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 261"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 261",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 363": {
    "title": "Manufacturing Processes",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 202"
+    ],
+    [
+     "MEEN 261"
+    ],
+    [
+     "MEEN 232"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 202, MEEN 261 and MEEN 232",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 421": {
    "title": "Design of Machine Elements",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 321"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 321",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 424": {
    "title": "Vibrations and Controls",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 324"
+    ],
+    [
+     "ECEN 340"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 324 and ECEN 340.",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 425": {
    "title": "Mechanical Systems Laboratory",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 324"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 324",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 480": {
    "title": "Mechanical Engineering Senior Project I",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 341",
+     "MEEN 318"
+    ],
+    [
+     "MEEN 321"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 341 or MEEN 318 , and MEEN 321",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 481": {
    "title": "Mechanical Engineering Senior Project II",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [
+    [
+     "MEEN 480"
+    ]
+   ],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "MEEN 480",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MEEN 492": {
    "title": "Senior Seminar",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ME"
    ],
    "used_in": [
     "ME"
-   ]
+   ],
+   "prereq_text": "Senior standing in mechanical engineering.",
+   "prereq_note": "Senior standing in mechanical engineering",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: MEEN.html)"
+   }
   },
   "MGMT 110": {
    "title": "Business Environment",
@@ -3482,103 +5165,130 @@
    ]
   },
   "PHIL 101": {
-   "title": "(title not in provided sources)",
+   "title": "Introduction to Philosophy (formerly PHIL 260)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: PHIL.html)"
+   }
   },
   "PHIL 103": {
-   "title": "(title not in provided sources)",
+   "title": "World Religions (formerly PHIL 265)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_GLOBAL",
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: PHIL.html)"
+   }
   },
   "PHIL 104": {
-   "title": "(title not in provided sources)",
+   "title": "Introduction to Ethics (formerly PHIL 268)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: PHIL.html)"
+   }
   },
   "PHIL 201": {
-   "title": "(title not in provided sources)",
+   "title": "Business Ethics (formerly PHIL 315)",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_GLOBAL",
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: PHIL.html)"
+   }
   },
   "PHIL 266": {
-   "title": "(title not in provided sources)",
+   "title": "Contemporary Moral Problems",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: PHIL.html)"
+   }
   },
   "PHIL 267": {
-   "title": "(title not in provided sources)",
+   "title": "Philosophy of Love and Friendship",
    "credits": 3,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "list"
    ],
-   "title_missing": true,
    "credits_inferred": true,
    "used_in": [
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: PHIL.html)"
+   }
   },
   "PHYS 241": {
    "title": "General Physics I",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [
+    "MATH 132",
+    "PHYS 251"
+   ],
    "sources": [
     "catalog:CE",
     "catalog:CPE",
@@ -3593,14 +5303,29 @@
     "ISE",
     "ME",
     "list:CS_SCIENCE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "coreq_text": "MATH 132 , PHYS 251 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: PHYS.html)"
+   }
   },
   "PHYS 242": {
    "title": "General Physics II",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [
+    [
+     "PHYS 241"
+    ],
+    [
+     "MATH 132"
+    ]
+   ],
+   "prereq_status": "stated",
+   "coreq": [
+    "PHYS 252"
+   ],
    "sources": [
     "catalog:CE",
     "catalog:CPE",
@@ -3615,14 +5340,22 @@
     "ISE",
     "ME",
     "list:CS_SCIENCE"
-   ]
+   ],
+   "prereq_text": "PHYS 241 , MATH 132 .",
+   "coreq_text": "PHYS 252 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: PHYS.html)"
+   }
   },
   "PHYS 251": {
    "title": "General Physics I Lab",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [
+    "PHYS 241"
+   ],
    "sources": [
     "catalog:CE",
     "catalog:CPE",
@@ -3637,14 +5370,22 @@
     "ISE",
     "ME",
     "list:CS_SCIENCE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "coreq_text": "PHYS 241 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: PHYS.html)"
+   }
   },
   "PHYS 252": {
    "title": "General Physics II Lab",
    "credits": 1.0,
-   "prereq": null,
-   "prereq_status": "unknown",
-   "coreq": [],
+   "prereq": [],
+   "prereq_status": "stated",
+   "coreq": [
+    "PHYS 242"
+   ],
    "sources": [
     "catalog:CE",
     "catalog:CPE",
@@ -3659,7 +5400,13 @@
     "ISE",
     "ME",
     "list:CS_SCIENCE"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "coreq_text": "PHYS 242 .",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: PHYS.html)"
+   }
   },
   "POLI 110": {
    "title": "(title not in provided sources)",
@@ -3679,8 +5426,8 @@
   "PSYC 101": {
    "title": "General Psychology",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "stated",
    "coreq": [],
    "sources": [
     "catalog:ISE"
@@ -3689,7 +5436,13 @@
    "used_in": [
     "ISE",
     "list:GENED_SOC"
-   ]
+   ],
+   "prereq_text": "Non Psychology majors.",
+   "prereq_note": "Non Psychology majors",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: PSYC.html)"
+   }
   },
   "SLMG 200": {
    "title": "Soil Science",
@@ -3737,8 +5490,8 @@
   "SPCH 250": {
    "title": "Speech Fundamentals",
    "credits": 3.0,
-   "prereq": null,
-   "prereq_status": "unknown",
+   "prereq": [],
+   "prereq_status": "none_listed",
    "coreq": [],
    "sources": [
     "catalog:CPE",
@@ -3749,7 +5502,12 @@
     "CS",
     "EE",
     "list:GENED_HUM"
-   ]
+   ],
+   "prereq_text": "NONE",
+   "prereq_source": {
+    "catalog_year": "2025-2026",
+    "url": "catalog.ncat.edu 2025-2026 course descriptions (saved page: SPCH.html)"
+   }
   },
   "SSFM 226": {
    "title": "(title not in provided sources)",
@@ -3765,6 +5523,19 @@
    "used_in": [
     "list:GENED_SOC"
    ]
+  },
+  "STAT 214": {
+   "title": "(title not in provided sources)",
+   "credits": 0,
+   "prereq": null,
+   "prereq_status": "unknown",
+   "coreq": [],
+   "sources": [
+    "prereq-reference"
+   ],
+   "used_in": [],
+   "stub": true,
+   "title_missing": true
   }
  }
 }
