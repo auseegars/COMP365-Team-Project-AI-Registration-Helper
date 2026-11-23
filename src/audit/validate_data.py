@@ -36,7 +36,7 @@ def _known(code, courses):
 def validate_courses(path, warns):
     errs = []
     courses = _load(path)["courses"]
-    unknown = inferred = 0
+    unknown = inferred = stubs = 0
     for code, c in courses.items():
         if code != norm(code):
             errs.append(f"courses.json: key '{code}' is not normalised (expected '{norm(code)}')")
@@ -52,7 +52,10 @@ def validate_courses(path, warns):
         if p is None:
             if status != "unknown":
                 errs.append(f"{code}: prereq is null but prereq_status is '{status}'")
-            unknown += 1
+            if c.get("stub"):
+                stubs += 1
+            else:
+                unknown += 1
         elif not isinstance(p, list) or any(not isinstance(g, list) or not g for g in p):
             errs.append(f"{code}: prereq must be a list of non-empty OR-lists")
         else:
@@ -70,6 +73,8 @@ def validate_courses(path, warns):
             errs.append(str(e))
     if unknown:
         warns.append(f"{unknown} course(s) have unknown prerequisites (see data/prereq_todo.csv)")
+    if stubs:
+        warns.append(f"{stubs} prerequisite-only stub course(s) have no data of their own (stub: true)")
     if inferred:
         warns.append(f"{inferred} course(s) have inferred (not catalog-stated) credits")
     return courses, errs
