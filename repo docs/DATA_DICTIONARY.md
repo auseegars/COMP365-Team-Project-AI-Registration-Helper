@@ -16,6 +16,17 @@ All course codes are normalised `DEPT NNN` (upper-case, one space), e.g. `COMP 1
 * `prereq: []` = no prerequisite. `prereq: null` + `prereq_status: "unknown"` = not entered yet (see DATA_GAPS #1).
 * `none_listed` = source describes the course but states no prerequisite.
 * `credits_inferred` / `title_missing` flag values not stated in our sources.
+* Courses filled from the catalog also carry `prereq_text` (the catalog's Prerequisite(s) wording, or `NONE`),
+  `coreq_text` when the page has a Corequisite(s) line, and `prereq_source` `{catalog_year, url}`.
+  `coreq` means "already done or taken the same term" and also holds "prerequisite or corequisite" courses.
+* `stub: true` = course added only because another course names it as a prerequisite (not in any curriculum).
+
+## data/catalog_prereqs.csv
+One row per catalog course: `code, title, credits, prereq_text, coreq_text, cnf_override, note, catalog_year, source_url`.
+Written by `tools/parse_catalog_courses.py <year> <saved pages…>` from saved catalog.ncat.edu Course Descriptions
+pages; applied to courses.json by `tools/apply_prereqs.py` (which also rewrites prereq_todo.csv).
+`cnf_override` replaces the parsed text where the wording is ambiguous (`MATH 131 ; PHYS 241`, or `-` for
+"no enforceable course requirement", e.g. a placement-score alternative); `note` then becomes `prereq_note`.
 
 ## data/lists.json
 `{"lists": {"GENED_SOC": {"title","source","courses":[…]}}}` Named approved-course lists referenced by `list_ref`.
