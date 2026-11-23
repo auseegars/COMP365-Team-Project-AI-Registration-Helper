@@ -48,18 +48,55 @@ class RealData(unittest.TestCase):
     def test_cs_senior_project_needs_410_corequisite_data(self):
         self.assertEqual(courses["COMP 495"]["coreq"], ["COMP 410"])
 
-    def test_cs_transfer_student_via_generic_codes(self):
-        # Guilford Tech student with the handbook's CS transfer courses
+    def test_cs_transfer_student_guilford_tool_rows(self):
+        # Rows taken from the A&T Transfer Articulation Tool for Guilford Tech (retrieved 2026-11-10)
         tr = [{"institution_id": "GTCC", "course": c} for c in
-              ("ENG 111", "ENG 112", "MAT 271", "MAT 272", "CSC 151", "CSC 251", "MAT 167", "BUS 110")]
+              ("ENG 111", "ENG 112", "MAT 271", "MAT 272", "CSC 151", "CSC 251", "MAT 167")]
         r = run("CS", {"completed": [], "transfer": tr})
         sat = set(r.satisfied)
         codes = {q["code"] for q in cur["CS"]["requirements"] if q["type"] == "course" and q["id"] in sat}
-        self.assertTrue({"ENGL 100", "ENGL 101", "MATH 131", "MATH 132", "COMP 163", "COMP 167", "COMP 180"} <= codes)
-        business = next(q["id"] for q in cur["CS"]["requirements"] if q.get("category") == "business")
-        self.assertIn(business, sat)                      # BUS 110 -> business elective
+        self.assertTrue({"ENGL 100", "ENGL 101", "MATH 131", "MATH 132", "COMP 163", "COMP 167"} <= codes)
+        # the 2016 handbook said MAT 167 -> COMP 180; the A&T tool says MATH 123, so COMP 180 stays open
+        self.assertNotIn("COMP 180", codes)
         self.assertEqual(r.transfer_unmatched, [])
-        self.assertIn("COMP 280", r.eligible_now)         # COMP 167 + COMP 180 now done
+
+    def test_or_alternative_picks_the_one_the_curriculum_needs(self):
+        # Alamance/Guilford list "CSC 151 -> COMP 163 OR CST 240"; only COMP 163 is in the CS curriculum
+        gt = tmap[("GTCC", "CSC 151")]
+        self.assertIn("COMP 163", gt["ncat_equivalent"])
+        # a synthetic OR entry: both options real courses, the audit should take the one still needed
+        fake = dict(gt, alternatives=[["COMP 163"], ["COMP 167"]], ncat_equivalent=["COMP 163"])
+        m = {**tmap, ("GTCC", "CSC 151"): fake}
+        r = da.audit({"completed": ["COMP 163"], "transfer": [{"institution_id": "GTCC", "course": "CSC 151"}]},
+                     cur["CS"], courses, m, lists)
+        self.assertIn(next(q["id"] for q in cur["CS"]["requirements"] if q.get("code") == "COMP 167"), r.satisfied)
+
+    def test_seed_rows_still_apply_to_unlisted_colleges(self):
+        # 2016 handbook seed (institution 'NCCCS') is the fallback when a college has no row of its own
+        tr = [{"institution_id": "NCCCS", "course": c} for c in ("ENG 111", "MAT 167", "BUS 110")]
+        r = run("CS", {"completed": [], "transfer": tr})
+        sat = set(r.satisfied)
+        codes = {q["code"] for q in cur["CS"]["requirements"] if q["type"] == "course" and q["id"] in sat}
+        self.assertTrue({"ENGL 100", "COMP 180"} <= codes)
+        business = next(q["id"] for q in cur["CS"]["requirements"] if q.get("category") == "business")
+        self.assertIn(business, sat)
+        self.assertEqual(r.transfer_unmatched, [])
+
+    def test_category_transfer_credit_used_before_shared_course(self):
+        # ECON 201 is on both the business and social-science lists; BUS 110 (seed row) gives business
+        # category credit.  The audit must spend the category credit on business and ECON 201 on social science.
+        r = run("CS", {"completed": ["ECON 201"], "transfer": [{"institution_id": "NCCCS", "course": "BUS 110"}]})
+        slot = {q.get("category"): q["id"] for q in cur["CS"]["requirements"] if q["type"] == "elective"}
+        self.assertIn(slot["business"], r.satisfied)
+        self.assertIn(slot["social_behavioral"], r.satisfied)
+
+    def test_course_fitting_fewer_slots_is_used_first(self):
+        # Guilford BUS 110 -> MGMT 110 (business only).  With ECON 201 also done, MGMT 110 should fill
+        # business and leave ECON 201 for social science.
+        r = run("CS", {"completed": ["ECON 201"], "transfer": [{"institution_id": "GTCC", "course": "BUS 110"}]})
+        slot = {q.get("category"): q["id"] for q in cur["CS"]["requirements"] if q["type"] == "elective"}
+        self.assertIn(slot["business"], r.satisfied)
+        self.assertIn(slot["social_behavioral"], r.satisfied)
 
     def test_net_pair_needs_both_courses(self):
         one = run("CS", {"completed": [], "transfer": [{"institution_id": "GTCC", "course": "NET 110"}]})
@@ -78,9 +115,50 @@ class RealData(unittest.TestCase):
         self.assertEqual(len(filled), 1)
 
     def test_unverified_prereqs_are_reported_not_hidden(self):
+        # every required course now has catalog data, so blank one out in a copy
+        import copy
+        cs = copy.deepcopy(courses)
+        cs["GEEN 100"]["prereq"], cs["GEEN 100"]["prereq_status"] = None, "unknown"
+        r = da.audit({"completed": []}, cur["ISE"], cs, tmap, lists)
+        self.assertIn("GEEN 100", r.unverified_prereqs)
+        self.assertTrue(all(cs[c]["prereq"] is None for c in r.unverified_prereqs))
+
+    def test_no_required_course_has_unknown_prereqs(self):
+        for p in PROGRAMS:
+            req = {q["code"] for q in cur[p]["requirements"] if q["type"] == "course"}
+            self.assertEqual([c for c in sorted(req) if courses[c]["prereq"] is None], [], p)
+
+    def test_at_least_three_of_five_rule(self):
+        self.assertTrue(da.prereqs_met("CIEN 483", courses, {"CIEN 310", "CIEN 320", "CIEN 350"}))
+        self.assertFalse(da.prereqs_met("CIEN 483", courses, {"CIEN 310", "CIEN 320"}))
+
+    # ---- catalog prerequisites for the engineering majors (data/catalog_prereqs.csv)
+    def test_ee_catalog_prereq_chain_blocks_and_unlocks(self):
         r = run("EE", {"completed": []})
-        self.assertTrue(r.unverified_prereqs)             # EE courses have no prereq data yet
-        self.assertTrue(all(courses[c]["prereq"] is None for c in r.unverified_prereqs))
+        self.assertIn("ECEN 101", r.eligible_now)
+        self.assertNotIn("ECEN 200", r.eligible_now)       # ECEN 101 and MATH 132
+        self.assertNotIn("ECEN 200", r.unverified_prereqs)
+        r = run("EE", {"completed": ["ECEN 101", "MATH 131", "MATH 132"]})
+        self.assertIn("ECEN 200", r.eligible_now)
+        self.assertNotIn("ECEN 300", r.eligible_now)       # ECEN 200 and MATH 341
+
+    def test_me_three_course_prereq(self):
+        self.assertEqual(courses["MEEN 324"]["prereq"], [["MEEN 210"], ["MEEN 233"], ["MATH 341"]])
+        self.assertTrue(da.prereqs_met("MEEN 324", courses, {"MEEN 210", "MEEN 233", "MATH 341"}))
+        self.assertFalse(da.prereqs_met("MEEN 324", courses, {"MEEN 210", "MEEN 233"}))
+
+    def test_catalog_corequisites_and_placement_courses(self):
+        self.assertEqual(courses["ECEN 212"]["coreq"], ["ECEN 218"])
+        self.assertEqual(courses["CAEE 231"]["prereq"], [["PHYS 241"]])   # "Corequisite: CAEE 230" kept out of prereq
+        self.assertEqual(courses["CAEE 231"]["coreq"], ["CAEE 230"])
+        self.assertEqual(courses["MATH 131"]["prereq"], [])                # placement score is an alternative
+        self.assertIn("placement", courses["MATH 131"]["prereq_note"])
+
+    def test_every_catalog_prereq_records_its_source(self):
+        done = [c for c, v in courses.items() if "prereq_text" in v]
+        self.assertGreater(len(done), 150)
+        for c in done:
+            self.assertIn(courses[c]["prereq_source"]["catalog_year"], ("2024-2025", "2025-2026"), c)
 
     def test_attest_electives_need_attestation(self):
         q = next(q for q in cur["ISE"]["requirements"] if q.get("fill") == "attest")
